@@ -1,0 +1,778 @@
+{
+    "info": {
+        "name": "Telegram Bot API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": {
+        "key": "token",
+        "value": "1234:AAbbcc",
+        "type": "string"
+    },
+    "item": [
+        {
+            "name": "getUpdates",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "offset",
+                            "value": "",
+                            "description": "Optional. Identifier of the first update to be returned. Must be greater by one than the highest among the identifiers of previously received updates. By default, updates starting with the earliest unconfirmed update are returned. An update is considered confirmed as soon as getUpdates is called with an offset higher than its update_id.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "limit",
+                            "value": "",
+                            "description": "Optional. Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100",
+                            "type": "text"
+                        },
+                        {
+                            "key": "timeout",
+                            "value": "",
+                            "description": "Optional. Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/getUpdates",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "getUpdates"
+                    ]
+                },
+                "description": "Use this method to receive incoming updates using long polling (wiki). An Array of Update objects is returned."
+            }
+        },
+        {
+            "name": "setWebhook",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "url",
+                            "value": "",
+                            "description": "Optional. HTTPS url to send updates to. Use an empty string to remove webhook integration",
+                            "type": "text"
+                        },
+                        {
+                            "key": "certificate",
+                            "value": "",
+                            "description": "Optional. Upload your public key certificate so that the root certificate in use can be checked. See our self-signed guide for details.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/setWebhook",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "setWebhook"
+                    ]
+                },
+                "description": "Use this method to specify a url and receive incoming updates via an outgoing webhook. Whenever there is an update for the bot, we will send an HTTPS POST request to the specified url, containing a JSON-serialized Update. In case of an unsuccessful request, we will give up after a reasonable amount of attempts.\nIf you'd like to make sure that the Webhook request comes from Telegram, we recommend using a secret path in the URL, e.g. https://www.example.com/<token>. Since nobody else knows your bot‘s token, you can be pretty sure it’s us."
+            }
+        },
+        {
+            "name": "getMe",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/getMe",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "getMe"
+                    ]
+                },
+                "description": "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object."
+            }
+        },
+        {
+            "name": "sendMessage",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "text",
+                            "value": "",
+                            "description": "Required. Text of the message to be sent",
+                            "type": "text"
+                        },
+                        {
+                            "key": "parse_mode",
+                            "value": "",
+                            "description": "Optional. Send Markdown, if you want Telegram apps to show bold, italic and inline URLs in your bot's message.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "disable_web_page_preview",
+                            "value": "",
+                            "description": "Optional. Disables link previews for links in this message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendMessage",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendMessage"
+                    ]
+                },
+                "description": "Use this method to send text messages. On success, the sent Message is returned."
+            }
+        },
+        {
+            "name": "forwardMessage",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "from_chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the chat where the original message was sent (or channel username in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "message_id",
+                            "value": "",
+                            "description": "Required. Unique message identifier",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/forwardMessage",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "forwardMessage"
+                    ]
+                },
+                "description": "Use this method to forward messages of any kind. On success, the sent Message is returned."
+            }
+        },
+        {
+            "name": "sendPhoto",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "photo",
+                            "value": "",
+                            "description": "Required. Photo to send. You can either pass a file_id as String to resend a photo that is already on the Telegram servers, or upload a new photo using multipart/form-data.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "caption",
+                            "value": "",
+                            "description": "Optional. Photo caption (may also be used when resending photos by file_id), 0-200 characters.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendPhoto",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendPhoto"
+                    ]
+                },
+                "description": "Use this method to send photos. On success, the sent Message is returned."
+            }
+        },
+        {
+            "name": "sendAudio",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "audio",
+                            "value": "",
+                            "description": "Required. Audio file to send. You can either pass a file_id as String to resend an audio that is already on the Telegram servers, or upload a new audio file using multipart/form-data.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "duration",
+                            "value": "",
+                            "description": "Optional. Duration of the audio in seconds",
+                            "type": "text"
+                        },
+                        {
+                            "key": "performer",
+                            "value": "",
+                            "description": "Optional. Performer",
+                            "type": "text"
+                        },
+                        {
+                            "key": "title",
+                            "value": "",
+                            "description": "Optional. Track name",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendAudio",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendAudio"
+                    ]
+                },
+                "description": "Use this method to send audio files, if you want Telegram clients to display them in the music player. Your audio must be in the .mp3 format. On success, the sent Message is returned. Bots can currently send audio files of up to 50 MB in size, this limit may be changed in the future.\nFor backward compatibility, when the fields title and performer are both empty and the mime-type of the file to be sent is not audio/mpeg, the file will be sent as a playable voice message. For this to work, the audio must be in an .ogg file encoded with OPUS. This behavior will be phased out in the future. For sending voice messages, use the sendVoice method instead."
+            }
+        },
+        {
+            "name": "sendDocument",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "document",
+                            "value": "",
+                            "description": "Required. File to send. You can either pass a file_id as String to resend a file that is already on the Telegram servers, or upload a new file using multipart/form-data.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendDocument",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendDocument"
+                    ]
+                },
+                "description": "Use this method to send general files. On success, the sent Message is returned. Bots can currently send files of any type of up to 50 MB in size, this limit may be changed in the future."
+            }
+        },
+        {
+            "name": "sendSticker",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "sticker",
+                            "value": "",
+                            "description": "Required. Sticker to send. You can either pass a file_id as String to resend a sticker that is already on the Telegram servers, or upload a new sticker using multipart/form-data.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendSticker",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendSticker"
+                    ]
+                },
+                "description": "Use this method to send .webp stickers. On success, the sent Message is returned."
+            }
+        },
+        {
+            "name": "sendVideo",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "video",
+                            "value": "",
+                            "description": "Required. Video to send. You can either pass a file_id as String to resend a video that is already on the Telegram servers, or upload a new video file using multipart/form-data.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "duration",
+                            "value": "",
+                            "description": "Optional. Duration of sent video in seconds",
+                            "type": "text"
+                        },
+                        {
+                            "key": "caption",
+                            "value": "",
+                            "description": "Optional. Video caption (may also be used when resending videos by file_id), 0-200 characters.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendVideo",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendVideo"
+                    ]
+                },
+                "description": "Use this method to send video files, Telegram clients support mp4 videos (other formats may be sent as Document). On success, the sent Message is returned. Bots can currently send video files of up to 50 MB in size, this limit may be changed in the future."
+            }
+        },
+        {
+            "name": "sendVoice",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "voice",
+                            "value": "",
+                            "description": "Required. Audio file to send. You can either pass a file_id as String to resend an audio that is already on the Telegram servers, or upload a new audio file using multipart/form-data.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "duration",
+                            "value": "",
+                            "description": "Optional. Duration of sent audio in seconds",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendVoice",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendVoice"
+                    ]
+                },
+                "description": "Use this method to send audio files, if you want Telegram clients to display the file as a playable voice message. For this to work, your audio must be in an .ogg file encoded with OPUS (other formats may be sent as Audio or Document). On success, the sent Message is returned. Bots can currently send voice messages of up to 50 MB in size, this limit may be changed in the future."
+            }
+        },
+        {
+            "name": "sendLocation",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "latitude",
+                            "value": "",
+                            "description": "Required. Latitude of location",
+                            "type": "text"
+                        },
+                        {
+                            "key": "longitude",
+                            "value": "",
+                            "description": "Required. Longitude of location",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_to_message_id",
+                            "value": "",
+                            "description": "Optional. If the message is a reply, ID of the original message",
+                            "type": "text"
+                        },
+                        {
+                            "key": "reply_markup",
+                            "value": "",
+                            "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendLocation",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendLocation"
+                    ]
+                },
+                "description": "Use this method to send point on the map. On success, the sent Message is returned."
+            }
+        },
+        {
+            "name": "sendChatAction",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "chat_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
+                            "type": "text"
+                        },
+                        {
+                            "key": "action",
+                            "value": "",
+                            "description": "Required. Type of action to broadcast. Choose one, depending on what the user is about to receive: typing for text messages, upload_photo for photos, record_video or upload_video for videos, record_audio or upload_audio for audio files, upload_document for general files, find_location for location data.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/sendChatAction",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "sendChatAction"
+                    ]
+                },
+                "description": "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). \nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
+            }
+        },
+        {
+            "name": "getUserProfilePhotos",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "user_id",
+                            "value": "",
+                            "description": "Required. Unique identifier of the target user",
+                            "type": "text"
+                        },
+                        {
+                            "key": "offset",
+                            "value": "",
+                            "description": "Optional. Sequential number of the first photo to be returned. By default, all photos are returned.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "limit",
+                            "value": "",
+                            "description": "Optional. Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/getUserProfilePhotos",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "getUserProfilePhotos"
+                    ]
+                },
+                "description": "Use this method to get a list of profile pictures for a user. Returns a UserProfilePhotos object."
+            }
+        },
+        {
+            "name": "getFile",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file_id",
+                            "value": "",
+                            "description": "Required. File identifier to get info about",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/getFile",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "getFile"
+                    ]
+                },
+                "description": "Use this method to get basic info about a file and prepare it for downloading. For the moment, bots can download files of up to 20MB in size. On success, a File object is returned. The file can then be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>, where <file_path> is taken from the response. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile again."
+            }
+        },
+        {
+            "name": "answerInlineQuery",
+            "request": {
+                "method": "POST",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "inline_query_id",
+                            "value": "",
+                            "description": "Required. Unique identifier for the answered query",
+                            "type": "text"
+                        },
+                        {
+                            "key": "results",
+                            "value": "",
+                            "description": "Required. A JSON-serialized array of results for the inline query",
+                            "type": "text"
+                        },
+                        {
+                            "key": "cache_time",
+                            "value": "",
+                            "description": "Optional. The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.",
+                            "type": "text"
+                        },
+                        {
+                            "key": "is_personal",
+                            "value": "",
+                            "description": "Optional. Pass True, if results may be cached on the server side only for the user that sent the query. By default, results may be returned to any user who sends the same query",
+                            "type": "text"
+                        },
+                        {
+                            "key": "next_offset",
+                            "value": "",
+                            "description": "Optional. Pass the offset that a client should send in the next query with the same text to receive more results. Pass an empty string if there are no more results or if you don‘t support pagination. Offset length can’t exceed 64 bytes.",
+                            "type": "text"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "https://api.telegram.org/bot{{token}}/answerInlineQuery",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "telegram",
+                        "org"
+                    ],
+                    "path": [
+                        "bot{{token}}",
+                        "answerInlineQuery"
+                    ]
+                },
+                "description": "Use this method to send answers to an inline query. On success, True is returned.No more than 50 results per query are allowed."
+            }
+        }
+    ]
+}

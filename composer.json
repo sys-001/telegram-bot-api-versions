@@ -1,0 +1,5 @@
+{
+  "require": {
+    "sysbot/tgscraper": "^2.0"
+  }
+}
