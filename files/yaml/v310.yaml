@@ -1,3 +1,4 @@
+version: 3.1.0
 types:
     -
         name: Update
@@ -63,6 +64,7 @@ types:
                     - PreCheckoutQuery
                 optional: true
                 description: 'Optional. New incoming pre-checkout query. Contains full information about checkout'
+        extended_by: {  }
     -
         name: WebhookInfo
         description: 'Contains information about the current status of a webhook.'
@@ -109,6 +111,7 @@ types:
                     - Array<string>
                 optional: true
                 description: 'Optional. A list of update types the bot is subscribed to. Defaults to all update types'
+        extended_by: {  }
     -
         name: User
         description: 'This object represents a Telegram user or bot.'
@@ -143,6 +146,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. IETF language tag of the user''s language'
+        extended_by: {  }
     -
         name: Chat
         description: 'This object represents a chat.'
@@ -207,6 +211,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. Chat invite link, for supergroups and channel chats. Returned only in getChat.'
+        extended_by: {  }
     -
         name: Message
         description: 'This object represents a message.'
@@ -439,6 +444,7 @@ types:
                     - SuccessfulPayment
                 optional: true
                 description: 'Optional. Message is a service message about a successful payment, information about the payment. More about payments »'
+        extended_by: {  }
     -
         name: MessageEntity
         description: 'This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.'
@@ -473,6 +479,7 @@ types:
                     - User
                 optional: true
                 description: 'Optional. For “text_mention” only, the mentioned user'
+        extended_by: {  }
     -
         name: PhotoSize
         description: 'This object represents one size of a photo or a file / sticker thumbnail.'
@@ -501,6 +508,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: Audio
         description: 'This object represents an audio file to be treated as music by the Telegram clients.'
@@ -541,6 +549,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: Document
         description: 'This object represents a general file (as opposed to photos, voice messages and audio files).'
@@ -575,6 +584,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: Sticker
         description: 'This object represents a sticker.'
@@ -615,6 +625,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: Video
         description: 'This object represents a video file.'
@@ -661,6 +672,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: Voice
         description: 'This object represents a voice note.'
@@ -689,6 +701,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: VideoNote
         description: 'This object represents a video message (available in Telegram apps as of v.4.0).'
@@ -723,6 +736,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: Contact
         description: 'This object represents a phone contact.'
@@ -751,6 +765,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. Contact''s user identifier in Telegram'
+        extended_by: {  }
     -
         name: Location
         description: 'This object represents a point on the map.'
@@ -767,6 +782,7 @@ types:
                     - float
                 optional: false
                 description: 'Latitude as defined by sender'
+        extended_by: {  }
     -
         name: Venue
         description: 'This object represents a venue.'
@@ -795,6 +811,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. Foursquare identifier of the venue'
+        extended_by: {  }
     -
         name: UserProfilePhotos
         description: 'This object represent a user''s profile pictures.'
@@ -811,6 +828,7 @@ types:
                     - Array<Array<PhotoSize>>
                 optional: false
                 description: 'Requested profile pictures (in up to 4 sizes each)'
+        extended_by: {  }
     -
         name: File
         description: 'This object represents a file ready to be downloaded. The file can be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile.'
@@ -833,6 +851,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. File path. Use https://api.telegram.org/file/bot<token>/<file_path> to get the file.'
+        extended_by: {  }
     -
         name: ReplyKeyboardMarkup
         description: 'This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).'
@@ -861,6 +880,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard.'
+        extended_by: {  }
     -
         name: KeyboardButton
         description: 'This object represents one button of the reply keyboard. For simple text buttons String can be used instead of this object to specify text of the button. Optional fields are mutually exclusive.'
@@ -883,6 +903,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. If True, the user''s current location will be sent when the button is pressed. Available in private chats only'
+        extended_by: {  }
     -
         name: ReplyKeyboardRemove
         description: 'Upon receiving a message with this object, Telegram clients will remove the current custom keyboard and display the default letter-keyboard. By default, custom keyboards are displayed until a new keyboard is sent by a bot. An exception is made for one-time keyboards that are hidden immediately after the user presses a button (see ReplyKeyboardMarkup).'
@@ -899,6 +920,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Use this parameter if you want to remove the keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and removes the keyboard for that user, while still showing the keyboard with poll options to users who haven''t voted yet.'
+        extended_by: {  }
     -
         name: InlineKeyboardMarkup
         description: 'This object represents an inline keyboard that appears right next to the message it belongs to.'
@@ -909,6 +931,7 @@ types:
                     - Array<Array<InlineKeyboardButton>>
                 optional: false
                 description: 'Array of button rows, each represented by an Array of InlineKeyboardButton objects'
+        extended_by: {  }
     -
         name: InlineKeyboardButton
         description: 'This object represents one button of an inline keyboard. You must use exactly one of the optional fields.'
@@ -955,6 +978,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Specify True, to send a Pay button.NOTE: This type of button must always be the first button in the first row.'
+        extended_by: {  }
     -
         name: CallbackQuery
         description: 'This object represents an incoming callback query from a callback button in an inline keyboard. If the button that originated the query was attached to a message sent by the bot, the field message will be present. If the button was attached to a message sent via the bot (in inline mode), the field inline_message_id will be present. Exactly one of the fields data or game_short_name will be present.'
@@ -1001,6 +1025,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. Short name of a Game to be returned, serves as the unique identifier for the game'
+        extended_by: {  }
     -
         name: ForceReply
         description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
@@ -1017,6 +1042,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.'
+        extended_by: {  }
     -
         name: ChatPhoto
         description: 'This object represents a chat photo.'
@@ -1033,6 +1059,7 @@ types:
                     - string
                 optional: false
                 description: 'Unique file identifier of big (640x640) chat photo. This file_id can be used only for photo download.'
+        extended_by: {  }
     -
         name: ChatMember
         description: 'This object contains information about one member of a chat.'
@@ -1133,6 +1160,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Restricted only. True, if user may add web page previews to his messages, implies can_send_media_messages'
+        extended_by: {  }
     -
         name: ResponseParameters
         description: 'Contains information about why a request was unsuccessfull.'
@@ -1149,10 +1177,12 @@ types:
                     - int
                 optional: true
                 description: 'Optional. In case of exceeding flood control, the number of seconds left to wait before the request can be repeated'
+        extended_by: {  }
     -
         name: InputFile
         description: 'This object represents the contents of a file to be uploaded. Must be posted using multipart/form-data in the usual way that files are uploaded via the browser.'
         fields: {  }
+        extended_by: {  }
     -
         name: InlineQuery
         description: 'This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results.'
@@ -1187,10 +1217,32 @@ types:
                     - string
                 optional: false
                 description: 'Offset of the results to be returned, can be controlled by the bot'
+        extended_by: {  }
     -
         name: InlineQueryResult
         description: 'This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:'
         fields: {  }
+        extended_by:
+            - InlineQueryResultCachedAudio
+            - InlineQueryResultCachedDocument
+            - InlineQueryResultCachedGif
+            - InlineQueryResultCachedMpeg4Gif
+            - InlineQueryResultCachedPhoto
+            - InlineQueryResultCachedSticker
+            - InlineQueryResultCachedVideo
+            - InlineQueryResultCachedVoice
+            - InlineQueryResultArticle
+            - InlineQueryResultAudio
+            - InlineQueryResultContact
+            - InlineQueryResultGame
+            - InlineQueryResultDocument
+            - InlineQueryResultGif
+            - InlineQueryResultLocation
+            - InlineQueryResultMpeg4Gif
+            - InlineQueryResultPhoto
+            - InlineQueryResultVenue
+            - InlineQueryResultVideo
+            - InlineQueryResultVoice
     -
         name: InlineQueryResultArticle
         description: 'Represents a link to an article or web page.'
@@ -1261,6 +1313,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. Thumbnail height'
+        extended_by: {  }
     -
         name: InlineQueryResultPhoto
         description: 'Represents a link to a photo. By default, this photo will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.'
@@ -1331,6 +1384,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the photo'
+        extended_by: {  }
     -
         name: InlineQueryResultGif
         description: 'Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.'
@@ -1401,6 +1455,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the GIF animation'
+        extended_by: {  }
     -
         name: InlineQueryResultMpeg4Gif
         description: 'Represents a link to a video animation (H.264/MPEG-4 AVC video without sound). By default, this animated MPEG-4 file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.'
@@ -1471,6 +1526,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the video animation'
+        extended_by: {  }
     -
         name: InlineQueryResultVideo
         description: 'Represents a link to a page containing an embedded video player or a video file. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video.'
@@ -1553,6 +1609,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the video'
+        extended_by: {  }
     -
         name: InlineQueryResultAudio
         description: 'Represents a link to an mp3 audio file. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.'
@@ -1611,6 +1668,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the audio'
+        extended_by: {  }
     -
         name: InlineQueryResultVoice
         description: 'Represents a link to a voice recording in an .ogg container encoded with OPUS. By default, this voice recording will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the the voice message.'
@@ -1663,6 +1721,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the voice recording'
+        extended_by: {  }
     -
         name: InlineQueryResultDocument
         description: 'Represents a link to a file. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file. Currently, only .PDF and .ZIP files can be sent using this method.'
@@ -1739,6 +1798,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. Thumbnail height'
+        extended_by: {  }
     -
         name: InlineQueryResultLocation
         description: 'Represents a location on a map. By default, the location will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the location.'
@@ -1803,6 +1863,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. Thumbnail height'
+        extended_by: {  }
     -
         name: InlineQueryResultVenue
         description: 'Represents a venue. By default, the venue will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the venue.'
@@ -1879,6 +1940,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. Thumbnail height'
+        extended_by: {  }
     -
         name: InlineQueryResultContact
         description: 'Represents a contact with a phone number. By default, this contact will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the contact.'
@@ -1943,6 +2005,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. Thumbnail height'
+        extended_by: {  }
     -
         name: InlineQueryResultGame
         description: 'Represents a Game.'
@@ -1971,6 +2034,7 @@ types:
                     - InlineKeyboardMarkup
                 optional: true
                 description: 'Optional. Inline keyboard attached to the message'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedPhoto
         description: 'Represents a link to a photo stored on the Telegram servers. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.'
@@ -2023,6 +2087,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the photo'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedGif
         description: 'Represents a link to an animated GIF file stored on the Telegram servers. By default, this animated GIF file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with specified content instead of the animation.'
@@ -2069,6 +2134,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the GIF animation'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedMpeg4Gif
         description: 'Represents a link to a video animation (H.264/MPEG-4 AVC video without sound) stored on the Telegram servers. By default, this animated MPEG-4 file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.'
@@ -2115,6 +2181,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the video animation'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedSticker
         description: 'Represents a link to a sticker stored on the Telegram servers. By default, this sticker will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the sticker.'
@@ -2149,6 +2216,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the sticker'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedDocument
         description: 'Represents a link to a file stored on the Telegram servers. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file.'
@@ -2201,6 +2269,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the file'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedVideo
         description: 'Represents a link to a video file stored on the Telegram servers. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video.'
@@ -2253,6 +2322,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the video'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedVoice
         description: 'Represents a link to a voice message stored on the Telegram servers. By default, this voice message will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the voice message.'
@@ -2299,6 +2369,7 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the voice message'
+        extended_by: {  }
     -
         name: InlineQueryResultCachedAudio
         description: 'Represents a link to an mp3 audio file stored on the Telegram servers. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.'
@@ -2339,10 +2410,16 @@ types:
                     - InputMessageContent
                 optional: true
                 description: 'Optional. Content of the message to be sent instead of the audio'
+        extended_by: {  }
     -
         name: InputMessageContent
         description: 'This object represents the content of a message to be sent as a result of an inline query. Telegram clients currently support the following 4 types:'
         fields: {  }
+        extended_by:
+            - InputTextMessageContent
+            - InputLocationMessageContent
+            - InputVenueMessageContent
+            - InputContactMessageContent
     -
         name: InputTextMessageContent
         description: 'Represents the content of a text message to be sent as the result of an inline query.'
@@ -2365,6 +2442,7 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Disables link previews for links in the sent message'
+        extended_by: {  }
     -
         name: InputLocationMessageContent
         description: 'Represents the content of a location message to be sent as the result of an inline query.'
@@ -2381,6 +2459,7 @@ types:
                     - float
                 optional: false
                 description: 'Longitude of the location in degrees'
+        extended_by: {  }
     -
         name: InputVenueMessageContent
         description: 'Represents the content of a venue message to be sent as the result of an inline query.'
@@ -2415,6 +2494,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. Foursquare identifier of the venue, if known'
+        extended_by: {  }
     -
         name: InputContactMessageContent
         description: 'Represents the content of a contact message to be sent as the result of an inline query.'
@@ -2437,6 +2517,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. Contact''s last name'
+        extended_by: {  }
     -
         name: ChosenInlineResult
         description: 'Represents a result of an inline query that was chosen by the user and sent to their chat partner.'
@@ -2471,6 +2552,7 @@ types:
                     - string
                 optional: false
                 description: 'The query that was used to obtain the result'
+        extended_by: {  }
     -
         name: LabeledPrice
         description: 'This object represents a portion of the price for goods or services.'
@@ -2487,6 +2569,7 @@ types:
                     - int
                 optional: false
                 description: 'Price of the product in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45 pass amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).'
+        extended_by: {  }
     -
         name: Invoice
         description: 'This object contains basic information about an invoice.'
@@ -2521,6 +2604,7 @@ types:
                     - int
                 optional: false
                 description: 'Total price in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45 pass amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).'
+        extended_by: {  }
     -
         name: ShippingAddress
         description: 'This object represents a shipping address.'
@@ -2561,6 +2645,7 @@ types:
                     - string
                 optional: false
                 description: 'Address post code'
+        extended_by: {  }
     -
         name: OrderInfo
         description: 'This object represents information about an order.'
@@ -2589,6 +2674,7 @@ types:
                     - ShippingAddress
                 optional: true
                 description: 'Optional. User shipping address'
+        extended_by: {  }
     -
         name: ShippingOption
         description: 'This object represents one shipping option.'
@@ -2611,6 +2697,7 @@ types:
                     - Array<LabeledPrice>
                 optional: false
                 description: 'List of price portions'
+        extended_by: {  }
     -
         name: SuccessfulPayment
         description: 'This object contains basic information about a successful payment.'
@@ -2657,6 +2744,7 @@ types:
                     - string
                 optional: false
                 description: 'Provider payment identifier'
+        extended_by: {  }
     -
         name: ShippingQuery
         description: 'This object contains information about an incoming shipping query.'
@@ -2685,6 +2773,7 @@ types:
                     - ShippingAddress
                 optional: false
                 description: 'User specified shipping address'
+        extended_by: {  }
     -
         name: PreCheckoutQuery
         description: 'This object contains information about an incoming pre-checkout query.'
@@ -2731,6 +2820,7 @@ types:
                     - OrderInfo
                 optional: true
                 description: 'Optional. Order info provided by the user'
+        extended_by: {  }
     -
         name: Game
         description: 'This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers.'
@@ -2771,6 +2861,7 @@ types:
                     - Animation
                 optional: true
                 description: 'Optional. Animation that will be displayed in the game message in chats. Upload via BotFather'
+        extended_by: {  }
     -
         name: Animation
         description: 'You can provide an animation for your game so that it looks stylish in chats (check out Lumberjack for an example). This object represents an animation file to be displayed in the message containing a game.'
@@ -2805,10 +2896,12 @@ types:
                     - int
                 optional: true
                 description: 'Optional. File size'
+        extended_by: {  }
     -
         name: CallbackGame
         description: 'A placeholder, currently holds no information. Use BotFather to set up your game.'
         fields: {  }
+        extended_by: {  }
     -
         name: GameHighScore
         description: 'This object represents one row of the high scores table for a game.'
@@ -2831,6 +2924,7 @@ types:
                     - int
                 optional: false
                 description: Score
+        extended_by: {  }
 methods:
     -
         name: getUpdates
@@ -2860,6 +2954,7 @@ methods:
                     - Array<string>
                 required: false
                 description: 'List the types of updates you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all updates regardless of type (default). If not specified, the previous setting will be used.Please note that this parameter doesn''t affect updates created before the call to the getUpdates, so unwanted updates may be received for a short period of time.'
+        extended_by: {  }
         return_types:
             - Array<Update>
     -
@@ -2890,23 +2985,27 @@ methods:
                     - Array<string>
                 required: false
                 description: 'List the types of updates you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all updates regardless of type (default). If not specified, the previous setting will be used.Please note that this parameter doesn''t affect updates created before the call to the setWebhook, so unwanted updates may be received for a short period of time.'
+        extended_by: {  }
         return_types: {  }
     -
         name: deleteWebhook
         description: 'Use this method to remove webhook integration if you decide to switch back to getUpdates. Returns True on success. Requires no parameters.'
         fields: {  }
+        extended_by: {  }
         return_types:
             - bool
     -
         name: getWebhookInfo
         description: 'Use this method to get current webhook status. Requires no parameters. On success, returns a WebhookInfo object. If the bot is using getUpdates, will return an object with the url field empty.'
         fields: {  }
+        extended_by: {  }
         return_types:
             - WebhookInfo
     -
         name: getMe
         description: 'A simple method for testing your bot''s auth token. Requires no parameters. Returns basic information about the bot in form of a User object.'
         fields: {  }
+        extended_by: {  }
         return_types:
             - User
     -
@@ -2959,6 +3058,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -2991,6 +3091,7 @@ methods:
                     - int
                 required: true
                 description: 'Message identifier in the chat specified in from_chat_id'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3038,6 +3139,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3103,6 +3205,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3150,6 +3253,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3191,6 +3295,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3256,6 +3361,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3309,6 +3415,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3362,6 +3469,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3408,6 +3516,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3472,6 +3581,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3524,6 +3634,7 @@ methods:
                     - ForceReply
                 required: false
                 description: 'Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove keyboard or to force a reply from the user.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -3543,6 +3654,7 @@ methods:
                     - string
                 required: true
                 description: 'Type of action to broadcast. Choose one, depending on what the user is about to receive: typing for text messages, upload_photo for photos, record_video or upload_video for videos, record_audio or upload_audio for audio files, upload_document for general files, find_location for location data, record_video_note or upload_video_note for video notes.'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3567,6 +3679,7 @@ methods:
                     - int
                 required: false
                 description: 'Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.'
+        extended_by: {  }
         return_types:
             - UserProfilePhotos
     -
@@ -3579,6 +3692,7 @@ methods:
                     - string
                 required: true
                 description: 'File identifier to get info about'
+        extended_by: {  }
         return_types:
             - File
     -
@@ -3604,6 +3718,7 @@ methods:
                     - int
                 required: false
                 description: 'Date when the user will be unbanned, unix time. If user is banned for more than 366 days or less than 30 seconds from the current time they are considered to be banned forever'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3623,6 +3738,7 @@ methods:
                     - int
                 required: true
                 description: 'Unique identifier of the target user'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3672,6 +3788,7 @@ methods:
                     - bool
                 required: false
                 description: 'Pass True, if the user may add web page previews to their messages, implies can_send_media_messages'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3739,6 +3856,7 @@ methods:
                     - bool
                 required: false
                 description: 'Pass True, if the administrator can add new administrators with a subset of his own privileges or demote administrators that he has promoted, directly or indirectly (promoted by administrators that were appointed by him)'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3752,6 +3870,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target channel (in the format @channelusername)'
+        extended_by: {  }
         return_types:
             - string
     -
@@ -3771,6 +3890,7 @@ methods:
                     - InputFile
                 required: true
                 description: 'New chat photo, uploaded using multipart/form-data'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3784,6 +3904,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target channel (in the format @channelusername)'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3803,6 +3924,7 @@ methods:
                     - string
                 required: true
                 description: 'New chat title, 1-255 characters'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3822,6 +3944,7 @@ methods:
                     - string
                 required: false
                 description: 'New chat description, 0-255 characters'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3847,6 +3970,7 @@ methods:
                     - bool
                 required: false
                 description: 'Pass True, if it is not necessary to send a notification to all group members about the new pinned message'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3860,6 +3984,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target supergroup (in the format @supergroupusername)'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3873,6 +3998,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -3886,6 +4012,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)'
+        extended_by: {  }
         return_types:
             - Chat
     -
@@ -3899,6 +4026,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)'
+        extended_by: {  }
         return_types:
             - Array<ChatMember>
     -
@@ -3912,6 +4040,7 @@ methods:
                     - string
                 required: true
                 description: 'Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)'
+        extended_by: {  }
         return_types:
             - int
     -
@@ -3931,6 +4060,7 @@ methods:
                     - int
                 required: true
                 description: 'Unique identifier of the target user'
+        extended_by: {  }
         return_types:
             - ChatMember
     -
@@ -3967,6 +4097,7 @@ methods:
                     - int
                 required: false
                 description: 'The maximum amount of time in seconds that the result of the callback query may be cached client-side. Telegram apps will support caching starting in version 3.14. Defaults to 0.'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -4016,6 +4147,7 @@ methods:
                     - InlineKeyboardMarkup
                 required: false
                 description: 'A JSON-serialized object for an inline keyboard.'
+        extended_by: {  }
         return_types:
             - Message
             - bool
@@ -4054,6 +4186,7 @@ methods:
                     - InlineKeyboardMarkup
                 required: false
                 description: 'A JSON-serialized object for an inline keyboard.'
+        extended_by: {  }
         return_types:
             - Message
             - bool
@@ -4086,6 +4219,7 @@ methods:
                     - InlineKeyboardMarkup
                 required: false
                 description: 'A JSON-serialized object for an inline keyboard.'
+        extended_by: {  }
         return_types:
             - Message
             - bool
@@ -4106,6 +4240,7 @@ methods:
                     - int
                 required: true
                 description: 'Identifier of the message to delete'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -4154,6 +4289,7 @@ methods:
                     - string
                 required: false
                 description: 'Deep-linking parameter for the /start message sent to the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a ‘Connect your YouTube account’ button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an oauth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot''s inline capabilities.'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -4280,6 +4416,7 @@ methods:
                     - InlineKeyboardMarkup
                 required: false
                 description: 'A JSON-serialized object for an inline keyboard. If empty, one ''Pay total price'' button will be shown. If not empty, the first button must be a Pay button.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -4310,6 +4447,7 @@ methods:
                     - string
                 required: false
                 description: 'Required if ok is False. Error message in human readable form that explains why it is impossible to complete the order (e.g. "Sorry, delivery to your desired address is unavailable''). Telegram will display this message to the user.'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -4334,6 +4472,7 @@ methods:
                     - string
                 required: false
                 description: 'Required if ok is False. Error message in human readable form that explains the reason for failure to proceed with the checkout (e.g. "Sorry, somebody just bought the last of our amazing black T-shirts while you were busy filling out your payment details. Please choose a different color or garment!"). Telegram will display this message to the user.'
+        extended_by: {  }
         return_types:
             - bool
     -
@@ -4370,6 +4509,7 @@ methods:
                     - InlineKeyboardMarkup
                 required: false
                 description: 'A JSON-serialized object for an inline keyboard. If empty, one ‘Play game_title’ button will be shown. If not empty, the first button must launch the game.'
+        extended_by: {  }
         return_types:
             - Message
     -
@@ -4418,6 +4558,7 @@ methods:
                     - string
                 required: false
                 description: 'Required if chat_id and message_id are not specified. Identifier of the inline message'
+        extended_by: {  }
         return_types:
             - Message
             - bool
@@ -4449,5 +4590,6 @@ methods:
                     - string
                 required: false
                 description: 'Required if chat_id and message_id are not specified. Identifier of the inline message'
+        extended_by: {  }
         return_types:
             - Array<GameHighScore>

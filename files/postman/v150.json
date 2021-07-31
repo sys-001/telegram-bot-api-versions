@@ -1,12 +1,15 @@
 {
     "info": {
         "name": "Telegram Bot API",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+        "description": "Auto-generated Postman collection by TGScraper.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "version": "1.5.0"
     },
     "variable": {
         "key": "token",
-        "value": "1234:AAbbcc",
-        "type": "string"
+        "description": "Bot's unique authentication token, given by @BotFather.",
+        "type": "string",
+        "value": "1234:AAbbcc"
     },
     "item": [
         {
@@ -18,19 +21,19 @@
                     "formdata": [
                         {
                             "key": "offset",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Identifier of the first update to be returned. Must be greater by one than the highest among the identifiers of previously received updates. By default, updates starting with the earliest unconfirmed update are returned. An update is considered confirmed as soon as getUpdates is called with an offset higher than its update_id.",
                             "type": "text"
                         },
                         {
                             "key": "limit",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100",
                             "type": "text"
                         },
                         {
                             "key": "timeout",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling",
                             "type": "text"
                         }
@@ -61,13 +64,13 @@
                     "formdata": [
                         {
                             "key": "url",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. HTTPS url to send updates to. Use an empty string to remove webhook integration",
                             "type": "text"
                         },
                         {
                             "key": "certificate",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Upload your public key certificate so that the root certificate in use can be checked",
                             "type": "text"
                         }
@@ -122,37 +125,37 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "text",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Text of the message to be sent",
                             "type": "text"
                         },
                         {
                             "key": "parse_mode",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Send Markdown, if you want Telegram apps to show bold, italic and inline URLs in your bot's message. For the moment, only Telegram for Android supports this.",
                             "type": "text"
                         },
                         {
                             "key": "disable_web_page_preview",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Disables link previews for links in this message",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -183,19 +186,19 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "from_chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the chat where the original message was sent — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "message_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique message identifier",
                             "type": "text"
                         }
@@ -226,31 +229,31 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "photo",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Photo to send. You can either pass a file_id as String to resend a photo that is already on the Telegram servers, or upload a new photo using multipart/form-data.",
                             "type": "text"
                         },
                         {
                             "key": "caption",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Photo caption (may also be used when resending photos by file_id).",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -281,43 +284,43 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "audio",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Audio file to send. You can either pass a file_id as String to resend an audio that is already on the Telegram servers, or upload a new audio file using multipart/form-data.",
                             "type": "text"
                         },
                         {
                             "key": "duration",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Duration of the audio in seconds",
                             "type": "text"
                         },
                         {
                             "key": "performer",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Performer",
                             "type": "text"
                         },
                         {
                             "key": "title",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Track name",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -348,25 +351,25 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "document",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. File to send. You can either pass a file_id as String to resend a file that is already on the Telegram servers, or upload a new file using multipart/form-data.",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -397,25 +400,25 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "sticker",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Sticker to send. You can either pass a file_id as String to resend a sticker that is already on the Telegram servers, or upload a new sticker using multipart/form-data.",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -446,37 +449,37 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "video",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Video to send. You can either pass a file_id as String to resend a video that is already on the Telegram servers, or upload a new video file using multipart/form-data.",
                             "type": "text"
                         },
                         {
                             "key": "duration",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Duration of sent video in seconds",
                             "type": "text"
                         },
                         {
                             "key": "caption",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Video caption (may also be used when resending videos by file_id).",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -507,31 +510,31 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "voice",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Audio file to send. You can either pass a file_id as String to resend an audio that is already on the Telegram servers, or upload a new audio file using multipart/form-data.",
                             "type": "text"
                         },
                         {
                             "key": "duration",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Duration of sent audio in seconds",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -562,31 +565,31 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "latitude",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Latitude of location",
                             "type": "text"
                         },
                         {
                             "key": "longitude",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Longitude of location",
                             "type": "text"
                         },
                         {
                             "key": "reply_to_message_id",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. If the message is a reply, ID of the original message",
                             "type": "text"
                         },
                         {
                             "key": "reply_markup",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user.",
                             "type": "text"
                         }
@@ -617,13 +620,13 @@
                     "formdata": [
                         {
                             "key": "chat_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier for the message recipient — User or GroupChat id",
                             "type": "text"
                         },
                         {
                             "key": "action",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Type of action to broadcast. Choose one, depending on what the user is about to receive: typing for text messages, upload_photo for photos, record_video or upload_video for videos, record_audio or upload_audio for audio files, upload_document for general files, find_location for location data.",
                             "type": "text"
                         }
@@ -654,19 +657,19 @@
                     "formdata": [
                         {
                             "key": "user_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. Unique identifier of the target user",
                             "type": "text"
                         },
                         {
                             "key": "offset",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Sequential number of the first photo to be returned. By default, all photos are returned.",
                             "type": "text"
                         },
                         {
                             "key": "limit",
-                            "value": "",
+                            "disabled": true,
                             "description": "Optional. Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
                             "type": "text"
                         }
@@ -697,7 +700,7 @@
                     "formdata": [
                         {
                             "key": "file_id",
-                            "value": "",
+                            "disabled": false,
                             "description": "Required. File identifier to get info about",
                             "type": "text"
                         }

@@ -1,4 +1,5 @@
 {
+    "version": "1.6.0",
     "types": [
         {
             "name": "Update",
@@ -20,7 +21,8 @@
                     "optional": true,
                     "description": "Optional. New incoming message of any kind — text, photo, sticker, etc."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "User",
@@ -58,7 +60,8 @@
                     "optional": true,
                     "description": "Optional. User‘s or bot’s username"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Chat",
@@ -112,7 +115,8 @@
                     "optional": true,
                     "description": "Optional. Last name of the other party in a private chat"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Message",
@@ -302,7 +306,8 @@
                     "optional": true,
                     "description": "Optional. Informs that the group has been created"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PhotoSize",
@@ -340,7 +345,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Audio",
@@ -394,7 +400,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Document",
@@ -440,7 +447,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Sticker",
@@ -486,7 +494,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Video",
@@ -548,7 +557,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Voice",
@@ -586,7 +596,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Contact",
@@ -624,7 +635,8 @@
                     "optional": true,
                     "description": "Optional. Contact's user identifier in Telegram"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Location",
@@ -646,7 +658,8 @@
                     "optional": false,
                     "description": "Latitude as defined by sender"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "UserProfilePhotos",
@@ -668,7 +681,8 @@
                     "optional": false,
                     "description": "Requested profile pictures (in up to 4 sizes each)"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "File",
@@ -698,7 +712,8 @@
                     "optional": true,
                     "description": "Optional. File path. Use https://api.telegram.org/file/bot<token>/<file_path> to get the file."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ReplyKeyboardMarkup",
@@ -736,7 +751,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ReplyKeyboardHide",
@@ -758,7 +774,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to hide keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and hides keyboard for that user, while still showing the keyboard with poll options to users who haven't voted yet."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ForceReply",
@@ -780,12 +797,14 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputFile",
             "description": "This object represents the contents of a file to be uploaded. Must be posted using multipart/form-data in the usual way that files are uploaded via the browser.",
-            "fields": []
+            "fields": [],
+            "extended_by": []
         }
     ],
     "methods": [
@@ -818,6 +837,7 @@
                     "description": "Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Array<Update>"
             ]
@@ -843,12 +863,14 @@
                     "description": "Upload your public key certificate so that the root certificate in use can be checked. See our self-signed guide for details."
                 }
             ],
+            "extended_by": [],
             "return_types": []
         },
         {
             "name": "getMe",
             "description": "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "User"
             ]
@@ -909,6 +931,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -944,6 +967,7 @@
                     "description": "Unique message identifier"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -997,6 +1021,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1066,6 +1091,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1111,6 +1137,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1156,6 +1183,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1217,6 +1245,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1270,6 +1299,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1322,6 +1352,7 @@
                     "description": "Additional interface options. A JSON-serialized object for a custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -1348,6 +1379,7 @@
                     "description": "Type of action to broadcast. Choose one, depending on what the user is about to receive: typing for text messages, upload_photo for photos, record_video or upload_video for videos, record_audio or upload_audio for audio files, upload_document for general files, find_location for location data."
                 }
             ],
+            "extended_by": [],
             "return_types": []
         },
         {
@@ -1379,6 +1411,7 @@
                     "description": "Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "UserProfilePhotos"
             ]
@@ -1396,6 +1429,7 @@
                     "description": "File identifier to get info about"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "File"
             ]

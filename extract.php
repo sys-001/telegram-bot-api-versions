@@ -13,7 +13,15 @@ unset($versions['LATEST']);
 
 foreach ($versions as $version => $url) {
     $filename = strtolower($version);
+    echo $filename . PHP_EOL;
     $generator = new \TgScraper\Generator($logger, url: $url);
+    // fix for older bot API versions
+    $rawVersion = str_split(str_replace('v', '', $filename));
+    $realVersion = sprintf('%s.%s.%s', $rawVersion[0] ?? '1', $rawVersion[1] ?? '0', $rawVersion[2] ?? '0');
+    $json = $generator->toJson();
+    $jsonData = json_decode($json, true);
+    $jsonData = ['version' => $realVersion] + $jsonData;
+    $generator = \TgScraper\Generator::fromJson($logger, json_encode($jsonData));
     $json = $generator->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     $postman = $generator->toPostman(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     $yaml = $generator->toYaml();

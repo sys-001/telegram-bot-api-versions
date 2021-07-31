@@ -1,4 +1,5 @@
 {
+    "version": "5.1.0",
     "types": [
         {
             "name": "Update",
@@ -116,7 +117,8 @@
                     "optional": true,
                     "description": "Optional. A chat member's status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify “chat_member” in the list of allowed_updates to receive these updates."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "WebhookInfo",
@@ -186,7 +188,8 @@
                     "optional": true,
                     "description": "Optional. A list of update types the bot is subscribed to. Defaults to all update types except chat_member"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "User",
@@ -264,7 +267,8 @@
                     "optional": true,
                     "description": "Optional. True, if the bot supports inline queries. Returned only in getMe."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Chat",
@@ -414,7 +418,8 @@
                     "optional": true,
                     "description": "Optional. For supergroups, the location to which the supergroup is connected. Returned only in getChat."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Message",
@@ -860,7 +865,8 @@
                     "optional": true,
                     "description": "Optional. Inline keyboard attached to the message. login_url buttons are represented as ordinary url buttons."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "MessageId",
@@ -874,7 +880,8 @@
                     "optional": false,
                     "description": "Unique message identifier"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "MessageEntity",
@@ -928,7 +935,8 @@
                     "optional": true,
                     "description": "Optional. For “pre” only, the programming language of the entity text"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PhotoSize",
@@ -974,7 +982,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Animation",
@@ -1052,7 +1061,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Audio",
@@ -1130,7 +1140,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail of the album cover to which the music file belongs"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Document",
@@ -1184,7 +1195,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Video",
@@ -1262,7 +1274,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "VideoNote",
@@ -1316,7 +1329,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Voice",
@@ -1362,7 +1376,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Contact",
@@ -1408,7 +1423,8 @@
                     "optional": true,
                     "description": "Optional. Additional data about the contact in the form of a vCard"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Dice",
@@ -1430,7 +1446,8 @@
                     "optional": false,
                     "description": "Value of the dice, 1-6 for “”, “” and “” base emoji, 1-5 for “” and “” base emoji, 1-64 for “” base emoji"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PollOption",
@@ -1452,7 +1469,8 @@
                     "optional": false,
                     "description": "Number of users that voted for this option"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PollAnswer",
@@ -1482,7 +1500,8 @@
                     "optional": false,
                     "description": "0-based identifiers of answer options, chosen by the user. May be empty if the user retracted their vote."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Poll",
@@ -1592,7 +1611,8 @@
                     "optional": true,
                     "description": "Optional. Point in time (Unix timestamp) when the poll will be automatically closed"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Location",
@@ -1646,7 +1666,8 @@
                     "optional": true,
                     "description": "Optional. Maximum distance for proximity alerts about approaching another chat member, in meters. For sent live locations only."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Venue",
@@ -1708,7 +1729,8 @@
                     "optional": true,
                     "description": "Optional. Google Places type of the venue. (See supported types.)"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ProximityAlertTriggered",
@@ -1738,7 +1760,8 @@
                     "optional": false,
                     "description": "The distance between the users"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "MessageAutoDeleteTimerChanged",
@@ -1752,12 +1775,14 @@
                     "optional": false,
                     "description": "New auto-delete time for messages in the chat"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "VoiceChatStarted",
             "description": "This object represents a service message about a voice chat started in the chat. Currently holds no information.",
-            "fields": []
+            "fields": [],
+            "extended_by": []
         },
         {
             "name": "VoiceChatEnded",
@@ -1771,7 +1796,8 @@
                     "optional": false,
                     "description": "Voice chat duration; in seconds"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "VoiceChatParticipantsInvited",
@@ -1785,7 +1811,8 @@
                     "optional": true,
                     "description": "Optional. New members that were invited to the voice chat"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "UserProfilePhotos",
@@ -1807,7 +1834,8 @@
                     "optional": false,
                     "description": "Requested profile pictures (in up to 4 sizes each)"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "File",
@@ -1845,7 +1873,8 @@
                     "optional": true,
                     "description": "Optional. File path. Use https://api.telegram.org/file/bot<token>/<file_path> to get the file."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ReplyKeyboardMarkup",
@@ -1883,7 +1912,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot's language, bot replies to the request with a keyboard to select the new language. Other users in the group don't see the keyboard."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "KeyboardButton",
@@ -1921,7 +1951,8 @@
                     "optional": true,
                     "description": "Optional. If specified, the user will be asked to create a poll and send it to the bot when the button is pressed. Available in private chats only"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "KeyboardButtonPollType",
@@ -1935,7 +1966,8 @@
                     "optional": true,
                     "description": "Optional. If quiz is passed, the user will be allowed to create only polls in the quiz mode. If regular is passed, only regular polls will be allowed. Otherwise, the user will be allowed to create a poll of any type."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ReplyKeyboardRemove",
@@ -1957,7 +1989,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to remove the keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and removes the keyboard for that user, while still showing the keyboard with poll options to users who haven't voted yet."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineKeyboardMarkup",
@@ -1971,7 +2004,8 @@
                     "optional": false,
                     "description": "Array of button rows, each represented by an Array of InlineKeyboardButton objects"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineKeyboardButton",
@@ -2041,7 +2075,8 @@
                     "optional": true,
                     "description": "Optional. Specify True, to send a Pay button.NOTE: This type of button must always be the first button in the first row."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "LoginUrl",
@@ -2079,7 +2114,8 @@
                     "optional": true,
                     "description": "Optional. Pass True to request the permission for your bot to send messages to the user."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "CallbackQuery",
@@ -2141,7 +2177,8 @@
                     "optional": true,
                     "description": "Optional. Short name of a Game to be returned, serves as the unique identifier for the game"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ForceReply",
@@ -2163,7 +2200,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChatPhoto",
@@ -2201,7 +2239,8 @@
                     "optional": false,
                     "description": "Unique file identifier of big (640x640) chat photo, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChatInviteLink",
@@ -2255,7 +2294,8 @@
                     "optional": true,
                     "description": "Optional. Maximum number of users that can be members of the chat simultaneously after joining the chat via this invite link; 1-99999"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChatMember",
@@ -2437,7 +2477,8 @@
                     "optional": true,
                     "description": "Optional. Restricted and kicked only. Date when restrictions will be lifted for this user; unix time"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChatMemberUpdated",
@@ -2491,7 +2532,8 @@
                     "optional": true,
                     "description": "Optional. Chat invite link, which was used by the user to join the chat; for joining by invite link events only."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChatPermissions",
@@ -2561,7 +2603,8 @@
                     "optional": true,
                     "description": "Optional. True, if the user is allowed to pin messages. Ignored in public supergroups"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChatLocation",
@@ -2583,7 +2626,8 @@
                     "optional": false,
                     "description": "Location address; 1-64 characters, as defined by the chat owner"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "BotCommand",
@@ -2605,7 +2649,8 @@
                     "optional": false,
                     "description": "Description of the command, 3-256 characters."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ResponseParameters",
@@ -2627,12 +2672,20 @@
                     "optional": true,
                     "description": "Optional. In case of exceeding flood control, the number of seconds left to wait before the request can be repeated"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMedia",
             "description": "This object represents the content of a media message to be sent. It should be one of",
-            "fields": []
+            "fields": [],
+            "extended_by": [
+                "InputMediaAnimation",
+                "InputMediaDocument",
+                "InputMediaAudio",
+                "InputMediaPhoto",
+                "InputMediaVideo"
+            ]
         },
         {
             "name": "InputMediaPhoto",
@@ -2678,7 +2731,8 @@
                     "optional": true,
                     "description": "Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMediaVideo",
@@ -2765,7 +2819,8 @@
                     "optional": true,
                     "description": "Optional. Pass True, if the uploaded video is suitable for streaming"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMediaAnimation",
@@ -2844,7 +2899,8 @@
                     "optional": true,
                     "description": "Optional. Animation duration"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMediaAudio",
@@ -2923,7 +2979,8 @@
                     "optional": true,
                     "description": "Optional. Title of the audio"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMediaDocument",
@@ -2986,12 +3043,14 @@
                     "optional": true,
                     "description": "Optional. Disables automatic server-side content type detection for files uploaded using multipart/form-data. Always true, if the document is sent as part of an album."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputFile",
             "description": "This object represents the contents of a file to be uploaded. Must be posted using multipart/form-data in the usual way that files are uploaded via the browser.",
-            "fields": []
+            "fields": [],
+            "extended_by": []
         },
         {
             "name": "Sticker",
@@ -3077,7 +3136,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "StickerSet",
@@ -3131,7 +3191,8 @@
                     "optional": true,
                     "description": "Optional. Sticker set thumbnail in the .WEBP or .TGS format"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "MaskPosition",
@@ -3169,7 +3230,8 @@
                     "optional": false,
                     "description": "Mask scaling coefficient. For example, 2.0 means double size."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQuery",
@@ -3215,12 +3277,35 @@
                     "optional": false,
                     "description": "Offset of the results to be returned, can be controlled by the bot"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResult",
-            "description": "This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:\nNote: All URLs passed in inline query results will be available to end users and therefore must be assumed to be public.",
-            "fields": []
+            "description": "This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:",
+            "fields": [],
+            "extended_by": [
+                "InlineQueryResultCachedAudio",
+                "InlineQueryResultCachedDocument",
+                "InlineQueryResultCachedGif",
+                "InlineQueryResultCachedMpeg4Gif",
+                "InlineQueryResultCachedPhoto",
+                "InlineQueryResultCachedSticker",
+                "InlineQueryResultCachedVideo",
+                "InlineQueryResultCachedVoice",
+                "InlineQueryResultArticle",
+                "InlineQueryResultAudio",
+                "InlineQueryResultContact",
+                "InlineQueryResultGame",
+                "InlineQueryResultDocument",
+                "InlineQueryResultGif",
+                "InlineQueryResultLocation",
+                "InlineQueryResultMpeg4Gif",
+                "InlineQueryResultPhoto",
+                "InlineQueryResultVenue",
+                "InlineQueryResultVideo",
+                "InlineQueryResultVoice"
+            ]
         },
         {
             "name": "InlineQueryResultArticle",
@@ -3314,7 +3399,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultPhoto",
@@ -3424,7 +3510,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the photo"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultGif",
@@ -3542,7 +3629,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the GIF animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultMpeg4Gif",
@@ -3660,7 +3748,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultVideo",
@@ -3786,7 +3875,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video. This field is required if InlineQueryResultVideo is used to send an HTML-page as a result (e.g., a YouTube video)."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultAudio",
@@ -3880,7 +3970,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the audio"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultVoice",
@@ -3966,7 +4057,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the voice recording"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultDocument",
@@ -4084,7 +4176,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultLocation",
@@ -4202,7 +4295,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultVenue",
@@ -4328,7 +4422,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultContact",
@@ -4422,7 +4517,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultGame",
@@ -4460,7 +4556,8 @@
                     "optional": true,
                     "description": "Optional. Inline keyboard attached to the message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedPhoto",
@@ -4546,7 +4643,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the photo"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedGif",
@@ -4624,7 +4722,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the GIF animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedMpeg4Gif",
@@ -4702,7 +4801,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedSticker",
@@ -4748,7 +4848,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the sticker"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedDocument",
@@ -4834,7 +4935,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the file"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedVideo",
@@ -4920,7 +5022,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedVoice",
@@ -4998,7 +5101,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the voice message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedAudio",
@@ -5068,12 +5172,19 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the audio"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMessageContent",
             "description": "This object represents the content of a message to be sent as a result of an inline query. Telegram clients currently support the following 4 types:",
-            "fields": []
+            "fields": [],
+            "extended_by": [
+                "InputTextMessageContent",
+                "InputLocationMessageContent",
+                "InputVenueMessageContent",
+                "InputContactMessageContent"
+            ]
         },
         {
             "name": "InputTextMessageContent",
@@ -5111,7 +5222,8 @@
                     "optional": true,
                     "description": "Optional. Disables link previews for links in the sent message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputLocationMessageContent",
@@ -5165,7 +5277,8 @@
                     "optional": true,
                     "description": "Optional. For live locations, a maximum distance for proximity alerts about approaching another chat member, in meters. Must be between 1 and 100000 if specified."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputVenueMessageContent",
@@ -5235,7 +5348,8 @@
                     "optional": true,
                     "description": "Optional. Google Places type of the venue. (See supported types.)"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputContactMessageContent",
@@ -5273,7 +5387,8 @@
                     "optional": true,
                     "description": "Optional. Additional data about the contact in the form of a vCard, 0-2048 bytes"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChosenInlineResult",
@@ -5319,7 +5434,8 @@
                     "optional": false,
                     "description": "The query that was used to obtain the result"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "LabeledPrice",
@@ -5341,7 +5457,8 @@
                     "optional": false,
                     "description": "Price of the product in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45 pass amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies)."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Invoice",
@@ -5387,7 +5504,8 @@
                     "optional": false,
                     "description": "Total price in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45 pass amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies)."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ShippingAddress",
@@ -5441,7 +5559,8 @@
                     "optional": false,
                     "description": "Address post code"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "OrderInfo",
@@ -5479,7 +5598,8 @@
                     "optional": true,
                     "description": "Optional. User shipping address"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ShippingOption",
@@ -5509,7 +5629,8 @@
                     "optional": false,
                     "description": "List of price portions"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "SuccessfulPayment",
@@ -5571,7 +5692,8 @@
                     "optional": false,
                     "description": "Provider payment identifier"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ShippingQuery",
@@ -5609,7 +5731,8 @@
                     "optional": false,
                     "description": "User specified shipping address"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PreCheckoutQuery",
@@ -5671,7 +5794,8 @@
                     "optional": true,
                     "description": "Optional. Order info provided by the user"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportData",
@@ -5693,7 +5817,8 @@
                     "optional": false,
                     "description": "Encrypted credentials required to decrypt the data"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportFile",
@@ -5731,7 +5856,8 @@
                     "optional": false,
                     "description": "Unix time when the file was uploaded"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "EncryptedPassportElement",
@@ -5817,7 +5943,8 @@
                     "optional": false,
                     "description": "Base64-encoded element hash for using in PassportElementErrorUnspecified"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "EncryptedCredentials",
@@ -5847,12 +5974,24 @@
                     "optional": false,
                     "description": "Base64-encoded secret, encrypted with the bot's public RSA key, required for data decryption"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementError",
             "description": "This object represents an error in the Telegram Passport element which was submitted that should be resolved by the user. It should be one of:",
-            "fields": []
+            "fields": [],
+            "extended_by": [
+                "PassportElementErrorDataField",
+                "PassportElementErrorFrontSide",
+                "PassportElementErrorReverseSide",
+                "PassportElementErrorSelfie",
+                "PassportElementErrorFile",
+                "PassportElementErrorFiles",
+                "PassportElementErrorTranslationFile",
+                "PassportElementErrorTranslationFiles",
+                "PassportElementErrorUnspecified"
+            ]
         },
         {
             "name": "PassportElementErrorDataField",
@@ -5898,7 +6037,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorFrontSide",
@@ -5936,7 +6076,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorReverseSide",
@@ -5974,7 +6115,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorSelfie",
@@ -6012,7 +6154,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorFile",
@@ -6050,7 +6193,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorFiles",
@@ -6088,7 +6232,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorTranslationFile",
@@ -6126,7 +6271,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorTranslationFiles",
@@ -6164,7 +6310,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PassportElementErrorUnspecified",
@@ -6202,7 +6349,8 @@
                     "optional": false,
                     "description": "Error message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Game",
@@ -6256,12 +6404,14 @@
                     "optional": true,
                     "description": "Optional. Animation that will be displayed in the game message in chats. Upload via BotFather"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "CallbackGame",
             "description": "A placeholder, currently holds no information. Use BotFather to set up your game.",
-            "fields": []
+            "fields": [],
+            "extended_by": []
         },
         {
             "name": "GameHighScore",
@@ -6291,7 +6441,8 @@
                     "optional": false,
                     "description": "Score"
                 }
-            ]
+            ],
+            "extended_by": []
         }
     ],
     "methods": [
@@ -6332,6 +6483,7 @@
                     "description": "A JSON-serialized list of the update types you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all update types except chat_member (default). If not specified, the previous setting will be used.Please note that this parameter doesn't affect updates created before the call to the getUpdates, so unwanted updates may be received for a short period of time."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Array<Update>"
             ]
@@ -6389,6 +6541,7 @@
                     "description": "Pass True to drop all pending updates"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -6406,6 +6559,7 @@
                     "description": "Pass True to drop all pending updates"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -6414,6 +6568,7 @@
             "name": "getWebhookInfo",
             "description": "Use this method to get current webhook status. Requires no parameters. On success, returns a WebhookInfo object. If the bot is using getUpdates, will return an object with the url field empty.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "WebhookInfo"
             ]
@@ -6422,6 +6577,7 @@
             "name": "getMe",
             "description": "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "User"
             ]
@@ -6430,6 +6586,7 @@
             "name": "logOut",
             "description": "Use this method to log out from the cloud Bot API server before launching the bot locally. You must log out the bot before running it locally, otherwise there is no guarantee that the bot will receive updates. After a successful call, you can immediately log in on a local server, but will not be able to log in back to the cloud Bot API server for 10 minutes. Returns True on success. Requires no parameters.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -6438,6 +6595,7 @@
             "name": "close",
             "description": "Use this method to close the bot instance before moving it from one local server to another. You need to delete the webhook before calling this method to ensure that the bot isn't launched again after server restart. The method will return error 429 in the first 10 minutes after the bot is launched. Returns True on success. Requires no parameters.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -6523,6 +6681,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -6566,6 +6725,7 @@
                     "description": "Message identifier in the chat specified in from_chat_id"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -6660,6 +6820,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "MessageId"
             ]
@@ -6746,6 +6907,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -6865,6 +7027,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -6968,6 +7131,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7095,6 +7259,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7214,6 +7379,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7308,6 +7474,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7395,6 +7562,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7445,6 +7613,7 @@
                     "description": "Pass True, if the message should be sent even if the specified replied-to message is not found"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Array<Message>"
             ]
@@ -7546,6 +7715,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7628,6 +7798,7 @@
                     "description": "A JSON-serialized object for a new inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -7671,6 +7842,7 @@
                     "description": "A JSON-serialized object for a new inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -7789,6 +7961,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -7874,6 +8047,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -8023,6 +8197,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -8084,6 +8259,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -8110,6 +8286,7 @@
                     "description": "Type of action to broadcast. Choose one, depending on what the user is about to receive: typing for text messages, upload_photo for photos, record_video or upload_video for videos, record_voice or upload_voice for voice notes, upload_document for general files, find_location for location data, record_video_note or upload_video_note for video notes."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8143,6 +8320,7 @@
                     "description": "Limits the number of photos to be retrieved. Values between 1-100 are accepted. Defaults to 100."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "UserProfilePhotos"
             ]
@@ -8160,6 +8338,7 @@
                     "description": "File identifier to get info about"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "File"
             ]
@@ -8202,6 +8381,7 @@
                     "description": "Pass True to delete all messages from the chat for the user that is being removed. If False, the user will be able to see messages in the group that were sent before the user was removed. Always True for supergroups and channels."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8236,6 +8416,7 @@
                     "description": "Do nothing if the user is not banned"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8278,6 +8459,7 @@
                     "description": "Date when restrictions will be lifted for the user, unix time. If user is restricted for more than 366 days or less than 30 seconds from the current time, they are considered to be restricted forever"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8392,6 +8574,7 @@
                     "description": "Pass True, if the administrator can pin messages, supergroups only"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8426,6 +8609,7 @@
                     "description": "New custom title for the administrator; 0-16 characters, emoji are not allowed"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8452,6 +8636,7 @@
                     "description": "New default chat permissions"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8470,6 +8655,7 @@
                     "description": "Unique identifier for the target chat or username of the target channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "string"
             ]
@@ -8504,6 +8690,7 @@
                     "description": "Maximum number of users that can be members of the chat simultaneously after joining the chat via this invite link; 1-99999"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "ChatInviteLink"
             ]
@@ -8546,6 +8733,7 @@
                     "description": "Maximum number of users that can be members of the chat simultaneously after joining the chat via this invite link; 1-99999"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "ChatInviteLink"
             ]
@@ -8572,6 +8760,7 @@
                     "description": "The invite link to revoke"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "ChatInviteLink"
             ]
@@ -8598,6 +8787,7 @@
                     "description": "New chat photo, uploaded using multipart/form-data"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8616,6 +8806,7 @@
                     "description": "Unique identifier for the target chat or username of the target channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8642,6 +8833,7 @@
                     "description": "New chat title, 1-255 characters"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8668,6 +8860,7 @@
                     "description": "New chat description, 0-255 characters"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8702,6 +8895,7 @@
                     "description": "Pass True, if it is not necessary to send a notification to all chat members about the new pinned message. Notifications are always disabled in channels and private chats."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8728,6 +8922,7 @@
                     "description": "Identifier of a message to unpin. If not specified, the most recent pinned message (by sending date) will be unpinned."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8746,6 +8941,7 @@
                     "description": "Unique identifier for the target chat or username of the target channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8764,6 +8960,7 @@
                     "description": "Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8782,6 +8979,7 @@
                     "description": "Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Chat"
             ]
@@ -8800,6 +8998,7 @@
                     "description": "Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Array<ChatMember>"
             ]
@@ -8818,6 +9017,7 @@
                     "description": "Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "int"
             ]
@@ -8844,6 +9044,7 @@
                     "description": "Unique identifier of the target user"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "ChatMember"
             ]
@@ -8870,6 +9071,7 @@
                     "description": "Name of the sticker set to be set as the group sticker set"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8888,6 +9090,7 @@
                     "description": "Unique identifier for the target chat or username of the target supergroup (in the format @supergroupusername)"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8937,6 +9140,7 @@
                     "description": "The maximum amount of time in seconds that the result of the callback query may be cached client-side. Telegram apps will support caching starting in version 3.14. Defaults to 0."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8954,6 +9158,7 @@
                     "description": "A JSON-serialized list of bot commands to be set as the list of the bot's commands. At most 100 commands can be specified."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -8962,6 +9167,7 @@
             "name": "getMyCommands",
             "description": "Use this method to get the current list of the bot's commands. Requires no parameters. Returns Array of BotCommand on success.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "Array<BotCommand>"
             ]
@@ -9036,6 +9242,7 @@
                     "description": "A JSON-serialized object for an inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -9103,6 +9310,7 @@
                     "description": "A JSON-serialized object for an inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -9154,6 +9362,7 @@
                     "description": "A JSON-serialized object for a new inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -9197,6 +9406,7 @@
                     "description": "A JSON-serialized object for an inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -9232,6 +9442,7 @@
                     "description": "A JSON-serialized object for a new message inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Poll"
             ]
@@ -9258,6 +9469,7 @@
                     "description": "Identifier of the message to delete"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9320,6 +9532,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -9337,6 +9550,7 @@
                     "description": "Name of the sticker set"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "StickerSet"
             ]
@@ -9362,6 +9576,7 @@
                     "description": "PNG image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. More info on Sending Files »"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "File"
             ]
@@ -9436,6 +9651,7 @@
                     "description": "A JSON-serialized object for position where the mask should be placed on faces"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9494,6 +9710,7 @@
                     "description": "A JSON-serialized object for position where the mask should be placed on faces"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9519,6 +9736,7 @@
                     "description": "New sticker position in the set, zero-based"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9536,6 +9754,7 @@
                     "description": "File identifier of the sticker"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9570,6 +9789,7 @@
                     "description": "A PNG image with the thumbnail, must be up to 128 kilobytes in size and have width and height exactly 100px, or a TGS animation with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/animated_stickers#technical-requirements for animated sticker technical requirements. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More info on Sending Files ». Animated sticker set thumbnail can't be uploaded via HTTP URL."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9635,6 +9855,7 @@
                     "description": "Deep-linking parameter for the /start message sent to the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a 'Connect your YouTube account' button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an oauth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot's inline capabilities."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9836,6 +10057,7 @@
                     "description": "A JSON-serialized object for an inline keyboard. If empty, one 'Pay total price' button will be shown. If not empty, the first button must be a Pay button."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -9877,6 +10099,7 @@
                     "description": "Required if ok is False. Error message in human readable form that explains why it is impossible to complete the order (e.g. \"Sorry, delivery to your desired address is unavailable'). Telegram will display this message to the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9910,6 +10133,7 @@
                     "description": "Required if ok is False. Error message in human readable form that explains the reason for failure to proceed with the checkout (e.g. \"Sorry, somebody just bought the last of our amazing black T-shirts while you were busy filling out your payment details. Please choose a different color or garment!\"). Telegram will display this message to the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9935,6 +10159,7 @@
                     "description": "A JSON-serialized array describing the errors"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -9992,6 +10217,7 @@
                     "description": "A JSON-serialized object for an inline keyboard. If empty, one 'Play game_title' button will be shown. If not empty, the first button must launch the game."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -10057,6 +10283,7 @@
                     "description": "Required if chat_id and message_id are not specified. Identifier of the inline message"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message",
                 "bool"
@@ -10099,6 +10326,7 @@
                     "description": "Required if chat_id and message_id are not specified. Identifier of the inline message"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Array<GameHighScore>"
             ]

@@ -1,4 +1,5 @@
 {
+    "version": "2.0.0",
     "types": [
         {
             "name": "Update",
@@ -44,7 +45,8 @@
                     "optional": true,
                     "description": "Optional. New incoming callback query"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "User",
@@ -82,7 +84,8 @@
                     "optional": true,
                     "description": "Optional. User‘s or bot’s username"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Chat",
@@ -136,7 +139,8 @@
                     "optional": true,
                     "description": "Optional. Last name of the other party in a private chat"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Message",
@@ -382,7 +386,8 @@
                     "optional": true,
                     "description": "Optional. Specified message was pinned. Note that the Message object in this field will not contain further reply_to_message fields even if it is itself a reply."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "MessageEntity",
@@ -420,7 +425,8 @@
                     "optional": true,
                     "description": "Optional. For “text_link” only, url that will be opened after user taps on the text"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "PhotoSize",
@@ -458,7 +464,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Audio",
@@ -512,7 +519,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Document",
@@ -558,7 +566,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Sticker",
@@ -604,7 +613,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Video",
@@ -666,7 +676,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Voice",
@@ -704,7 +715,8 @@
                     "optional": true,
                     "description": "Optional. File size"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Contact",
@@ -742,7 +754,8 @@
                     "optional": true,
                     "description": "Optional. Contact's user identifier in Telegram"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Location",
@@ -764,7 +777,8 @@
                     "optional": false,
                     "description": "Latitude as defined by sender"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "Venue",
@@ -802,7 +816,8 @@
                     "optional": true,
                     "description": "Optional. Foursquare identifier of the venue"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "UserProfilePhotos",
@@ -824,7 +839,8 @@
                     "optional": false,
                     "description": "Requested profile pictures (in up to 4 sizes each)"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "File",
@@ -854,7 +870,8 @@
                     "optional": true,
                     "description": "Optional. File path. Use https://api.telegram.org/file/bot<token>/<file_path> to get the file."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ReplyKeyboardMarkup",
@@ -892,7 +909,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "KeyboardButton",
@@ -922,7 +940,8 @@
                     "optional": true,
                     "description": "Optional. If True, the user's current location will be sent when the button is pressed. Available in private chats only"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ReplyKeyboardHide",
@@ -944,7 +963,8 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to hide keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and hides keyboard for that user, while still showing the keyboard with poll options to users who haven't voted yet."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineKeyboardMarkup",
@@ -958,7 +978,8 @@
                     "optional": false,
                     "description": "Array of button rows, each represented by an Array of InlineKeyboardButton objects"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineKeyboardButton",
@@ -996,7 +1017,8 @@
                     "optional": true,
                     "description": "Optional. If set, pressing the button will prompt the user to select one of their chats, open that chat and insert the bot‘s username and the specified inline query in the input field. Can be empty, in which case just the bot’s username will be inserted.Note: This offers an easy way for users to start using your bot in inline mode when they are currently in a private chat with it. Especially useful when combined with switch_pm… actions – in this case the user will be automatically returned to the chat they switched from, skipping the chat selection screen."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "CallbackQuery",
@@ -1042,7 +1064,8 @@
                     "optional": false,
                     "description": "Data associated with the callback button. Be aware that a bad client can send arbitrary data in this field"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ForceReply",
@@ -1064,12 +1087,14 @@
                     "optional": true,
                     "description": "Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message."
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputFile",
             "description": "This object represents the contents of a file to be uploaded. Must be posted using multipart/form-data in the usual way that files are uploaded via the browser.",
-            "fields": []
+            "fields": [],
+            "extended_by": []
         },
         {
             "name": "InlineQuery",
@@ -1115,12 +1140,34 @@
                     "optional": false,
                     "description": "Offset of the results to be returned, can be controlled by the bot"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResult",
             "description": "This object represents one result of an inline query. Telegram clients currently support results of the following 19 types:",
-            "fields": []
+            "fields": [],
+            "extended_by": [
+                "InlineQueryResultCachedAudio",
+                "InlineQueryResultCachedDocument",
+                "InlineQueryResultCachedGif",
+                "InlineQueryResultCachedMpeg4Gif",
+                "InlineQueryResultCachedPhoto",
+                "InlineQueryResultCachedSticker",
+                "InlineQueryResultCachedVideo",
+                "InlineQueryResultCachedVoice",
+                "InlineQueryResultArticle",
+                "InlineQueryResultAudio",
+                "InlineQueryResultContact",
+                "InlineQueryResultDocument",
+                "InlineQueryResultGif",
+                "InlineQueryResultLocation",
+                "InlineQueryResultMpeg4Gif",
+                "InlineQueryResultPhoto",
+                "InlineQueryResultVenue",
+                "InlineQueryResultVideo",
+                "InlineQueryResultVoice"
+            ]
         },
         {
             "name": "InlineQueryResultArticle",
@@ -1214,7 +1261,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultPhoto",
@@ -1308,7 +1356,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the photo"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultGif",
@@ -1394,7 +1443,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the GIF animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultMpeg4Gif",
@@ -1480,7 +1530,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultVideo",
@@ -1590,7 +1641,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultAudio",
@@ -1660,7 +1712,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the audio"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultVoice",
@@ -1722,7 +1775,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the voice recording"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultDocument",
@@ -1824,7 +1878,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultLocation",
@@ -1910,7 +1965,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultVenue",
@@ -2012,7 +2068,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultContact",
@@ -2098,7 +2155,8 @@
                     "optional": true,
                     "description": "Optional. Thumbnail height"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedPhoto",
@@ -2168,7 +2226,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the photo"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedGif",
@@ -2230,7 +2289,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the GIF animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedMpeg4Gif",
@@ -2292,7 +2352,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video animation"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedSticker",
@@ -2338,7 +2399,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the sticker"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedDocument",
@@ -2408,7 +2470,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the file"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedVideo",
@@ -2478,7 +2541,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the video"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedVoice",
@@ -2532,7 +2596,8 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the voice message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InlineQueryResultCachedAudio",
@@ -2578,12 +2643,19 @@
                     "optional": true,
                     "description": "Optional. Content of the message to be sent instead of the audio"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputMessageContent",
             "description": "This object represents the content of a message to be sent as a result of an inline query. Telegram clients currently support the following 4 types:",
-            "fields": []
+            "fields": [],
+            "extended_by": [
+                "InputTextMessageContent",
+                "InputLocationMessageContent",
+                "InputVenueMessageContent",
+                "InputContactMessageContent"
+            ]
         },
         {
             "name": "InputTextMessageContent",
@@ -2613,7 +2685,8 @@
                     "optional": true,
                     "description": "Optional. Disables link previews for links in the sent message"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputLocationMessageContent",
@@ -2635,7 +2708,8 @@
                     "optional": false,
                     "description": "Longitude of the location in degrees"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputVenueMessageContent",
@@ -2681,7 +2755,8 @@
                     "optional": true,
                     "description": "Optional. Foursquare identifier of the venue, if known"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "InputContactMessageContent",
@@ -2711,7 +2786,8 @@
                     "optional": true,
                     "description": "Optional. Contact's last name"
                 }
-            ]
+            ],
+            "extended_by": []
         },
         {
             "name": "ChosenInlineResult",
@@ -2757,7 +2833,8 @@
                     "optional": false,
                     "description": "The query that was used to obtain the result"
                 }
-            ]
+            ],
+            "extended_by": []
         }
     ],
     "methods": [
@@ -2790,6 +2867,7 @@
                     "description": "Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Array<Update>"
             ]
@@ -2815,12 +2893,14 @@
                     "description": "Upload your public key certificate so that the root certificate in use can be checked. See our self-signed guide for details."
                 }
             ],
+            "extended_by": [],
             "return_types": []
         },
         {
             "name": "getMe",
             "description": "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object.",
             "fields": [],
+            "extended_by": [],
             "return_types": [
                 "User"
             ]
@@ -2890,6 +2970,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -2933,6 +3014,7 @@
                     "description": "Unique message identifier"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -2995,6 +3077,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3073,6 +3156,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3135,6 +3219,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3189,6 +3274,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3275,6 +3361,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3337,6 +3424,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3398,6 +3486,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3483,6 +3572,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide reply keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3552,6 +3642,7 @@
                     "description": "Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to hide keyboard or to force a reply from the user."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3578,6 +3669,7 @@
                     "description": "Type of action to broadcast. Choose one, depending on what the user is about to receive: typing for text messages, upload_photo for photos, record_video or upload_video for videos, record_audio or upload_audio for audio files, upload_document for general files, find_location for location data."
                 }
             ],
+            "extended_by": [],
             "return_types": []
         },
         {
@@ -3609,6 +3701,7 @@
                     "description": "Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "UserProfilePhotos"
             ]
@@ -3626,6 +3719,7 @@
                     "description": "File identifier to get info about"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "File"
             ]
@@ -3652,6 +3746,7 @@
                     "description": "Unique identifier of the target user"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -3678,6 +3773,7 @@
                     "description": "Unique identifier of the target user"
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -3711,6 +3807,7 @@
                     "description": "If true, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
@@ -3777,6 +3874,7 @@
                     "description": "A JSON-serialized object for an inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3827,6 +3925,7 @@
                     "description": "A JSON-serialized object for an inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3869,6 +3968,7 @@
                     "description": "A JSON-serialized object for an inline keyboard."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "Message"
             ]
@@ -3934,6 +4034,7 @@
                     "description": "Parameter for the start message sent to the bot when user presses the switch buttonExample: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a ‘Connect your YouTube account’ button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an oauth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot's inline capabilities."
                 }
             ],
+            "extended_by": [],
             "return_types": [
                 "bool"
             ]
