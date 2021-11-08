@@ -1,31 +1,52 @@
 <?php
 
 use Psr\Log\NullLogger;
+use TgScraper\Common\Encoder;
 use TgScraper\Constants\Versions;
+use TgScraper\TgScraper;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $logger = new NullLogger();
 
-$versions = (new ReflectionClass(Versions::class))
-    ->getConstants();
-unset($versions['LATEST']);
+$versionReplacer = function (string $ver) {
+    $this->version = $ver;
+};
 
-foreach ($versions as $version => $url) {
-    $filename = strtolower($version);
+function rrmdir(string $directory): void
+{
+    $files = new RecursiveIteratorIterator(
+        new RecursiveDirectoryIterator($directory, FilesystemIterator::SKIP_DOTS),
+        RecursiveIteratorIterator::CHILD_FIRST
+    );
+    foreach ($files as $fileInfo) {
+        $todo = ($fileInfo->isDir() ? 'rmdir' : 'unlink');
+        $todo($fileInfo->getRealPath());
+    }
+    rmdir($directory);
+}
+
+$versions = array_keys(
+    (new ReflectionClass(Versions::class))
+        ->getConstants()['URLS']
+);
+$versions = array_diff($versions, ['latest']);
+
+foreach ($versions as $version) {
+    $filename = 'v' . str_replace('.', '', $version);
     echo $filename . PHP_EOL;
-    $generator = new \TgScraper\Generator($logger, url: $url);
-    // fix for older bot API versions
-    $rawVersion = str_split(str_replace('v', '', $filename));
-    $realVersion = sprintf('%s.%s.%s', $rawVersion[0] ?? '1', $rawVersion[1] ?? '0', $rawVersion[2] ?? '0');
-    $json = $generator->toJson();
-    $jsonData = json_decode($json, true);
-    $jsonData = ['version' => $realVersion] + $jsonData;
-    $generator = \TgScraper\Generator::fromJson($logger, json_encode($jsonData));
-    $json = $generator->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-    $postman = $generator->toPostman(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-    $yaml = $generator->toYaml();
-    file_put_contents("files/json/$filename.json", $json);
-    file_put_contents("files/postman/$filename.json", $postman);
-    file_put_contents("files/yaml/$filename.yaml", $yaml);
+    $generator = TgScraper::fromVersion($logger, $version);
+    $versionReplacer->call($generator, $version); // fix for older bot API versions
+    $custom = $generator->toArray();
+    $postman = $generator->toPostman();
+    $openapi = $generator->toOpenApi();
+    $generator->toStubs('tmp');
+    $zip = new PharData("files/stubs/$filename.zip");
+    $zip->buildFromDirectory('tmp');
+    rrmdir('tmp');
+    file_put_contents("files/custom/json/$filename.json", Encoder::toJson($custom, readable: true));
+    file_put_contents("files/custom/yaml/$filename.yaml", Encoder::toYaml($custom));
+    file_put_contents("files/postman/$filename.json", Encoder::toJson($postman, readable: true));
+    file_put_contents("files/openapi/json/$filename.json", Encoder::toJson($openapi, readable: true));
+    file_put_contents("files/openapi/yaml/$filename.yaml", Encoder::toYaml($openapi));
 }
