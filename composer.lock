@@ -1912,16 +1912,16 @@
         },
         {
             "name": "sysbot/tgscraper",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sysbot-org/tgscraper.git",
-                "reference": "6298361b59b2433b1639a318bb28b0e7bd477490"
+                "reference": "1a22f3eda903325fb370d9121456872a8c67640f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sysbot-org/tgscraper/zipball/6298361b59b2433b1639a318bb28b0e7bd477490",
-                "reference": "6298361b59b2433b1639a318bb28b0e7bd477490",
+                "url": "https://api.github.com/repos/Sysbot-org/tgscraper/zipball/1a22f3eda903325fb370d9121456872a8c67640f",
+                "reference": "1a22f3eda903325fb370d9121456872a8c67640f",
                 "shasum": ""
             },
             "require": {
@@ -1961,22 +1961,22 @@
             "description": "Utility to extract scheme from Telegram Bot API webpage.",
             "support": {
                 "issues": "https://github.com/Sysbot-org/tgscraper/issues",
-                "source": "https://github.com/Sysbot-org/tgscraper/tree/3.0.2"
+                "source": "https://github.com/Sysbot-org/tgscraper/tree/3.0.3"
             },
-            "time": "2021-11-08T14:57:52+00:00"
+            "time": "2021-12-11T00:47:04+00:00"
         },
         {
             "name": "sysbot/tgscraper-cache",
-            "version": "1.0.1",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sysbot-org/tgscraper-cache.git",
-                "reference": "e8e11068c63c780f784c5abd0622c80e3eeadff8"
+                "reference": "a8a41d365ce6467fa8537b748ba49d4b2b310dab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sysbot-org/tgscraper-cache/zipball/e8e11068c63c780f784c5abd0622c80e3eeadff8",
-                "reference": "e8e11068c63c780f784c5abd0622c80e3eeadff8",
+                "url": "https://api.github.com/repos/Sysbot-org/tgscraper-cache/zipball/a8a41d365ce6467fa8537b748ba49d4b2b310dab",
+                "reference": "a8a41d365ce6467fa8537b748ba49d4b2b310dab",
                 "shasum": ""
             },
             "require": {
@@ -2002,9 +2002,9 @@
             ],
             "description": "Utility to extract scheme from Telegram Bot API webpage.",
             "support": {
-                "source": "https://github.com/Sysbot-org/tgscraper-cache/tree/1.0.1"
+                "source": "https://github.com/Sysbot-org/tgscraper-cache/tree/1.1.1"
             },
-            "time": "2021-08-23T10:49:44+00:00"
+            "time": "2021-11-08T23:41:00+00:00"
         }
     ],
     "packages-dev": [],
