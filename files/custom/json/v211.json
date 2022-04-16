@@ -6,6 +6,14 @@
             "description": "This object represents an incoming update.Only one of the optional parameters can be present in any given update.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "update_id",
                     "types": [
                         "int"
@@ -61,6 +69,14 @@
             "description": "This object represents a Telegram user or bot.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "id",
                     "types": [
                         "int"
@@ -99,6 +115,14 @@
             "name": "Chat",
             "description": "This object represents a chat.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "id",
                     "types": [
@@ -154,6 +178,14 @@
             "name": "Message",
             "description": "This object represents a message.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "message_id",
                     "types": [
@@ -360,7 +392,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the chat photo was deleted"
+                    "description": "Optional. Service message: the chat photo was deleted",
+                    "default": true
                 },
                 {
                     "name": "group_chat_created",
@@ -368,7 +401,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the group has been created"
+                    "description": "Optional. Service message: the group has been created",
+                    "default": true
                 },
                 {
                     "name": "supergroup_chat_created",
@@ -376,7 +410,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the supergroup has been created. This field can‘t be received in a message coming through updates, because bot can’t be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup."
+                    "description": "Optional. Service message: the supergroup has been created. This field can‘t be received in a message coming through updates, because bot can’t be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.",
+                    "default": true
                 },
                 {
                     "name": "channel_chat_created",
@@ -384,7 +419,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the channel has been created. This field can‘t be received in a message coming through updates, because bot can’t be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel."
+                    "description": "Optional. Service message: the channel has been created. This field can‘t be received in a message coming through updates, because bot can’t be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.",
+                    "default": true
                 },
                 {
                     "name": "migrate_to_chat_id",
@@ -417,6 +453,14 @@
             "name": "MessageEntity",
             "description": "This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "type",
                     "types": [
@@ -465,6 +509,14 @@
             "description": "This object represents one size of a photo or a file / sticker thumbnail.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "file_id",
                     "types": [
                         "string"
@@ -503,6 +555,14 @@
             "name": "Audio",
             "description": "This object represents an audio file to be treated as music by the Telegram clients.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "file_id",
                     "types": [
@@ -559,6 +619,14 @@
             "description": "This object represents a general file (as opposed to photos, voice messages and audio files).",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "file_id",
                     "types": [
                         "string"
@@ -605,6 +673,14 @@
             "name": "Sticker",
             "description": "This object represents a sticker.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "file_id",
                     "types": [
@@ -660,6 +736,14 @@
             "name": "Video",
             "description": "This object represents a video file.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "file_id",
                     "types": [
@@ -724,6 +808,14 @@
             "description": "This object represents a voice note.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "file_id",
                     "types": [
                         "string"
@@ -762,6 +854,14 @@
             "name": "Contact",
             "description": "This object represents a phone contact.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "phone_number",
                     "types": [
@@ -802,6 +902,14 @@
             "description": "This object represents a point on the map.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "longitude",
                     "types": [
                         "float"
@@ -824,6 +932,14 @@
             "name": "Venue",
             "description": "This object represents a venue.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "location",
                     "types": [
@@ -864,6 +980,14 @@
             "description": "This object represent a user's profile pictures.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "total_count",
                     "types": [
                         "int"
@@ -886,6 +1010,14 @@
             "name": "File",
             "description": "This object represents a file ready to be downloaded. The file can be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "file_id",
                     "types": [
@@ -918,6 +1050,14 @@
             "description": "This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "keyboard",
                     "types": [
                         "Array<Array<KeyboardButton>>"
@@ -931,7 +1071,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard."
+                    "description": "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard.",
+                    "default": false
                 },
                 {
                     "name": "one_time_keyboard",
@@ -939,7 +1080,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Requests clients to hide the keyboard as soon as it's been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false."
+                    "description": "Optional. Requests clients to hide the keyboard as soon as it's been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false.",
+                    "default": false
                 },
                 {
                     "name": "selective",
@@ -956,6 +1098,14 @@
             "name": "KeyboardButton",
             "description": "This object represents one button of the reply keyboard. For simple text buttons String can be used instead of this object to specify text of the button. Optional fields are mutually exclusive.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "text",
                     "types": [
@@ -988,12 +1138,21 @@
             "description": "Upon receiving a message with this object, Telegram clients will hide the current custom keyboard and display the default letter-keyboard. By default, custom keyboards are displayed until a new keyboard is sent by a bot. An exception is made for one-time keyboards that are hidden immediately after the user presses a button (see ReplyKeyboardMarkup).",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "hide_keyboard",
                     "types": [
                         "bool"
                     ],
                     "optional": false,
-                    "description": "Requests clients to hide the custom keyboard"
+                    "description": "Requests clients to hide the custom keyboard",
+                    "default": true
                 },
                 {
                     "name": "selective",
@@ -1011,6 +1170,14 @@
             "description": "This object represents an inline keyboard that appears right next to the message it belongs to.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "inline_keyboard",
                     "types": [
                         "Array<Array<InlineKeyboardButton>>"
@@ -1025,6 +1192,14 @@
             "name": "InlineKeyboardButton",
             "description": "This object represents one button of an inline keyboard. You must use exactly one of the optional fields.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "text",
                     "types": [
@@ -1064,6 +1239,14 @@
             "name": "CallbackQuery",
             "description": "This object represents an incoming callback query from a callback button in an inline keyboard. If the button that originated the query was attached to a message sent by the bot, the field message will be presented. If the button was attached to a message sent via the bot (in inline mode), the field inline_message_id will be presented.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "id",
                     "types": [
@@ -1112,12 +1295,21 @@
             "description": "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "force_reply",
                     "types": [
                         "bool"
                     ],
                     "optional": false,
-                    "description": "Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'"
+                    "description": "Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'",
+                    "default": true
                 },
                 {
                     "name": "selective",
@@ -1134,6 +1326,14 @@
             "name": "ChatMember",
             "description": "This object contains information about one member of the chat.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "user",
                     "types": [
@@ -1163,6 +1363,14 @@
             "name": "InlineQuery",
             "description": "This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "id",
                     "types": [
@@ -1237,12 +1445,21 @@
             "description": "Represents a link to an article or web page.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be article"
+                    "description": "Type of the result, must be article",
+                    "default": "article"
                 },
                 {
                     "name": "id",
@@ -1332,12 +1549,21 @@
             "description": "Represents a link to a photo. By default, this photo will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be photo"
+                    "description": "Type of the result, must be photo",
+                    "default": "photo"
                 },
                 {
                     "name": "id",
@@ -1427,12 +1653,21 @@
             "description": "Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be gif"
+                    "description": "Type of the result, must be gif",
+                    "default": "gif"
                 },
                 {
                     "name": "id",
@@ -1514,12 +1749,21 @@
             "description": "Represents a link to a video animation (H.264/MPEG-4 AVC video without sound). By default, this animated MPEG-4 file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be mpeg4_gif"
+                    "description": "Type of the result, must be mpeg4_gif",
+                    "default": "mpeg4_gif"
                 },
                 {
                     "name": "id",
@@ -1601,12 +1845,21 @@
             "description": "Represents a link to a page containing an embedded video player or a video file. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be video"
+                    "description": "Type of the result, must be video",
+                    "default": "video"
                 },
                 {
                     "name": "id",
@@ -1712,12 +1965,21 @@
             "description": "Represents a link to an mp3 audio file. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be audio"
+                    "description": "Type of the result, must be audio",
+                    "default": "audio"
                 },
                 {
                     "name": "id",
@@ -1783,12 +2045,21 @@
             "description": "Represents a link to a voice recording in an .ogg container encoded with OPUS. By default, this voice recording will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the the voice message.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be voice"
+                    "description": "Type of the result, must be voice",
+                    "default": "voice"
                 },
                 {
                     "name": "id",
@@ -1846,12 +2117,21 @@
             "description": "Represents a link to a file. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file. Currently, only .PDF and .ZIP files can be sent using this method.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be document"
+                    "description": "Type of the result, must be document",
+                    "default": "document"
                 },
                 {
                     "name": "id",
@@ -1949,12 +2229,21 @@
             "description": "Represents a location on a map. By default, the location will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the location.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be location"
+                    "description": "Type of the result, must be location",
+                    "default": "location"
                 },
                 {
                     "name": "id",
@@ -2036,12 +2325,21 @@
             "description": "Represents a venue. By default, the venue will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the venue.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be venue"
+                    "description": "Type of the result, must be venue",
+                    "default": "venue"
                 },
                 {
                     "name": "id",
@@ -2139,12 +2437,21 @@
             "description": "Represents a contact with a phone number. By default, this contact will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the contact.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be contact"
+                    "description": "Type of the result, must be contact",
+                    "default": "contact"
                 },
                 {
                     "name": "id",
@@ -2226,12 +2533,21 @@
             "description": "Represents a link to a photo stored on the Telegram servers. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be photo"
+                    "description": "Type of the result, must be photo",
+                    "default": "photo"
                 },
                 {
                     "name": "id",
@@ -2297,12 +2613,21 @@
             "description": "Represents a link to an animated GIF file stored on the Telegram servers. By default, this animated GIF file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with specified content instead of the animation.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be gif"
+                    "description": "Type of the result, must be gif",
+                    "default": "gif"
                 },
                 {
                     "name": "id",
@@ -2360,12 +2685,21 @@
             "description": "Represents a link to a video animation (H.264/MPEG-4 AVC video without sound) stored on the Telegram servers. By default, this animated MPEG-4 file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be mpeg4_gif"
+                    "description": "Type of the result, must be mpeg4_gif",
+                    "default": "mpeg4_gif"
                 },
                 {
                     "name": "id",
@@ -2423,12 +2757,21 @@
             "description": "Represents a link to a sticker stored on the Telegram servers. By default, this sticker will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the sticker.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be sticker"
+                    "description": "Type of the result, must be sticker",
+                    "default": "sticker"
                 },
                 {
                     "name": "id",
@@ -2470,12 +2813,21 @@
             "description": "Represents a link to a file stored on the Telegram servers. By default, this file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the file. Currently, only pdf-files and zip archives can be sent using this method.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be document"
+                    "description": "Type of the result, must be document",
+                    "default": "document"
                 },
                 {
                     "name": "id",
@@ -2541,12 +2893,21 @@
             "description": "Represents a link to a video file stored on the Telegram servers. By default, this video file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the video.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be video"
+                    "description": "Type of the result, must be video",
+                    "default": "video"
                 },
                 {
                     "name": "id",
@@ -2612,12 +2973,21 @@
             "description": "Represents a link to a voice message stored on the Telegram servers. By default, this voice message will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the voice message.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be voice"
+                    "description": "Type of the result, must be voice",
+                    "default": "voice"
                 },
                 {
                     "name": "id",
@@ -2667,12 +3037,21 @@
             "description": "Represents a link to an mp3 audio file stored on the Telegram servers. By default, this audio file will be sent by the user. Alternatively, you can use input_message_content to send a message with the specified content instead of the audio.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "type",
                     "types": [
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be audio"
+                    "description": "Type of the result, must be audio",
+                    "default": "audio"
                 },
                 {
                     "name": "id",
@@ -2725,6 +3104,14 @@
             "description": "Represents the content of a text message to be sent as the result of an inline query.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "message_text",
                     "types": [
                         "string"
@@ -2756,6 +3143,14 @@
             "description": "Represents the content of a location message to be sent as the result of an inline query.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "latitude",
                     "types": [
                         "float"
@@ -2778,6 +3173,14 @@
             "name": "InputVenueMessageContent",
             "description": "Represents the content of a venue message to be sent as the result of an inline query.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "latitude",
                     "types": [
@@ -2826,6 +3229,14 @@
             "description": "Represents the content of a contact message to be sent as the result of an inline query.",
             "fields": [
                 {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
+                {
                     "name": "phone_number",
                     "types": [
                         "string"
@@ -2856,6 +3267,14 @@
             "name": "ChosenInlineResult",
             "description": "Represents a result of an inline query that was chosen by the user and sent to their chat partner.",
             "fields": [
+                {
+                    "name": "Field",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": false,
+                    "description": "Description"
+                },
                 {
                     "name": "result_id",
                     "types": [
@@ -2906,6 +3325,14 @@
             "description": "Use this method to receive incoming updates using long polling (wiki). An Array of Update objects is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "offset",
                     "types": [
                         "int"
@@ -2919,7 +3346,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100."
+                    "description": "Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
+                    "default": 100
                 },
                 {
                     "name": "timeout",
@@ -2927,7 +3355,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling"
+                    "description": "Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling",
+                    "default": 0
                 }
             ],
             "return_types": [
@@ -2938,6 +3367,14 @@
             "name": "setWebhook",
             "description": "Use this method to specify a url and receive incoming updates via an outgoing webhook. Whenever there is an update for the bot, we will send an HTTPS POST request to the specified url, containing a JSON-serialized Update. In case of an unsuccessful request, we will give up after a reasonable amount of attempts.\nIf you'd like to make sure that the Webhook request comes from Telegram, we recommend using a secret path in the URL, e.g. https://www.example.com/<token>. Since nobody else knows your bot‘s token, you can be pretty sure it’s us.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "url",
                     "types": [
@@ -2969,6 +3406,14 @@
             "name": "sendMessage",
             "description": "Use this method to send text messages. On success, the sent Message is returned.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3039,6 +3484,14 @@
             "description": "Use this method to forward messages of any kind. On success, the sent Message is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3081,6 +3534,14 @@
             "name": "sendPhoto",
             "description": "Use this method to send photos. On success, the sent Message is returned.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3143,6 +3604,14 @@
             "name": "sendAudio",
             "description": "Use this method to send audio files, if you want Telegram clients to display them in the music player. Your audio must be in the .mp3 format. On success, the sent Message is returned. Bots can currently send audio files of up to 50 MB in size, this limit may be changed in the future.\nFor sending voice messages, use the sendVoice method instead.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3222,6 +3691,14 @@
             "description": "Use this method to send general files. On success, the sent Message is returned. Bots can currently send files of any type of up to 50 MB in size, this limit may be changed in the future.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3284,6 +3761,14 @@
             "description": "Use this method to send .webp stickers. On success, the sent Message is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3337,6 +3822,14 @@
             "name": "sendVideo",
             "description": "Use this method to send video files, Telegram clients support mp4 videos (other formats may be sent as Document). On success, the sent Message is returned. Bots can currently send video files of up to 50 MB in size, this limit may be changed in the future.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3424,6 +3917,14 @@
             "description": "Use this method to send audio files, if you want Telegram clients to display the file as a playable voice message. For this to work, your audio must be in an .ogg file encoded with OPUS (other formats may be sent as Audio or Document). On success, the sent Message is returned. Bots can currently send voice messages of up to 50 MB in size, this limit may be changed in the future.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3486,6 +3987,14 @@
             "description": "Use this method to send point on the map. On success, the sent Message is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3546,6 +4055,14 @@
             "name": "sendVenue",
             "description": "Use this method to send information about a venue. On success, the sent Message is returned.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3632,6 +4149,14 @@
             "description": "Use this method to send phone contacts. On success, the sent Message is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3698,8 +4223,16 @@
         },
         {
             "name": "sendChatAction",
-            "description": "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). \nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive.",
+            "description": "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status).\nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3725,6 +4258,14 @@
             "description": "Use this method to get a list of profile pictures for a user. Returns a UserProfilePhotos object.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "user_id",
                     "types": [
                         "int"
@@ -3746,7 +4287,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100."
+                    "description": "Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
+                    "default": 100
                 }
             ],
             "return_types": [
@@ -3757,6 +4299,14 @@
             "name": "getFile",
             "description": "Use this method to get basic info about a file and prepare it for downloading. For the moment, bots can download files of up to 20MB in size. On success, a File object is returned. The file can then be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>, where <file_path> is taken from the response. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile again.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "file_id",
                     "types": [
@@ -3774,6 +4324,14 @@
             "name": "kickChatMember",
             "description": "Use this method to kick a user from a group or a supergroup. In the case of supergroups, the user will not be able to return to the group on their own using invite links, etc., unless unbanned first. The bot must be an administrator in the group for this to work. Returns True on success.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3801,6 +4359,14 @@
             "description": "Use this method for your bot to leave a group, supergroup or channel. Returns True on success.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3818,6 +4384,14 @@
             "name": "unbanChatMember",
             "description": "Use this method to unban a previously kicked user in a supergroup. The user will not return to the group automatically, but will be able to join via link, etc. The bot must be an administrator in the group for this to work. Returns True on success.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3845,6 +4419,14 @@
             "description": "Use this method to get up to date information about the chat (current name of the user for one-on-one conversations, current username of a user, group or channel, etc.). Returns a Chat object on success.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3862,6 +4444,14 @@
             "name": "getChatAdministrators",
             "description": "Use this method to get a list of administrators in a chat. On success, returns an Array of ChatMember objects that contains information about all chat administrators except other bots. If the chat is a group or a supergroup and no administrators were appointed, only the creator will be returned.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3881,6 +4471,14 @@
             "description": "Use this method to get the number of members in a chat. Returns Int on success.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -3898,6 +4496,14 @@
             "name": "getChatMember",
             "description": "Use this method to get information about a member of a chat. Returns a ChatMember object on success.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -3925,6 +4531,14 @@
             "description": "Use this method to send answers to callback queries sent from inline keyboards. The answer will be displayed to the user as a notification at the top of the chat screen or as an alert. On success, True is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "callback_query_id",
                     "types": [
                         "string"
@@ -3946,7 +4560,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "If true, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false."
+                    "description": "If true, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false.",
+                    "default": false
                 }
             ],
             "return_types": [
@@ -3957,6 +4572,14 @@
             "name": "editMessageText",
             "description": "Use this method to edit text messages sent by the bot or via the bot (for inline bots). On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -4025,6 +4648,14 @@
             "description": "Use this method to edit captions of messages sent by the bot or via the bot (for inline bots). On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "chat_id",
                     "types": [
                         "int",
@@ -4073,8 +4704,16 @@
         },
         {
             "name": "editMessageReplyMarkup",
-            "description": "Use this method to edit only the reply markup of messages sent by the bot or via the bot (for inline bots). On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned.",
+            "description": "Use this method to edit only the reply markup of messages sent by the bot or via the bot (for inline bots).  On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned.",
             "fields": [
+                {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
                 {
                     "name": "chat_id",
                     "types": [
@@ -4119,6 +4758,14 @@
             "description": "Use this method to send answers to an inline query. On success, True is returned.No more than 50 results per query are allowed.",
             "fields": [
                 {
+                    "name": "Parameters",
+                    "types": [
+                        "Type"
+                    ],
+                    "optional": true,
+                    "description": "Description"
+                },
+                {
                     "name": "inline_query_id",
                     "types": [
                         "string"
@@ -4140,7 +4787,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300."
+                    "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.",
+                    "default": 300
                 },
                 {
                     "name": "is_personal",

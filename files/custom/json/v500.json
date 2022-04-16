@@ -711,7 +711,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the chat photo was deleted"
+                    "description": "Optional. Service message: the chat photo was deleted",
+                    "default": true
                 },
                 {
                     "name": "group_chat_created",
@@ -719,7 +720,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the group has been created"
+                    "description": "Optional. Service message: the group has been created",
+                    "default": true
                 },
                 {
                     "name": "supergroup_chat_created",
@@ -727,7 +729,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the supergroup has been created. This field can't be received in a message coming through updates, because bot can't be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup."
+                    "description": "Optional. Service message: the supergroup has been created. This field can't be received in a message coming through updates, because bot can't be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.",
+                    "default": true
                 },
                 {
                     "name": "channel_chat_created",
@@ -735,7 +738,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Service message: the channel has been created. This field can't be received in a message coming through updates, because bot can't be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel."
+                    "description": "Optional. Service message: the channel has been created. This field can't be received in a message coming through updates, because bot can't be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.",
+                    "default": true
                 },
                 {
                     "name": "migrate_to_chat_id",
@@ -1388,7 +1392,7 @@
                         "int"
                     ],
                     "optional": false,
-                    "description": "Value of the dice, 1-6 for “” and “” base emoji, 1-5 for “” and “” base emoji, 1-64 for “” base emoji"
+                    "description": "Value of the dice, 1-6 for “🎲” and “🎯” base emoji, 1-5 for “🏀” and “⚽” base emoji, 1-64 for “🎰” base emoji"
                 }
             ],
             "extended_by": []
@@ -1787,7 +1791,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard."
+                    "description": "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard.",
+                    "default": false
                 },
                 {
                     "name": "one_time_keyboard",
@@ -1795,7 +1800,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "Optional. Requests clients to hide the keyboard as soon as it's been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false."
+                    "description": "Optional. Requests clients to hide the keyboard as soon as it's been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false.",
+                    "default": false
                 },
                 {
                     "name": "selective",
@@ -1872,7 +1878,8 @@
                         "bool"
                     ],
                     "optional": false,
-                    "description": "Requests clients to remove the custom keyboard (user will not be able to summon this keyboard; if you want to hide the keyboard from sight but keep it accessible, use one_time_keyboard in ReplyKeyboardMarkup)"
+                    "description": "Requests clients to remove the custom keyboard (user will not be able to summon this keyboard; if you want to hide the keyboard from sight but keep it accessible, use one_time_keyboard in ReplyKeyboardMarkup)",
+                    "default": true
                 },
                 {
                     "name": "selective",
@@ -2083,7 +2090,8 @@
                         "bool"
                     ],
                     "optional": false,
-                    "description": "Shows reply interface to the user, as if they manually selected the bot's message and tapped 'Reply'"
+                    "description": "Shows reply interface to the user, as if they manually selected the bot's message and tapped 'Reply'",
+                    "default": true
                 },
                 {
                     "name": "selective",
@@ -2464,7 +2472,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be photo"
+                    "description": "Type of the result, must be photo",
+                    "default": "photo"
                 },
                 {
                     "name": "media",
@@ -2511,7 +2520,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be video"
+                    "description": "Type of the result, must be video",
+                    "default": "video"
                 },
                 {
                     "name": "media",
@@ -2599,7 +2609,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be animation"
+                    "description": "Type of the result, must be animation",
+                    "default": "animation"
                 },
                 {
                     "name": "media",
@@ -2679,7 +2690,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be audio"
+                    "description": "Type of the result, must be audio",
+                    "default": "audio"
                 },
                 {
                     "name": "media",
@@ -2759,7 +2771,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be document"
+                    "description": "Type of the result, must be document",
+                    "default": "document"
                 },
                 {
                     "name": "media",
@@ -3084,7 +3097,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be article"
+                    "description": "Type of the result, must be article",
+                    "default": "article"
                 },
                 {
                     "name": "id",
@@ -3179,7 +3193,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be photo"
+                    "description": "Type of the result, must be photo",
+                    "default": "photo"
                 },
                 {
                     "name": "id",
@@ -3290,7 +3305,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be gif"
+                    "description": "Type of the result, must be gif",
+                    "default": "gif"
                 },
                 {
                     "name": "id",
@@ -3346,7 +3362,8 @@
                         "string"
                     ],
                     "optional": true,
-                    "description": "Optional. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”"
+                    "description": "Optional. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”",
+                    "default": "image/jpeg"
                 },
                 {
                     "name": "title",
@@ -3409,7 +3426,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be mpeg4_gif"
+                    "description": "Type of the result, must be mpeg4_gif",
+                    "default": "mpeg4_gif"
                 },
                 {
                     "name": "id",
@@ -3465,7 +3483,8 @@
                         "string"
                     ],
                     "optional": true,
-                    "description": "Optional. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”"
+                    "description": "Optional. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”",
+                    "default": "image/jpeg"
                 },
                 {
                     "name": "title",
@@ -3528,7 +3547,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be video"
+                    "description": "Type of the result, must be video",
+                    "default": "video"
                 },
                 {
                     "name": "id",
@@ -3655,7 +3675,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be audio"
+                    "description": "Type of the result, must be audio",
+                    "default": "audio"
                 },
                 {
                     "name": "id",
@@ -3750,7 +3771,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be voice"
+                    "description": "Type of the result, must be voice",
+                    "default": "voice"
                 },
                 {
                     "name": "id",
@@ -3837,7 +3859,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be document"
+                    "description": "Type of the result, must be document",
+                    "default": "document"
                 },
                 {
                     "name": "id",
@@ -3956,7 +3979,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be location"
+                    "description": "Type of the result, must be location",
+                    "default": "location"
                 },
                 {
                     "name": "id",
@@ -4075,7 +4099,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be venue"
+                    "description": "Type of the result, must be venue",
+                    "default": "venue"
                 },
                 {
                     "name": "id",
@@ -4202,7 +4227,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be contact"
+                    "description": "Type of the result, must be contact",
+                    "default": "contact"
                 },
                 {
                     "name": "id",
@@ -4297,7 +4323,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be game"
+                    "description": "Type of the result, must be game",
+                    "default": "game"
                 },
                 {
                     "name": "id",
@@ -4336,7 +4363,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be photo"
+                    "description": "Type of the result, must be photo",
+                    "default": "photo"
                 },
                 {
                     "name": "id",
@@ -4423,7 +4451,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be gif"
+                    "description": "Type of the result, must be gif",
+                    "default": "gif"
                 },
                 {
                     "name": "id",
@@ -4502,7 +4531,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be mpeg4_gif"
+                    "description": "Type of the result, must be mpeg4_gif",
+                    "default": "mpeg4_gif"
                 },
                 {
                     "name": "id",
@@ -4581,7 +4611,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be sticker"
+                    "description": "Type of the result, must be sticker",
+                    "default": "sticker"
                 },
                 {
                     "name": "id",
@@ -4628,7 +4659,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be document"
+                    "description": "Type of the result, must be document",
+                    "default": "document"
                 },
                 {
                     "name": "id",
@@ -4715,7 +4747,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be video"
+                    "description": "Type of the result, must be video",
+                    "default": "video"
                 },
                 {
                     "name": "id",
@@ -4802,7 +4835,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be voice"
+                    "description": "Type of the result, must be voice",
+                    "default": "voice"
                 },
                 {
                     "name": "id",
@@ -4881,7 +4915,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Type of the result, must be audio"
+                    "description": "Type of the result, must be audio",
+                    "default": "audio"
                 },
                 {
                     "name": "id",
@@ -5770,7 +5805,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be data"
+                    "description": "Error source, must be data",
+                    "default": "data"
                 },
                 {
                     "name": "type",
@@ -5817,7 +5853,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be front_side"
+                    "description": "Error source, must be front_side",
+                    "default": "front_side"
                 },
                 {
                     "name": "type",
@@ -5856,7 +5893,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be reverse_side"
+                    "description": "Error source, must be reverse_side",
+                    "default": "reverse_side"
                 },
                 {
                     "name": "type",
@@ -5895,7 +5933,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be selfie"
+                    "description": "Error source, must be selfie",
+                    "default": "selfie"
                 },
                 {
                     "name": "type",
@@ -5934,7 +5973,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be file"
+                    "description": "Error source, must be file",
+                    "default": "file"
                 },
                 {
                     "name": "type",
@@ -5973,7 +6013,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be files"
+                    "description": "Error source, must be files",
+                    "default": "files"
                 },
                 {
                     "name": "type",
@@ -6012,7 +6053,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be translation_file"
+                    "description": "Error source, must be translation_file",
+                    "default": "translation_file"
                 },
                 {
                     "name": "type",
@@ -6051,7 +6093,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be translation_files"
+                    "description": "Error source, must be translation_files",
+                    "default": "translation_files"
                 },
                 {
                     "name": "type",
@@ -6090,7 +6133,8 @@
                         "string"
                     ],
                     "optional": false,
-                    "description": "Error source, must be unspecified"
+                    "description": "Error source, must be unspecified",
+                    "default": "unspecified"
                 },
                 {
                     "name": "type",
@@ -6231,7 +6275,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Limits the number of updates to be retrieved. Values between 1-100 are accepted. Defaults to 100."
+                    "description": "Limits the number of updates to be retrieved. Values between 1-100 are accepted. Defaults to 100.",
+                    "default": 100
                 },
                 {
                     "name": "timeout",
@@ -6239,7 +6284,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling. Should be positive, short polling should be used for testing purposes only."
+                    "description": "Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling. Should be positive, short polling should be used for testing purposes only.",
+                    "default": 0
                 },
                 {
                     "name": "allowed_updates",
@@ -6288,7 +6334,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot's server, and higher values to increase your bot's throughput."
+                    "description": "Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot's server, and higher values to increase your bot's throughput.",
+                    "default": 40
                 },
                 {
                     "name": "allowed_updates",
@@ -7333,7 +7380,7 @@
                 {
                     "name": "media",
                     "types": [
-                        "Array<InputMediaAudio, InputMediaDocument, InputMediaPhoto, InputMediaVideo>"
+                        "Array<InputMediaAudio|InputMediaDocument|InputMediaPhoto|InputMediaVideo>"
                     ],
                     "optional": false,
                     "description": "A JSON-serialized array describing messages to be sent, must include 2-10 items"
@@ -7831,7 +7878,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "True, if the poll needs to be anonymous, defaults to True"
+                    "description": "True, if the poll needs to be anonymous, defaults to True",
+                    "default": true
                 },
                 {
                     "name": "type",
@@ -7839,7 +7887,8 @@
                         "string"
                     ],
                     "optional": true,
-                    "description": "Poll type, “quiz” or “regular”, defaults to “regular”"
+                    "description": "Poll type, “quiz” or “regular”, defaults to “regular”",
+                    "default": "regular"
                 },
                 {
                     "name": "allows_multiple_answers",
@@ -7847,7 +7896,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "True, if the poll allows multiple answers, ignored for polls in quiz mode, defaults to False"
+                    "description": "True, if the poll allows multiple answers, ignored for polls in quiz mode, defaults to False",
+                    "default": false
                 },
                 {
                     "name": "correct_option_id",
@@ -7964,7 +8014,8 @@
                         "string"
                     ],
                     "optional": true,
-                    "description": "Emoji on which the dice throw animation is based. Currently, must be one of “”, “”, “”, “”, or “”. Dice can have values 1-6 for “” and “”, values 1-5 for “” and “”, and values 1-64 for “”. Defaults to “”"
+                    "description": "Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, or “🎰”. Dice can have values 1-6 for “🎲” and “🎯”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”",
+                    "default": "🎲"
                 },
                 {
                     "name": "disable_notification",
@@ -8058,7 +8109,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "Limits the number of photos to be retrieved. Values between 1-100 are accepted. Defaults to 100."
+                    "description": "Limits the number of photos to be retrieved. Values between 1-100 are accepted. Defaults to 100.",
+                    "default": 100
                 }
             ],
             "return_types": [
@@ -8710,7 +8762,8 @@
                         "bool"
                     ],
                     "optional": true,
-                    "description": "If true, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false."
+                    "description": "If true, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false.",
+                    "default": false
                 },
                 {
                     "name": "url",
@@ -8726,7 +8779,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "The maximum amount of time in seconds that the result of the callback query may be cached client-side. Telegram apps will support caching starting in version 3.14. Defaults to 0."
+                    "description": "The maximum amount of time in seconds that the result of the callback query may be cached client-side. Telegram apps will support caching starting in version 3.14. Defaults to 0.",
+                    "default": 0
                 }
             ],
             "return_types": [
@@ -9392,7 +9446,8 @@
                         "int"
                     ],
                     "optional": true,
-                    "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300."
+                    "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.",
+                    "default": 300
                 },
                 {
                     "name": "is_personal",
@@ -9669,9 +9724,7 @@
                     "description": "Required if ok is False. Error message in human readable form that explains why it is impossible to complete the order (e.g. \"Sorry, delivery to your desired address is unavailable'). Telegram will display this message to the user."
                 }
             ],
-            "return_types": [
-                "bool"
-            ]
+            "return_types": []
         },
         {
             "name": "answerPreCheckoutQuery",
@@ -9702,9 +9755,7 @@
                     "description": "Required if ok is False. Error message in human readable form that explains the reason for failure to proceed with the checkout (e.g. \"Sorry, somebody just bought the last of our amazing black T-shirts while you were busy filling out your payment details. Please choose a different color or garment!\"). Telegram will display this message to the user."
                 }
             ],
-            "return_types": [
-                "bool"
-            ]
+            "return_types": []
         },
         {
             "name": "setPassportDataErrors",

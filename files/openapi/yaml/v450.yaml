@@ -297,12 +297,16 @@ components:
                         $ref: '#/components/schemas/PhotoSize'
                 delete_chat_photo:
                     type: boolean
+                    default: true
                 group_chat_created:
                     type: boolean
+                    default: true
                 supergroup_chat_created:
                     type: boolean
+                    default: true
                 channel_chat_created:
                     type: boolean
+                    default: true
                 migrate_to_chat_id:
                     type: integer
                 migrate_from_chat_id:
@@ -636,6 +640,7 @@ components:
             properties:
                 remove_keyboard:
                     type: boolean
+                    default: true
                 selective:
                     type: boolean
             type: object
@@ -716,6 +721,7 @@ components:
             properties:
                 force_reply:
                     type: boolean
+                    default: true
                 selective:
                     type: boolean
             type: object
@@ -830,6 +836,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: photo
                 media:
                     type: string
                 caption:
@@ -845,6 +852,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: video
                 media:
                     type: string
                 thumb:
@@ -874,6 +882,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: animation
                 media:
                     type: string
                 thumb:
@@ -901,6 +910,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: audio
                 media:
                     type: string
                 thumb:
@@ -928,6 +938,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: document
                 media:
                     type: string
                 thumb:
@@ -1085,6 +1096,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: article
                 id:
                     type: string
                 title:
@@ -1116,6 +1128,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: photo
                 id:
                     type: string
                 photo_url:
@@ -1149,6 +1162,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: gif
                 id:
                     type: string
                 gif_url:
@@ -1182,6 +1196,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: mpeg4_gif
                 id:
                     type: string
                 mpeg4_url:
@@ -1217,6 +1232,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: video
                 id:
                     type: string
                 video_url:
@@ -1254,6 +1270,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: audio
                 id:
                     type: string
                 audio_url:
@@ -1283,6 +1300,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: voice
                 id:
                     type: string
                 voice_url:
@@ -1311,6 +1329,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: document
                 id:
                     type: string
                 title:
@@ -1347,6 +1366,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: location
                 id:
                     type: string
                 latitude:
@@ -1380,6 +1400,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: venue
                 id:
                     type: string
                 latitude:
@@ -1415,6 +1436,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: contact
                 id:
                     type: string
                 phone_number:
@@ -1445,6 +1467,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: game
                 id:
                     type: string
                 game_short_name:
@@ -1461,6 +1484,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: photo
                 id:
                     type: string
                 photo_file_id:
@@ -1487,6 +1511,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: gif
                 id:
                     type: string
                 gif_file_id:
@@ -1511,6 +1536,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: mpeg4_gif
                 id:
                     type: string
                 mpeg4_file_id:
@@ -1535,6 +1561,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: sticker
                 id:
                     type: string
                 sticker_file_id:
@@ -1554,6 +1581,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: document
                 id:
                     type: string
                 title:
@@ -1581,6 +1609,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: video
                 id:
                     type: string
                 video_file_id:
@@ -1608,6 +1637,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: voice
                 id:
                     type: string
                 voice_file_id:
@@ -1632,6 +1662,7 @@ components:
             properties:
                 type:
                     type: string
+                    default: audio
                 id:
                     type: string
                 audio_file_id:
@@ -1989,6 +2020,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: data
                 type:
                     type: string
                 field_name:
@@ -2008,6 +2040,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: front_side
                 type:
                     type: string
                 file_hash:
@@ -2025,6 +2058,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: reverse_side
                 type:
                     type: string
                 file_hash:
@@ -2042,6 +2076,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: selfie
                 type:
                     type: string
                 file_hash:
@@ -2059,6 +2094,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: file
                 type:
                     type: string
                 file_hash:
@@ -2076,6 +2112,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: files
                 type:
                     type: string
                 file_hashes:
@@ -2095,6 +2132,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: translation_file
                 type:
                     type: string
                 file_hash:
@@ -2112,6 +2150,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: translation_files
                 type:
                     type: string
                 file_hashes:
@@ -2131,6 +2170,7 @@ components:
             properties:
                 source:
                     type: string
+                    default: unspecified
                 type:
                     type: string
                 element_hash:
@@ -2193,6 +2233,7 @@ paths:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                                 timeout:
                                     type: integer
                                 allowed_updates:
@@ -2207,6 +2248,7 @@ paths:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                                 timeout:
                                     type: integer
                                 allowed_updates:
@@ -2221,6 +2263,7 @@ paths:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                                 timeout:
                                     type: integer
                                 allowed_updates:
@@ -2277,6 +2320,7 @@ paths:
                                     $ref: '#/components/schemas/InputFile'
                                 max_connections:
                                     type: integer
+                                    default: 40
                                 allowed_updates:
                                     type: array
                                     items:
@@ -2293,6 +2337,7 @@ paths:
                                     $ref: '#/components/schemas/InputFile'
                                 max_connections:
                                     type: integer
+                                    default: 40
                                 allowed_updates:
                                     type: array
                                     items:
@@ -2309,6 +2354,7 @@ paths:
                                     $ref: '#/components/schemas/InputFile'
                                 max_connections:
                                     type: integer
+                                    default: 40
                                 allowed_updates:
                                     type: array
                                     items:
@@ -4893,6 +4939,7 @@ paths:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
@@ -4905,6 +4952,7 @@ paths:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                     multipart/form-data:
                         schema:
                             type: object
@@ -4917,6 +4965,7 @@ paths:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -7927,6 +7976,7 @@ paths:
                                         $ref: '#/components/schemas/InlineQueryResult'
                                 cache_time:
                                     type: integer
+                                    default: 300
                                 is_personal:
                                     type: boolean
                                 next_offset:
@@ -7950,6 +8000,7 @@ paths:
                                         $ref: '#/components/schemas/InlineQueryResult'
                                 cache_time:
                                     type: integer
+                                    default: 300
                                 is_personal:
                                     type: boolean
                                 next_offset:
@@ -7973,6 +8024,7 @@ paths:
                                         $ref: '#/components/schemas/InlineQueryResult'
                                 cache_time:
                                     type: integer
+                                    default: 300
                                 is_personal:
                                     type: boolean
                                 next_offset:
@@ -8299,8 +8351,7 @@ paths:
                                     -
                                         type: object
                                         properties:
-                                            result:
-                                                type: boolean
+                                            result: {  }
                 400:
                     $ref: '#/components/responses/BadRequest'
                 401:
@@ -8374,8 +8425,7 @@ paths:
                                     -
                                         type: object
                                         properties:
-                                            result:
-                                                type: boolean
+                                            result: {  }
                 400:
                     $ref: '#/components/responses/BadRequest'
                 401:

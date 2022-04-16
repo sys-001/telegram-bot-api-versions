@@ -1,6 +1,6 @@
 {
   "require": {
-    "sysbot/tgscraper": "^3.0",
+    "sysbot/tgscraper": "^4.0",
     "sysbot/tgscraper-cache": "^1.0"
   }
 }

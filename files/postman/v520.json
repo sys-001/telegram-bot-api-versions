@@ -29,7 +29,8 @@
                             "key": "limit",
                             "disabled": true,
                             "description": "Optional. Limits the number of updates to be retrieved. Values between 1-100 are accepted. Defaults to 100.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "100"
                         },
                         {
                             "key": "timeout",
@@ -90,7 +91,8 @@
                             "key": "max_connections",
                             "disabled": true,
                             "description": "Optional. Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot's server, and higher values to increase your bot's throughput.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "40"
                         },
                         {
                             "key": "allowed_updates",
@@ -1596,13 +1598,15 @@
                             "key": "is_anonymous",
                             "disabled": true,
                             "description": "Optional. True, if the poll needs to be anonymous, defaults to True",
-                            "type": "text"
+                            "type": "text",
+                            "value": "1"
                         },
                         {
                             "key": "type",
                             "disabled": true,
                             "description": "Optional. Poll type, “quiz” or “regular”, defaults to “regular”",
-                            "type": "text"
+                            "type": "text",
+                            "value": "regular"
                         },
                         {
                             "key": "allows_multiple_answers",
@@ -1710,8 +1714,9 @@
                         {
                             "key": "emoji",
                             "disabled": true,
-                            "description": "Optional. Emoji on which the dice throw animation is based. Currently, must be one of “”, “”, “”, “”, “”, or “”. Dice can have values 1-6 for “”, “” and “”, values 1-5 for “” and “”, and values 1-64 for “”. Defaults to “”",
-                            "type": "text"
+                            "description": "Optional. Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, “🎳”, or “🎰”. Dice can have values 1-6 for “🎲”, “🎯” and “🎳”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”",
+                            "type": "text",
+                            "value": "🎲"
                         },
                         {
                             "key": "disable_notification",
@@ -1815,7 +1820,8 @@
                             "key": "limit",
                             "disabled": true,
                             "description": "Optional. Limits the number of photos to be retrieved. Values between 1-100 are accepted. Defaults to 100.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "100"
                         }
                     ]
                 },
@@ -3663,7 +3669,8 @@
                             "key": "cache_time",
                             "disabled": true,
                             "description": "Optional. The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "300"
                         },
                         {
                             "key": "is_personal",

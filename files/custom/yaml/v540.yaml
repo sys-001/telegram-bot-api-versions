@@ -558,24 +558,28 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the chat photo was deleted'
+                default: true
             -
                 name: group_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the group has been created'
+                default: true
             -
                 name: supergroup_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the supergroup has been created. This field can''t be received in a message coming through updates, because bot can''t be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.'
+                default: true
             -
                 name: channel_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the channel has been created. This field can''t be received in a message coming through updates, because bot can''t be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.'
+                default: true
             -
                 name: message_auto_delete_timer_changed
                 types:
@@ -1092,7 +1096,7 @@ types:
                 types:
                     - int
                 optional: false
-                description: 'Value of the dice, 1-6 for “”, “” and “” base emoji, 1-5 for “” and “” base emoji, 1-64 for “” base emoji'
+                description: 'Value of the dice, 1-6 for “🎲”, “🎯” and “🎳” base emoji, 1-5 for “🏀” and “⚽” base emoji, 1-64 for “🎰” base emoji'
         extended_by: {  }
     -
         name: PollOption
@@ -1439,12 +1443,14 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app''s standard keyboard.'
+                default: false
             -
                 name: one_time_keyboard
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Requests clients to hide the keyboard as soon as it''s been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false.'
+                default: false
             -
                 name: input_field_placeholder
                 types:
@@ -1508,6 +1514,7 @@ types:
                     - bool
                 optional: false
                 description: 'Requests clients to remove the custom keyboard (user will not be able to summon this keyboard; if you want to hide the keyboard from sight but keep it accessible, use one_time_keyboard in ReplyKeyboardMarkup)'
+                default: true
             -
                 name: selective
                 types:
@@ -1665,6 +1672,7 @@ types:
                     - bool
                 optional: false
                 description: 'Shows reply interface to the user, as if they manually selected the bot''s message and tapped ''Reply'''
+                default: true
             -
                 name: input_field_placeholder
                 types:
@@ -2220,6 +2228,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be default'
+                default: default
         extended_by: {  }
     -
         name: BotCommandScopeAllPrivateChats
@@ -2231,6 +2240,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be all_private_chats'
+                default: all_private_chats
         extended_by: {  }
     -
         name: BotCommandScopeAllGroupChats
@@ -2242,6 +2252,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be all_group_chats'
+                default: all_group_chats
         extended_by: {  }
     -
         name: BotCommandScopeAllChatAdministrators
@@ -2253,6 +2264,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be all_chat_administrators'
+                default: all_chat_administrators
         extended_by: {  }
     -
         name: BotCommandScopeChat
@@ -2264,6 +2276,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be chat'
+                default: chat
             -
                 name: chat_id
                 types:
@@ -2282,6 +2295,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be chat_administrators'
+                default: chat_administrators
             -
                 name: chat_id
                 types:
@@ -2300,6 +2314,7 @@ types:
                     - string
                 optional: false
                 description: 'Scope type, must be chat_member'
+                default: chat_member
             -
                 name: chat_id
                 types:
@@ -2351,6 +2366,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: media
                 types:
@@ -2386,6 +2402,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: media
                 types:
@@ -2452,6 +2469,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be animation'
+                default: animation
             -
                 name: media
                 types:
@@ -2512,6 +2530,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be audio'
+                default: audio
             -
                 name: media
                 types:
@@ -2572,6 +2591,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be document'
+                default: document
             -
                 name: media
                 types:
@@ -2826,6 +2846,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be article'
+                default: article
             -
                 name: id
                 types:
@@ -2897,6 +2918,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: id
                 types:
@@ -2980,6 +3002,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be gif'
+                default: gif
             -
                 name: id
                 types:
@@ -3022,6 +3045,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”'
+                default: image/jpeg
             -
                 name: title
                 types:
@@ -3069,6 +3093,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be mpeg4_gif'
+                default: mpeg4_gif
             -
                 name: id
                 types:
@@ -3111,6 +3136,7 @@ types:
                     - string
                 optional: true
                 description: 'Optional. MIME type of the thumbnail, must be one of “image/jpeg”, “image/gif”, or “video/mp4”. Defaults to “image/jpeg”'
+                default: image/jpeg
             -
                 name: title
                 types:
@@ -3158,6 +3184,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: id
                 types:
@@ -3253,6 +3280,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be audio'
+                default: audio
             -
                 name: id
                 types:
@@ -3324,6 +3352,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be voice'
+                default: voice
             -
                 name: id
                 types:
@@ -3389,6 +3418,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be document'
+                default: document
             -
                 name: id
                 types:
@@ -3478,6 +3508,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be location'
+                default: location
             -
                 name: id
                 types:
@@ -3567,6 +3598,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be venue'
+                default: venue
             -
                 name: id
                 types:
@@ -3662,6 +3694,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be contact'
+                default: contact
             -
                 name: id
                 types:
@@ -3733,6 +3766,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be game'
+                default: game
             -
                 name: id
                 types:
@@ -3762,6 +3796,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: id
                 types:
@@ -3827,6 +3862,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be gif'
+                default: gif
             -
                 name: id
                 types:
@@ -3886,6 +3922,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be mpeg4_gif'
+                default: mpeg4_gif
             -
                 name: id
                 types:
@@ -3945,6 +3982,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be sticker'
+                default: sticker
             -
                 name: id
                 types:
@@ -3980,6 +4018,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be document'
+                default: document
             -
                 name: id
                 types:
@@ -4045,6 +4084,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: id
                 types:
@@ -4110,6 +4150,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be voice'
+                default: voice
             -
                 name: id
                 types:
@@ -4169,6 +4210,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be audio'
+                default: audio
             -
                 name: id
                 types:
@@ -4420,6 +4462,7 @@ types:
                     - int
                 optional: true
                 description: 'Optional. The maximum accepted amount for tips in the smallest units of the currency (integer, not float/double). For example, for a maximum tip of US$ 1.45 pass max_tip_amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies). Defaults to 0'
+                default: 0
             -
                 name: suggested_tip_amounts
                 types:
@@ -4960,6 +5003,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be data'
+                default: data
             -
                 name: type
                 types:
@@ -4995,6 +5039,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be front_side'
+                default: front_side
             -
                 name: type
                 types:
@@ -5024,6 +5069,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be reverse_side'
+                default: reverse_side
             -
                 name: type
                 types:
@@ -5053,6 +5099,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be selfie'
+                default: selfie
             -
                 name: type
                 types:
@@ -5082,6 +5129,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be file'
+                default: file
             -
                 name: type
                 types:
@@ -5111,6 +5159,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be files'
+                default: files
             -
                 name: type
                 types:
@@ -5140,6 +5189,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be translation_file'
+                default: translation_file
             -
                 name: type
                 types:
@@ -5169,6 +5219,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be translation_files'
+                default: translation_files
             -
                 name: type
                 types:
@@ -5198,6 +5249,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be unspecified'
+                default: unspecified
             -
                 name: type
                 types:
@@ -5303,12 +5355,14 @@ methods:
                     - int
                 optional: true
                 description: 'Limits the number of updates to be retrieved. Values between 1-100 are accepted. Defaults to 100.'
+                default: 100
             -
                 name: timeout
                 types:
                     - int
                 optional: true
                 description: 'Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling. Should be positive, short polling should be used for testing purposes only.'
+                default: 0
             -
                 name: allowed_updates
                 types:
@@ -5345,6 +5399,7 @@ methods:
                     - int
                 optional: true
                 description: 'Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot''s server, and higher values to increase your bot''s throughput.'
+                default: 40
             -
                 name: allowed_updates
                 types:
@@ -6132,7 +6187,7 @@ methods:
             -
                 name: media
                 types:
-                    - 'Array<InputMediaAudio, InputMediaDocument, InputMediaPhoto, InputMediaVideo>'
+                    - Array<InputMediaAudio|InputMediaDocument|InputMediaPhoto|InputMediaVideo>
                 optional: false
                 description: 'A JSON-serialized array describing messages to be sent, must include 2-10 items'
             -
@@ -6506,18 +6561,21 @@ methods:
                     - bool
                 optional: true
                 description: 'True, if the poll needs to be anonymous, defaults to True'
+                default: true
             -
                 name: type
                 types:
                     - string
                 optional: true
                 description: 'Poll type, “quiz” or “regular”, defaults to “regular”'
+                default: regular
             -
                 name: allows_multiple_answers
                 types:
                     - bool
                 optional: true
                 description: 'True, if the poll allows multiple answers, ignored for polls in quiz mode, defaults to False'
+                default: false
             -
                 name: correct_option_id
                 types:
@@ -6605,7 +6663,8 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Emoji on which the dice throw animation is based. Currently, must be one of “”, “”, “”, “”, “”, or “”. Dice can have values 1-6 for “”, “” and “”, values 1-5 for “” and “”, and values 1-64 for “”. Defaults to “”'
+                description: 'Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, “🎳”, or “🎰”. Dice can have values 1-6 for “🎲”, “🎯” and “🎳”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”'
+                default: 🎲
             -
                 name: disable_notification
                 types:
@@ -6676,6 +6735,7 @@ methods:
                     - int
                 optional: true
                 description: 'Limits the number of photos to be retrieved. Values between 1-100 are accepted. Defaults to 100.'
+                default: 100
         return_types:
             - UserProfilePhotos
     -
@@ -7308,6 +7368,7 @@ methods:
                     - bool
                 optional: true
                 description: 'If True, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false.'
+                default: false
             -
                 name: url
                 types:
@@ -7320,6 +7381,7 @@ methods:
                     - int
                 optional: true
                 description: 'The maximum amount of time in seconds that the result of the callback query may be cached client-side. Telegram apps will support caching starting in version 3.14. Defaults to 0.'
+                default: 0
         return_types:
             - bool
     -
@@ -7338,6 +7400,7 @@ methods:
                     - BotCommandScope
                 optional: true
                 description: 'A JSON-serialized object, describing scope of users for which the commands are relevant. Defaults to BotCommandScopeDefault.'
+                default: BotCommandScopeDefault
             -
                 name: language_code
                 types:
@@ -7356,6 +7419,7 @@ methods:
                     - BotCommandScope
                 optional: true
                 description: 'A JSON-serialized object, describing scope of users for which the commands are relevant. Defaults to BotCommandScopeDefault.'
+                default: BotCommandScopeDefault
             -
                 name: language_code
                 types:
@@ -7374,6 +7438,7 @@ methods:
                     - BotCommandScope
                 optional: true
                 description: 'A JSON-serialized object, describing scope of users. Defaults to BotCommandScopeDefault.'
+                default: BotCommandScopeDefault
             -
                 name: language_code
                 types:
@@ -7854,6 +7919,7 @@ methods:
                     - int
                 optional: true
                 description: 'The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.'
+                default: 300
             -
                 name: is_personal
                 types:
@@ -7933,6 +7999,7 @@ methods:
                     - int
                 optional: true
                 description: 'The maximum accepted amount for tips in the smallest units of the currency (integer, not float/double). For example, for a maximum tip of US$ 1.45 pass max_tip_amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies). Defaults to 0'
+                default: 0
             -
                 name: suggested_tip_amounts
                 types:

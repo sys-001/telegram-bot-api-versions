@@ -29,7 +29,8 @@
                             "key": "limit",
                             "disabled": true,
                             "description": "Optional. Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "100"
                         },
                         {
                             "key": "timeout",
@@ -84,7 +85,8 @@
                             "key": "max_connections",
                             "disabled": true,
                             "description": "Optional. Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot‘s server, and higher values to increase your bot’s throughput.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "40"
                         },
                         {
                             "key": "allowed_updates",
@@ -1368,7 +1370,8 @@
                             "key": "limit",
                             "disabled": true,
                             "description": "Optional. Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "100"
                         }
                     ]
                 },
@@ -2892,7 +2895,8 @@
                             "key": "cache_time",
                             "disabled": true,
                             "description": "Optional. The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "300"
                         },
                         {
                             "key": "is_personal",

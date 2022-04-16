@@ -460,16 +460,20 @@
                         }
                     },
                     "delete_chat_photo": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": true
                     },
                     "group_chat_created": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": true
                     },
                     "supergroup_chat_created": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": true
                     },
                     "channel_chat_created": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": true
                     },
                     "migrate_to_chat_id": {
                         "type": "integer"
@@ -1010,7 +1014,8 @@
                 ],
                 "properties": {
                     "remove_keyboard": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": true
                     },
                     "selective": {
                         "type": "boolean"
@@ -1129,7 +1134,8 @@
                 ],
                 "properties": {
                     "force_reply": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": true
                     },
                     "selective": {
                         "type": "boolean"
@@ -1298,7 +1304,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "photo"
                     },
                     "media": {
                         "type": "string"
@@ -1320,7 +1327,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "video"
                     },
                     "media": {
                         "type": "string"
@@ -1364,7 +1372,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "animation"
                     },
                     "media": {
                         "type": "string"
@@ -1405,7 +1414,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "audio"
                     },
                     "media": {
                         "type": "string"
@@ -1446,7 +1456,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "document"
                     },
                     "media": {
                         "type": "string"
@@ -1674,7 +1685,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "article"
                     },
                     "id": {
                         "type": "string"
@@ -1719,7 +1731,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "photo"
                     },
                     "id": {
                         "type": "string"
@@ -1767,7 +1780,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "gif"
                     },
                     "id": {
                         "type": "string"
@@ -1815,7 +1829,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "mpeg4_gif"
                     },
                     "id": {
                         "type": "string"
@@ -1865,7 +1880,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "video"
                     },
                     "id": {
                         "type": "string"
@@ -1919,7 +1935,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "audio"
                     },
                     "id": {
                         "type": "string"
@@ -1961,7 +1978,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "voice"
                     },
                     "id": {
                         "type": "string"
@@ -2001,7 +2019,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "document"
                     },
                     "id": {
                         "type": "string"
@@ -2053,7 +2072,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "location"
                     },
                     "id": {
                         "type": "string"
@@ -2100,7 +2120,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "venue"
                     },
                     "id": {
                         "type": "string"
@@ -2151,7 +2172,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "contact"
                     },
                     "id": {
                         "type": "string"
@@ -2195,7 +2217,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "game"
                     },
                     "id": {
                         "type": "string"
@@ -2218,7 +2241,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "photo"
                     },
                     "id": {
                         "type": "string"
@@ -2256,7 +2280,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "gif"
                     },
                     "id": {
                         "type": "string"
@@ -2291,7 +2316,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "mpeg4_gif"
                     },
                     "id": {
                         "type": "string"
@@ -2326,7 +2352,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "sticker"
                     },
                     "id": {
                         "type": "string"
@@ -2353,7 +2380,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "document"
                     },
                     "id": {
                         "type": "string"
@@ -2392,7 +2420,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "video"
                     },
                     "id": {
                         "type": "string"
@@ -2431,7 +2460,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "voice"
                     },
                     "id": {
                         "type": "string"
@@ -2466,7 +2496,8 @@
                 ],
                 "properties": {
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "audio"
                     },
                     "id": {
                         "type": "string"
@@ -2982,7 +3013,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "data"
                     },
                     "type": {
                         "type": "string"
@@ -3009,7 +3041,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "front_side"
                     },
                     "type": {
                         "type": "string"
@@ -3033,7 +3066,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "reverse_side"
                     },
                     "type": {
                         "type": "string"
@@ -3057,7 +3091,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "selfie"
                     },
                     "type": {
                         "type": "string"
@@ -3081,7 +3116,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "file"
                     },
                     "type": {
                         "type": "string"
@@ -3105,7 +3141,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "files"
                     },
                     "type": {
                         "type": "string"
@@ -3132,7 +3169,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "translation_file"
                     },
                     "type": {
                         "type": "string"
@@ -3156,7 +3194,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "translation_files"
                     },
                     "type": {
                         "type": "string"
@@ -3183,7 +3222,8 @@
                 ],
                 "properties": {
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "unspecified"
                     },
                     "type": {
                         "type": "string"
@@ -3272,7 +3312,8 @@
                                         "type": "integer"
                                     },
                                     "limit": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 100
                                     },
                                     "timeout": {
                                         "type": "integer"
@@ -3294,7 +3335,8 @@
                                         "type": "integer"
                                     },
                                     "limit": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 100
                                     },
                                     "timeout": {
                                         "type": "integer"
@@ -3316,7 +3358,8 @@
                                         "type": "integer"
                                     },
                                     "limit": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 100
                                     },
                                     "timeout": {
                                         "type": "integer"
@@ -3405,7 +3448,8 @@
                                         "$ref": "#/components/schemas/InputFile"
                                     },
                                     "max_connections": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 40
                                     },
                                     "allowed_updates": {
                                         "type": "array",
@@ -3430,7 +3474,8 @@
                                         "$ref": "#/components/schemas/InputFile"
                                     },
                                     "max_connections": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 40
                                     },
                                     "allowed_updates": {
                                         "type": "array",
@@ -3455,7 +3500,8 @@
                                         "$ref": "#/components/schemas/InputFile"
                                     },
                                     "max_connections": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 40
                                     },
                                     "allowed_updates": {
                                         "type": "array",
@@ -7238,10 +7284,12 @@
                                         }
                                     },
                                     "is_anonymous": {
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "default": true
                                     },
                                     "type": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "default": "regular"
                                     },
                                     "allows_multiple_answers": {
                                         "type": "boolean"
@@ -7306,10 +7354,12 @@
                                         }
                                     },
                                     "is_anonymous": {
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "default": true
                                     },
                                     "type": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "default": "regular"
                                     },
                                     "allows_multiple_answers": {
                                         "type": "boolean"
@@ -7374,10 +7424,12 @@
                                         }
                                     },
                                     "is_anonymous": {
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "default": true
                                     },
                                     "type": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "default": "regular"
                                     },
                                     "allows_multiple_answers": {
                                         "type": "boolean"
@@ -7615,7 +7667,8 @@
                                         "type": "integer"
                                     },
                                     "limit": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 100
                                     }
                                 }
                             }
@@ -7634,7 +7687,8 @@
                                         "type": "integer"
                                     },
                                     "limit": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 100
                                     }
                                 }
                             }
@@ -7653,7 +7707,8 @@
                                         "type": "integer"
                                     },
                                     "limit": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 100
                                     }
                                 }
                             }
@@ -12478,7 +12533,8 @@
                                         }
                                     },
                                     "cache_time": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 300
                                     },
                                     "is_personal": {
                                         "type": "boolean"
@@ -12513,7 +12569,8 @@
                                         }
                                     },
                                     "cache_time": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 300
                                     },
                                     "is_personal": {
                                         "type": "boolean"
@@ -12548,7 +12605,8 @@
                                         }
                                     },
                                     "cache_time": {
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "default": 300
                                     },
                                     "is_personal": {
                                         "type": "boolean"
@@ -13041,9 +13099,7 @@
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {
-                                                    "type": "boolean"
-                                                }
+                                                "result": []
                                             }
                                         }
                                     ]
@@ -13159,9 +13215,7 @@
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {
-                                                    "type": "boolean"
-                                                }
+                                                "result": []
                                             }
                                         }
                                     ]

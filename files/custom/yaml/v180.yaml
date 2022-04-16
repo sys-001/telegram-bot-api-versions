@@ -5,6 +5,12 @@ types:
         description: 'This object represents an incoming update.Only one of the optional parameters can be present in any given update.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: update_id
                 types:
                     - int
@@ -27,6 +33,12 @@ types:
         name: User
         description: 'This object represents a Telegram user or bot.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: id
                 types:
@@ -56,6 +68,12 @@ types:
         name: Chat
         description: 'This object represents a chat.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: id
                 types:
@@ -97,6 +115,12 @@ types:
         name: Message
         description: 'This object represents a message.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: message_id
                 types:
@@ -229,24 +253,28 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the chat photo was deleted'
+                default: true
             -
                 name: group_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the group has been created'
+                default: true
             -
                 name: supergroup_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the supergroup has been created'
+                default: true
             -
                 name: channel_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the channel has been created'
+                default: true
             -
                 name: migrate_to_chat_id
                 types:
@@ -264,6 +292,12 @@ types:
         name: PhotoSize
         description: 'This object represents one size of a photo or a file / sticker thumbnail.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: file_id
                 types:
@@ -293,6 +327,12 @@ types:
         name: Audio
         description: 'This object represents an audio file to be treated as music by the Telegram clients.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: file_id
                 types:
@@ -335,6 +375,12 @@ types:
         description: 'This object represents a general file (as opposed to photos, voice messages and audio files).'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: file_id
                 types:
                     - string
@@ -370,6 +416,12 @@ types:
         description: 'This object represents a sticker.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: file_id
                 types:
                     - string
@@ -404,6 +456,12 @@ types:
         name: Video
         description: 'This object represents a video file.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: file_id
                 types:
@@ -452,6 +510,12 @@ types:
         description: 'This object represents a voice note.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: file_id
                 types:
                     - string
@@ -480,6 +544,12 @@ types:
         name: Contact
         description: 'This object represents a phone contact.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: phone_number
                 types:
@@ -510,6 +580,12 @@ types:
         description: 'This object represents a point on the map.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: longitude
                 types:
                     - float
@@ -527,6 +603,12 @@ types:
         description: 'This object represent a user''s profile pictures.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: total_count
                 types:
                     - int
@@ -543,6 +625,12 @@ types:
         name: File
         description: 'This object represents a file ready to be downloaded. The file can be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: file_id
                 types:
@@ -567,6 +655,12 @@ types:
         description: 'This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: keyboard
                 types:
                     - Array<Array<string>>
@@ -578,12 +672,14 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app''s standard keyboard.'
+                default: false
             -
                 name: one_time_keyboard
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Requests clients to hide the keyboard as soon as it''s been used. Defaults to false.'
+                default: false
             -
                 name: selective
                 types:
@@ -596,11 +692,18 @@ types:
         description: 'Upon receiving a message with this object, Telegram clients will hide the current custom keyboard and display the default letter-keyboard. By default, custom keyboards are displayed until a new keyboard is sent by a bot. An exception is made for one-time keyboards that are hidden immediately after the user presses a button (see ReplyKeyboardMarkup).'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: hide_keyboard
                 types:
                     - bool
                 optional: false
                 description: 'Requests clients to hide the custom keyboard'
+                default: true
             -
                 name: selective
                 types:
@@ -613,11 +716,18 @@ types:
         description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: force_reply
                 types:
                     - bool
                 optional: false
                 description: 'Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'''
+                default: true
             -
                 name: selective
                 types:
@@ -634,6 +744,12 @@ types:
         name: InlineQuery
         description: 'This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results.'
         fields:
+            -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
             -
                 name: id
                 types:
@@ -674,11 +790,18 @@ types:
         description: 'Represents a link to an article or web page.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: type
                 types:
                     - string
                 optional: false
                 description: 'Type of the result, must be article'
+                default: article
             -
                 name: id
                 types:
@@ -751,11 +874,18 @@ types:
         description: 'Represents a link to a photo. By default, this photo will be sent by the user with optional caption. Alternatively, you can provide message_text to send it instead of photo.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: type
                 types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: id
                 types:
@@ -828,11 +958,18 @@ types:
         description: 'Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can provide message_text to send it instead of the animation.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: type
                 types:
                     - string
                 optional: false
                 description: 'Type of the result, must be gif'
+                default: gif
             -
                 name: id
                 types:
@@ -899,11 +1036,18 @@ types:
         description: 'Represents a link to a video animation (H.264/MPEG-4 AVC video without sound). By default, this animated MPEG-4 file will be sent by the user with optional caption. Alternatively, you can provide message_text to send it instead of the animation.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: type
                 types:
                     - string
                 optional: false
                 description: 'Type of the result, must be mpeg4_gif'
+                default: mpeg4_gif
             -
                 name: id
                 types:
@@ -970,11 +1114,18 @@ types:
         description: 'Represents link to a page containing an embedded video player or a video file.'
         fields:
             -
+                name: Field
+                types:
+                    - Type
+                optional: false
+                description: Description
+            -
                 name: type
                 types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: id
                 types:
@@ -1054,6 +1205,12 @@ methods:
         description: 'Use this method to receive incoming updates using long polling (wiki). An Array of Update objects is returned.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: offset
                 types:
                     - int
@@ -1065,18 +1222,26 @@ methods:
                     - int
                 optional: true
                 description: 'Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100'
+                default: 100
             -
                 name: timeout
                 types:
                     - int
                 optional: true
                 description: 'Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling'
+                default: 0
         return_types:
             - Array<Update>
     -
         name: setWebhook
         description: "Use this method to specify a url and receive incoming updates via an outgoing webhook. Whenever there is an update for the bot, we will send an HTTPS POST request to the specified url, containing a JSON-serialized Update. In case of an unsuccessful request, we will give up after a reasonable amount of attempts.\nIf you'd like to make sure that the Webhook request comes from Telegram, we recommend using a secret path in the URL, e.g. https://www.example.com/<token>. Since nobody else knows your bot‘s token, you can be pretty sure it’s us."
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: url
                 types:
@@ -1100,6 +1265,12 @@ methods:
         name: sendMessage
         description: 'Use this method to send text messages. On success, the sent Message is returned.'
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: chat_id
                 types:
@@ -1146,6 +1317,12 @@ methods:
         description: 'Use this method to forward messages of any kind. On success, the sent Message is returned.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: chat_id
                 types:
                     - int
@@ -1171,6 +1348,12 @@ methods:
         name: sendPhoto
         description: 'Use this method to send photos. On success, the sent Message is returned.'
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: chat_id
                 types:
@@ -1211,6 +1394,12 @@ methods:
         name: sendAudio
         description: "Use this method to send audio files, if you want Telegram clients to display them in the music player. Your audio must be in the .mp3 format. On success, the sent Message is returned. Bots can currently send audio files of up to 50 MB in size, this limit may be changed in the future.\nFor backward compatibility, when the fields title and performer are both empty and the mime-type of the file to be sent is not audio/mpeg, the file will be sent as a playable voice message. For this to work, the audio must be in an .ogg file encoded with OPUS. This behavior will be phased out in the future. For sending voice messages, use the sendVoice method instead."
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: chat_id
                 types:
@@ -1264,6 +1453,12 @@ methods:
         description: 'Use this method to send general files. On success, the sent Message is returned. Bots can currently send files of any type of up to 50 MB in size, this limit may be changed in the future.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: chat_id
                 types:
                     - int
@@ -1298,6 +1493,12 @@ methods:
         description: 'Use this method to send .webp stickers. On success, the sent Message is returned.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: chat_id
                 types:
                     - int
@@ -1331,6 +1532,12 @@ methods:
         name: sendVideo
         description: 'Use this method to send video files, Telegram clients support mp4 videos (other formats may be sent as Document). On success, the sent Message is returned. Bots can currently send video files of up to 50 MB in size, this limit may be changed in the future.'
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: chat_id
                 types:
@@ -1378,6 +1585,12 @@ methods:
         description: 'Use this method to send audio files, if you want Telegram clients to display the file as a playable voice message. For this to work, your audio must be in an .ogg file encoded with OPUS (other formats may be sent as Audio or Document). On success, the sent Message is returned. Bots can currently send voice messages of up to 50 MB in size, this limit may be changed in the future.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: chat_id
                 types:
                     - int
@@ -1418,6 +1631,12 @@ methods:
         description: 'Use this method to send point on the map. On success, the sent Message is returned.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: chat_id
                 types:
                     - int
@@ -1454,8 +1673,14 @@ methods:
             - Message
     -
         name: sendChatAction
-        description: "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). \nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
+        description: "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status).\nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: chat_id
                 types:
@@ -1475,6 +1700,12 @@ methods:
         description: 'Use this method to get a list of profile pictures for a user. Returns a UserProfilePhotos object.'
         fields:
             -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
+            -
                 name: user_id
                 types:
                     - int
@@ -1492,12 +1723,19 @@ methods:
                     - int
                 optional: true
                 description: 'Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.'
+                default: 100
         return_types:
             - UserProfilePhotos
     -
         name: getFile
         description: 'Use this method to get basic info about a file and prepare it for downloading. For the moment, bots can download files of up to 20MB in size. On success, a File object is returned. The file can then be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>, where <file_path> is taken from the response. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile again.'
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: file_id
                 types:
@@ -1510,6 +1748,12 @@ methods:
         name: answerInlineQuery
         description: 'Use this method to send answers to an inline query. On success, True is returned.No more than 50 results per query are allowed.'
         fields:
+            -
+                name: Parameters
+                types:
+                    - Type
+                optional: true
+                description: Description
             -
                 name: inline_query_id
                 types:
@@ -1528,6 +1772,7 @@ methods:
                     - int
                 optional: true
                 description: 'The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.'
+                default: 300
             -
                 name: is_personal
                 types:

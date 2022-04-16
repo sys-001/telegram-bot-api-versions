@@ -104,8 +104,11 @@ components:
         Update:
             description: 'This object represents an incoming update.Only one of the optional parameters can be present in any given update.'
             required:
+                - Field
                 - update_id
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 update_id:
                     type: integer
                 message:
@@ -118,9 +121,12 @@ components:
         User:
             description: 'This object represents a Telegram user or bot.'
             required:
+                - Field
                 - id
                 - first_name
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 id:
                     type: integer
                 first_name:
@@ -133,9 +139,12 @@ components:
         Chat:
             description: 'This object represents a chat.'
             required:
+                - Field
                 - id
                 - type
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 id:
                     type: integer
                 type:
@@ -152,10 +161,13 @@ components:
         Message:
             description: 'This object represents a message.'
             required:
+                - Field
                 - message_id
                 - date
                 - chat
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 message_id:
                     type: integer
                 from:
@@ -204,12 +216,16 @@ components:
                         $ref: '#/components/schemas/PhotoSize'
                 delete_chat_photo:
                     type: boolean
+                    default: true
                 group_chat_created:
                     type: boolean
+                    default: true
                 supergroup_chat_created:
                     type: boolean
+                    default: true
                 channel_chat_created:
                     type: boolean
+                    default: true
                 migrate_to_chat_id:
                     type: integer
                 migrate_from_chat_id:
@@ -218,10 +234,13 @@ components:
         PhotoSize:
             description: 'This object represents one size of a photo or a file / sticker thumbnail.'
             required:
+                - Field
                 - file_id
                 - width
                 - height
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 width:
@@ -234,9 +253,12 @@ components:
         Audio:
             description: 'This object represents an audio file to be treated as music by the Telegram clients.'
             required:
+                - Field
                 - file_id
                 - duration
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 duration:
@@ -253,8 +275,11 @@ components:
         Document:
             description: 'This object represents a general file (as opposed to photos, voice messages and audio files).'
             required:
+                - Field
                 - file_id
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 thumb:
@@ -269,10 +294,13 @@ components:
         Sticker:
             description: 'This object represents a sticker.'
             required:
+                - Field
                 - file_id
                 - width
                 - height
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 width:
@@ -287,11 +315,14 @@ components:
         Video:
             description: 'This object represents a video file.'
             required:
+                - Field
                 - file_id
                 - width
                 - height
                 - duration
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 width:
@@ -310,9 +341,12 @@ components:
         Voice:
             description: 'This object represents a voice note.'
             required:
+                - Field
                 - file_id
                 - duration
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 duration:
@@ -325,9 +359,12 @@ components:
         Contact:
             description: 'This object represents a phone contact.'
             required:
+                - Field
                 - phone_number
                 - first_name
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 phone_number:
                     type: string
                 first_name:
@@ -340,9 +377,12 @@ components:
         Location:
             description: 'This object represents a point on the map.'
             required:
+                - Field
                 - longitude
                 - latitude
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 longitude:
                     type: number
                 latitude:
@@ -351,9 +391,12 @@ components:
         UserProfilePhotos:
             description: 'This object represent a user''s profile pictures.'
             required:
+                - Field
                 - total_count
                 - photos
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 total_count:
                     type: integer
                 photos:
@@ -366,8 +409,11 @@ components:
         File:
             description: 'This object represents a file ready to be downloaded. The file can be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling getFile.'
             required:
+                - Field
                 - file_id
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 file_id:
                     type: string
                 file_size:
@@ -378,8 +424,11 @@ components:
         ReplyKeyboardMarkup:
             description: 'This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).'
             required:
+                - Field
                 - keyboard
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 keyboard:
                     type: array
                     items:
@@ -396,20 +445,28 @@ components:
         ReplyKeyboardHide:
             description: 'Upon receiving a message with this object, Telegram clients will hide the current custom keyboard and display the default letter-keyboard. By default, custom keyboards are displayed until a new keyboard is sent by a bot. An exception is made for one-time keyboards that are hidden immediately after the user presses a button (see ReplyKeyboardMarkup).'
             required:
+                - Field
                 - hide_keyboard
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 hide_keyboard:
                     type: boolean
+                    default: true
                 selective:
                     type: boolean
             type: object
         ForceReply:
             description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
             required:
+                - Field
                 - force_reply
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 force_reply:
                     type: boolean
+                    default: true
                 selective:
                     type: boolean
             type: object
@@ -419,11 +476,14 @@ components:
         InlineQuery:
             description: 'This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results.'
             required:
+                - Field
                 - id
                 - from
                 - query
                 - offset
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 id:
                     type: string
                 from:
@@ -449,13 +509,17 @@ components:
         InlineQueryResultArticle:
             description: 'Represents a link to an article or web page.'
             required:
+                - Field
                 - type
                 - id
                 - title
                 - message_text
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 type:
                     type: string
+                    default: article
                 id:
                     type: string
                 title:
@@ -482,13 +546,17 @@ components:
         InlineQueryResultPhoto:
             description: 'Represents a link to a photo. By default, this photo will be sent by the user with optional caption. Alternatively, you can provide message_text to send it instead of photo.'
             required:
+                - Field
                 - type
                 - id
                 - photo_url
                 - thumb_url
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 type:
                     type: string
+                    default: photo
                 id:
                     type: string
                 photo_url:
@@ -515,13 +583,17 @@ components:
         InlineQueryResultGif:
             description: 'Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can provide message_text to send it instead of the animation.'
             required:
+                - Field
                 - type
                 - id
                 - gif_url
                 - thumb_url
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 type:
                     type: string
+                    default: gif
                 id:
                     type: string
                 gif_url:
@@ -546,13 +618,17 @@ components:
         InlineQueryResultMpeg4Gif:
             description: 'Represents a link to a video animation (H.264/MPEG-4 AVC video without sound). By default, this animated MPEG-4 file will be sent by the user with optional caption. Alternatively, you can provide message_text to send it instead of the animation.'
             required:
+                - Field
                 - type
                 - id
                 - mpeg4_url
                 - thumb_url
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 type:
                     type: string
+                    default: mpeg4_gif
                 id:
                     type: string
                 mpeg4_url:
@@ -577,6 +653,7 @@ components:
         InlineQueryResultVideo:
             description: 'Represents link to a page containing an embedded video player or a video file.'
             required:
+                - Field
                 - type
                 - id
                 - video_url
@@ -585,8 +662,11 @@ components:
                 - thumb_url
                 - title
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 type:
                     type: string
+                    default: video
                 id:
                     type: string
                 video_url:
@@ -615,10 +695,13 @@ components:
         ChosenInlineResult:
             description: 'This object represents a result of an inline query that was chosen by the user and sent to their chat partner.'
             required:
+                - Field
                 - result_id
                 - from
                 - query
             properties:
+                Field:
+                    $ref: '#/components/schemas/Type'
                 result_id:
                     type: string
                 from:
@@ -636,30 +719,39 @@ paths:
                         schema:
                             type: object
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 offset:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                                 timeout:
                                     type: integer
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 offset:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                                 timeout:
                                     type: integer
                     multipart/form-data:
                         schema:
                             type: object
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 offset:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
                                 timeout:
                                     type: integer
             responses:
@@ -703,6 +795,8 @@ paths:
                         schema:
                             type: object
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 url:
                                     type: string
                                 certificate:
@@ -711,6 +805,8 @@ paths:
                         schema:
                             type: object
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 url:
                                     type: string
                                 certificate:
@@ -719,6 +815,8 @@ paths:
                         schema:
                             type: object
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 url:
                                     type: string
                                 certificate:
@@ -805,10 +903,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - text
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -833,13 +930,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - text
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - text
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -864,13 +963,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - text
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - text
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -895,6 +996,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - text
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -934,11 +1038,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - from_chat_id
-                                - message_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -955,14 +1057,16 @@ paths:
                                     type: boolean
                                 message_id:
                                     type: integer
+                            required:
+                                - chat_id
+                                - from_chat_id
+                                - message_id
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - from_chat_id
-                                - message_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -979,14 +1083,16 @@ paths:
                                     type: boolean
                                 message_id:
                                     type: integer
+                            required:
+                                - chat_id
+                                - from_chat_id
+                                - message_id
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - from_chat_id
-                                - message_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1003,6 +1109,10 @@ paths:
                                     type: boolean
                                 message_id:
                                     type: integer
+                            required:
+                                - chat_id
+                                - from_chat_id
+                                - message_id
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1042,10 +1152,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - photo
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1072,13 +1181,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - photo
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - photo
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1105,13 +1216,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - photo
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - photo
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1138,6 +1251,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - photo
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1177,10 +1293,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - audio
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1211,13 +1326,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - audio
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - audio
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1248,13 +1365,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - audio
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - audio
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1285,6 +1404,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - audio
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1324,10 +1446,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - document
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1354,13 +1475,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - document
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - document
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1387,13 +1510,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - document
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - document
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1420,6 +1545,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - document
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1459,10 +1587,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - sticker
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1487,13 +1614,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - sticker
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - sticker
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1518,13 +1647,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - sticker
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - sticker
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1549,6 +1680,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - sticker
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1588,10 +1722,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - video
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1624,13 +1757,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - video
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - video
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1663,13 +1798,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - video
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - video
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1702,6 +1839,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - video
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1741,10 +1881,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - voice
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1771,13 +1910,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - voice
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - voice
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1804,13 +1945,15 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - voice
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - voice
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1837,6 +1980,9 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - voice
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1876,11 +2022,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - latitude
-                                - longitude
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1903,14 +2047,16 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - latitude
+                                - longitude
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - latitude
-                                - longitude
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1933,14 +2079,16 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - latitude
+                                - longitude
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - latitude
-                                - longitude
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -1963,6 +2111,10 @@ paths:
                                             $ref: '#/components/schemas/ReplyKeyboardHide'
                                         -
                                             $ref: '#/components/schemas/ForceReply'
+                            required:
+                                - chat_id
+                                - latitude
+                                - longitude
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -1994,7 +2146,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /sendChatAction:
-        description: "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). \nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
+        description: "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status).\nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
         post:
             requestBody:
                 required: true
@@ -2002,10 +2154,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - action
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -2014,13 +2165,15 @@ paths:
                                             type: string
                                 action:
                                     type: string
+                            required:
+                                - chat_id
+                                - action
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - action
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -2029,13 +2182,15 @@ paths:
                                             type: string
                                 action:
                                     type: string
+                            required:
+                                - chat_id
+                                - action
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - chat_id
-                                - action
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 chat_id:
                                     anyOf:
                                         -
@@ -2044,6 +2199,9 @@ paths:
                                             type: string
                                 action:
                                     type: string
+                            required:
+                                - chat_id
+                                - action
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -2082,39 +2240,48 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - user_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 user_id:
                                     type: integer
                                 offset:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
+                            required:
+                                - user_id
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - user_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 user_id:
                                     type: integer
                                 offset:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
+                            required:
+                                - user_id
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - user_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 user_id:
                                     type: integer
                                 offset:
                                     type: integer
                                 limit:
                                     type: integer
+                                    default: 100
+                            required:
+                                - user_id
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -2154,27 +2321,33 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - file_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 file_id:
                                     type: string
+                            required:
+                                - file_id
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - file_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 file_id:
                                     type: string
+                            required:
+                                - file_id
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - file_id
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 file_id:
                                     type: string
+                            required:
+                                - file_id
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'
@@ -2214,10 +2387,9 @@ paths:
                     application/json:
                         schema:
                             type: object
-                            required:
-                                - inline_query_id
-                                - results
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 inline_query_id:
                                     type: string
                                 results:
@@ -2226,17 +2398,20 @@ paths:
                                         $ref: '#/components/schemas/InlineQueryResult'
                                 cache_time:
                                     type: integer
+                                    default: 300
                                 is_personal:
                                     type: boolean
                                 next_offset:
                                     type: string
+                            required:
+                                - inline_query_id
+                                - results
                     application/x-www-form-urlencoded:
                         schema:
                             type: object
-                            required:
-                                - inline_query_id
-                                - results
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 inline_query_id:
                                     type: string
                                 results:
@@ -2245,17 +2420,20 @@ paths:
                                         $ref: '#/components/schemas/InlineQueryResult'
                                 cache_time:
                                     type: integer
+                                    default: 300
                                 is_personal:
                                     type: boolean
                                 next_offset:
                                     type: string
+                            required:
+                                - inline_query_id
+                                - results
                     multipart/form-data:
                         schema:
                             type: object
-                            required:
-                                - inline_query_id
-                                - results
                             properties:
+                                Parameters:
+                                    $ref: '#/components/schemas/Type'
                                 inline_query_id:
                                     type: string
                                 results:
@@ -2264,10 +2442,14 @@ paths:
                                         $ref: '#/components/schemas/InlineQueryResult'
                                 cache_time:
                                     type: integer
+                                    default: 300
                                 is_personal:
                                     type: boolean
                                 next_offset:
                                     type: string
+                            required:
+                                - inline_query_id
+                                - results
             responses:
                 200:
                     description: 'Request was successful, the result is returned.'

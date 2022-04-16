@@ -20,6 +20,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "offset",
                             "disabled": true,
                             "description": "Optional. Identifier of the first update to be returned. Must be greater by one than the highest among the identifiers of previously received updates. By default, updates starting with the earliest unconfirmed update are returned. An update is considered confirmed as soon as getUpdates is called with an offset higher than its update_id. The negative offset can be specified to retrieve updates starting from -offset update from the end of the updates queue. All previous updates will forgotten.",
@@ -29,7 +35,8 @@
                             "key": "limit",
                             "disabled": true,
                             "description": "Optional. Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "100"
                         },
                         {
                             "key": "timeout",
@@ -62,6 +69,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "url",
                             "disabled": true,
@@ -148,6 +161,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -215,6 +234,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -263,6 +288,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -324,6 +355,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -404,6 +441,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -465,6 +508,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -519,6 +568,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -599,6 +654,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -666,6 +727,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -726,6 +793,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -806,6 +879,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -873,6 +952,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -899,7 +984,7 @@
                         "sendChatAction"
                     ]
                 },
-                "description": "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). \nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
+                "description": "Use this method when you need to tell the user that something is happening on the bot's side. The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status).\nWe only recommend using this method when a response from the bot will take a noticeable amount of time to arrive."
             }
         },
         {
@@ -909,6 +994,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "user_id",
                             "disabled": false,
@@ -925,7 +1016,8 @@
                             "key": "limit",
                             "disabled": true,
                             "description": "Optional. Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "100"
                         }
                     ]
                 },
@@ -952,6 +1044,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "file_id",
                             "disabled": false,
@@ -983,6 +1081,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -1021,6 +1125,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)",
@@ -1051,6 +1161,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -1089,6 +1205,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)",
@@ -1119,6 +1241,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -1151,6 +1279,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": false,
                             "description": "Required. Unique identifier for the target chat or username of the target supergroup or channel (in the format @channelusername)",
@@ -1181,6 +1315,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -1218,6 +1358,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "callback_query_id",
                             "disabled": false,
@@ -1267,6 +1413,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": true,
@@ -1335,6 +1487,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": true,
                             "description": "Optional. Required if inline_message_id is not specified. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -1390,6 +1548,12 @@
                     "mode": "formdata",
                     "formdata": [
                         {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
+                        {
                             "key": "chat_id",
                             "disabled": true,
                             "description": "Optional. Required if inline_message_id is not specified. Unique identifier for the target chat or username of the target channel (in the format @channelusername)",
@@ -1428,7 +1592,7 @@
                         "editMessageReplyMarkup"
                     ]
                 },
-                "description": "Use this method to edit only the reply markup of messages sent by the bot or via the bot (for inline bots). On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned."
+                "description": "Use this method to edit only the reply markup of messages sent by the bot or via the bot (for inline bots).  On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned."
             }
         },
         {
@@ -1438,6 +1602,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "inline_query_id",
                             "disabled": false,
@@ -1454,7 +1624,8 @@
                             "key": "cache_time",
                             "disabled": true,
                             "description": "Optional. The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.",
-                            "type": "text"
+                            "type": "text",
+                            "value": "300"
                         },
                         {
                             "key": "is_personal",
@@ -1505,6 +1676,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "chat_id",
                             "disabled": false,
@@ -1560,6 +1737,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "user_id",
                             "disabled": false,
@@ -1621,6 +1804,12 @@
                 "body": {
                     "mode": "formdata",
                     "formdata": [
+                        {
+                            "key": "Parameters",
+                            "disabled": true,
+                            "description": "Optional. Description",
+                            "type": "text"
+                        },
                         {
                             "key": "user_id",
                             "disabled": false,

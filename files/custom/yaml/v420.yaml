@@ -462,24 +462,28 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the chat photo was deleted'
+                default: true
             -
                 name: group_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the group has been created'
+                default: true
             -
                 name: supergroup_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the supergroup has been created. This field can‘t be received in a message coming through updates, because bot can’t be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.'
+                default: true
             -
                 name: channel_chat_created
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Service message: the channel has been created. This field can‘t be received in a message coming through updates, because bot can’t be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.'
+                default: true
             -
                 name: migrate_to_chat_id
                 types:
@@ -1022,12 +1026,14 @@ types:
                     - bool
                 optional: true
                 description: 'Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app''s standard keyboard.'
+                default: false
             -
                 name: one_time_keyboard
                 types:
                     - bool
                 optional: true
                 description: 'Optional. Requests clients to hide the keyboard as soon as it''s been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false.'
+                default: false
             -
                 name: selective
                 types:
@@ -1068,6 +1074,7 @@ types:
                     - bool
                 optional: false
                 description: 'Requests clients to remove the custom keyboard (user will not be able to summon this keyboard; if you want to hide the keyboard from sight but keep it accessible, use one_time_keyboard in ReplyKeyboardMarkup)'
+                default: true
             -
                 name: selective
                 types:
@@ -1190,6 +1197,7 @@ types:
                     - bool
                 optional: false
                 description: 'Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'''
+                default: true
             -
                 name: selective
                 types:
@@ -1358,6 +1366,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: media
                 types:
@@ -1387,6 +1396,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: media
                 types:
@@ -1447,6 +1457,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be animation'
+                default: animation
             -
                 name: media
                 types:
@@ -1501,6 +1512,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be audio'
+                default: audio
             -
                 name: media
                 types:
@@ -1555,6 +1567,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be document'
+                default: document
             -
                 name: media
                 types:
@@ -1767,6 +1780,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be article'
+                default: article
             -
                 name: id
                 types:
@@ -1838,6 +1852,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: id
                 types:
@@ -1915,6 +1930,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be gif'
+                default: gif
             -
                 name: id
                 types:
@@ -1992,6 +2008,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be mpeg4_gif'
+                default: mpeg4_gif
             -
                 name: id
                 types:
@@ -2069,6 +2086,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: id
                 types:
@@ -2158,6 +2176,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be audio'
+                default: audio
             -
                 name: id
                 types:
@@ -2223,6 +2242,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be voice'
+                default: voice
             -
                 name: id
                 types:
@@ -2282,6 +2302,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be document'
+                default: document
             -
                 name: id
                 types:
@@ -2365,6 +2386,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be location'
+                default: location
             -
                 name: id
                 types:
@@ -2436,6 +2458,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be venue'
+                default: venue
             -
                 name: id
                 types:
@@ -2519,6 +2542,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be contact'
+                default: contact
             -
                 name: id
                 types:
@@ -2590,6 +2614,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be game'
+                default: game
             -
                 name: id
                 types:
@@ -2619,6 +2644,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be photo'
+                default: photo
             -
                 name: id
                 types:
@@ -2678,6 +2704,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be gif'
+                default: gif
             -
                 name: id
                 types:
@@ -2731,6 +2758,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be mpeg4_gif'
+                default: mpeg4_gif
             -
                 name: id
                 types:
@@ -2784,6 +2812,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be sticker'
+                default: sticker
             -
                 name: id
                 types:
@@ -2819,6 +2848,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be document'
+                default: document
             -
                 name: id
                 types:
@@ -2878,6 +2908,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be video'
+                default: video
             -
                 name: id
                 types:
@@ -2937,6 +2968,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be voice'
+                default: voice
             -
                 name: id
                 types:
@@ -2990,6 +3022,7 @@ types:
                     - string
                 optional: false
                 description: 'Type of the result, must be audio'
+                default: audio
             -
                 name: id
                 types:
@@ -3607,6 +3640,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be data'
+                default: data
             -
                 name: type
                 types:
@@ -3642,6 +3676,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be front_side'
+                default: front_side
             -
                 name: type
                 types:
@@ -3671,6 +3706,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be reverse_side'
+                default: reverse_side
             -
                 name: type
                 types:
@@ -3700,6 +3736,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be selfie'
+                default: selfie
             -
                 name: type
                 types:
@@ -3729,6 +3766,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be file'
+                default: file
             -
                 name: type
                 types:
@@ -3758,6 +3796,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be files'
+                default: files
             -
                 name: type
                 types:
@@ -3787,6 +3826,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be translation_file'
+                default: translation_file
             -
                 name: type
                 types:
@@ -3816,6 +3856,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be translation_files'
+                default: translation_files
             -
                 name: type
                 types:
@@ -3845,6 +3886,7 @@ types:
                     - string
                 optional: false
                 description: 'Error source, must be unspecified'
+                default: unspecified
             -
                 name: type
                 types:
@@ -3950,12 +3992,14 @@ methods:
                     - int
                 optional: true
                 description: 'Limits the number of updates to be retrieved. Values between 1—100 are accepted. Defaults to 100.'
+                default: 100
             -
                 name: timeout
                 types:
                     - int
                 optional: true
                 description: 'Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling. Should be positive, short polling should be used for testing purposes only.'
+                default: 0
             -
                 name: allowed_updates
                 types:
@@ -3986,6 +4030,7 @@ methods:
                     - int
                 optional: true
                 description: 'Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot‘s server, and higher values to increase your bot’s throughput.'
+                default: 40
             -
                 name: allowed_updates
                 types:
@@ -4582,7 +4627,7 @@ methods:
             -
                 name: media
                 types:
-                    - 'Array<InputMediaPhoto, InputMediaVideo>'
+                    - Array<InputMediaPhoto|InputMediaVideo>
                 optional: false
                 description: 'A JSON-serialized array describing photos and videos to be sent, must include 2–10 items'
             -
@@ -4942,6 +4987,7 @@ methods:
                     - int
                 optional: true
                 description: 'Limits the number of photos to be retrieved. Values between 1—100 are accepted. Defaults to 100.'
+                default: 100
         return_types:
             - UserProfilePhotos
     -
@@ -5362,6 +5408,7 @@ methods:
                     - bool
                 optional: true
                 description: 'If true, an alert will be shown by the client instead of a notification at the top of the chat screen. Defaults to false.'
+                default: false
             -
                 name: url
                 types:
@@ -5374,6 +5421,7 @@ methods:
                     - int
                 optional: true
                 description: 'The maximum amount of time in seconds that the result of the callback query may be cached client-side. Telegram apps will support caching starting in version 3.14. Defaults to 0.'
+                default: 0
         return_types:
             - bool
     -
@@ -5793,6 +5841,7 @@ methods:
                     - int
                 optional: true
                 description: 'The maximum amount of time in seconds that the result of the inline query may be cached on the server. Defaults to 300.'
+                default: 300
             -
                 name: is_personal
                 types:
@@ -5991,8 +6040,7 @@ methods:
                     - string
                 optional: true
                 description: 'Required if ok is False. Error message in human readable form that explains why it is impossible to complete the order (e.g. "Sorry, delivery to your desired address is unavailable''). Telegram will display this message to the user.'
-        return_types:
-            - bool
+        return_types: {  }
     -
         name: answerPreCheckoutQuery
         description: 'Once the user has confirmed their payment and shipping details, the Bot API sends the final confirmation in the form of an Update with the field pre_checkout_query. Use this method to respond to such pre-checkout queries. On success, True is returned. Note: The Bot API must receive an answer within 10 seconds after the pre-checkout query was sent.'
@@ -6015,8 +6063,7 @@ methods:
                     - string
                 optional: true
                 description: 'Required if ok is False. Error message in human readable form that explains the reason for failure to proceed with the checkout (e.g. "Sorry, somebody just bought the last of our amazing black T-shirts while you were busy filling out your payment details. Please choose a different color or garment!"). Telegram will display this message to the user.'
-        return_types:
-            - bool
+        return_types: {  }
     -
         name: setPassportDataErrors
         description: "Informs a user that some of the Telegram Passport elements they provided contains errors. The user will not be able to re-submit their Passport to you until the errors are fixed (the contents of the field for which you returned the error must change). Returns True on success.\nUse this if the data submitted by the user doesn't satisfy the standards your service requires for any reason. For example, if a birthday date seems invalid, a submitted document is blurry, a scan shows evidence of tampering, etc. Supply some details in the error message to make sure the user knows how to correct the issues."
