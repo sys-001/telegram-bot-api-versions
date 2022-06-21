@@ -169,7 +169,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. IETF language tag of the user''s language'
+                description: "Optional. IETF language tag of the user's language"
         extended_by: {  }
     -
         name: Chat
@@ -829,25 +829,25 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
             -
                 name: user_id
                 types:
                     - int
                 optional: true
-                description: 'Optional. Contact''s user identifier in Telegram'
+                description: "Optional. Contact's user identifier in Telegram"
         extended_by: {  }
     -
         name: Location
@@ -909,7 +909,7 @@ types:
         extended_by: {  }
     -
         name: UserProfilePhotos
-        description: 'This object represent a user''s profile pictures.'
+        description: "This object represent a user's profile pictures."
         fields:
             -
                 name: Field
@@ -980,21 +980,21 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app''s standard keyboard.'
+                description: "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard."
                 default: false
             -
                 name: one_time_keyboard
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Requests clients to hide the keyboard as soon as it''s been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false.'
+                description: "Optional. Requests clients to hide the keyboard as soon as it's been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false."
                 default: false
             -
                 name: selective
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard.'
+                description: "Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard."
         extended_by: {  }
     -
         name: KeyboardButton
@@ -1017,13 +1017,13 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. If True, the user''s phone number will be sent as a contact when the button is pressed. Available in private chats only'
+                description: "Optional. If True, the user's phone number will be sent as a contact when the button is pressed. Available in private chats only"
             -
                 name: request_location
                 types:
                     - bool
                 optional: true
-                description: 'Optional. If True, the user''s current location will be sent when the button is pressed. Available in private chats only'
+                description: "Optional. If True, the user's current location will be sent when the button is pressed. Available in private chats only"
         extended_by: {  }
     -
         name: ReplyKeyboardRemove
@@ -1047,7 +1047,7 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to remove the keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and removes the keyboard for that user, while still showing the keyboard with poll options to users who haven''t voted yet.'
+                description: "Optional. Use this parameter if you want to remove the keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and removes the keyboard for that user, while still showing the keyboard with poll options to users who haven't voted yet."
         extended_by: {  }
     -
         name: InlineKeyboardMarkup
@@ -1105,7 +1105,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. If set, pressing the button will insert the bot‘s username and the specified inline query in the current chat''s input field. Can be empty, in which case only the bot’s username will be inserted.This offers a quick way for the user to open your bot in inline mode in the same chat – good for selecting something from multiple options.'
+                description: "Optional. If set, pressing the button will insert the bot‘s username and the specified inline query in the current chat's input field. Can be empty, in which case only the bot’s username will be inserted.This offers a quick way for the user to open your bot in inline mode in the same chat – good for selecting something from multiple options."
             -
                 name: callback_game
                 types:
@@ -1174,7 +1174,7 @@ types:
         extended_by: {  }
     -
         name: ForceReply
-        description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
+        description: "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode."
         fields:
             -
                 name: Field
@@ -1187,14 +1187,14 @@ types:
                 types:
                     - bool
                 optional: false
-                description: 'Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'''
+                description: "Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'"
                 default: true
             -
                 name: selective
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.'
+                description: "Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message."
         extended_by: {  }
     -
         name: ChatPhoto
@@ -1240,7 +1240,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat. Can be “creator”, “administrator”, “member”, “restricted”, “left” or “kicked”'
+                description: "The member's status in the chat. Can be “creator”, “administrator”, “member”, “restricted”, “left” or “kicked”"
             -
                 name: until_date
                 types:
@@ -1686,7 +1686,7 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if you don''t want the URL to be shown in the message'
+                description: "Optional. Pass True, if you don't want the URL to be shown in the message"
             -
                 name: description
                 types:
@@ -2436,19 +2436,19 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
             -
                 name: reply_markup
                 types:
@@ -2978,7 +2978,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot''s message.'
+                description: "Optional. Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot's message."
             -
                 name: disable_web_page_preview
                 types:
@@ -3071,19 +3071,19 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
         extended_by: {  }
     -
         name: ChosenInlineResult
@@ -3258,7 +3258,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. User''s phone number'
+                description: "Optional. User's phone number"
             -
                 name: email
                 types:
@@ -3600,7 +3600,7 @@ methods:
                 types:
                     - Array<string>
                 optional: true
-                description: 'List the types of updates you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all updates regardless of type (default). If not specified, the previous setting will be used.Please note that this parameter doesn''t affect updates created before the call to the getUpdates, so unwanted updates may be received for a short period of time.'
+                description: "List the types of updates you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all updates regardless of type (default). If not specified, the previous setting will be used.Please note that this parameter doesn't affect updates created before the call to the getUpdates, so unwanted updates may be received for a short period of time."
         return_types:
             - Array<Update>
     -
@@ -3637,7 +3637,7 @@ methods:
                 types:
                     - Array<string>
                 optional: true
-                description: 'List the types of updates you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all updates regardless of type (default). If not specified, the previous setting will be used.Please note that this parameter doesn''t affect updates created before the call to the setWebhook, so unwanted updates may be received for a short period of time.'
+                description: "List the types of updates you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all updates regardless of type (default). If not specified, the previous setting will be used.Please note that this parameter doesn't affect updates created before the call to the setWebhook, so unwanted updates may be received for a short period of time."
         return_types: {  }
     -
         name: deleteWebhook
@@ -3653,7 +3653,7 @@ methods:
             - WebhookInfo
     -
         name: getMe
-        description: 'A simple method for testing your bot''s auth token. Requires no parameters. Returns basic information about the bot in form of a User object.'
+        description: "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object."
         fields: {  }
         return_types:
             - User
@@ -3685,7 +3685,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot''s message.'
+                description: "Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot's message."
             -
                 name: disable_web_page_preview
                 types:
@@ -4394,19 +4394,19 @@ methods:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Contact''s last name'
+                description: "Contact's last name"
             -
                 name: disable_notification
                 types:
@@ -4709,7 +4709,7 @@ methods:
             - string
     -
         name: setChatPhoto
-        description: 'Use this method to set a new profile photo for the chat. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success.'
+        description: "Use this method to set a new profile photo for the chat. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success."
         fields:
             -
                 name: Parameters
@@ -4734,7 +4734,7 @@ methods:
             - bool
     -
         name: deleteChatPhoto
-        description: 'Use this method to delete a chat photo. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success.'
+        description: "Use this method to delete a chat photo. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success."
         fields:
             -
                 name: Parameters
@@ -4753,7 +4753,7 @@ methods:
             - bool
     -
         name: setChatTitle
-        description: 'Use this method to change the title of a chat. Titles can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success.'
+        description: "Use this method to change the title of a chat. Titles can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success."
         fields:
             -
                 name: Parameters
@@ -5030,7 +5030,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'URL that will be opened by the user''s client. If you have created a Game and accepted the conditions via @Botfather, specify the URL that opens your game – note that this will only work if the query comes from a callback_game button.Otherwise, you may use links like t.me/your_bot?start=XXXX that open your bot with a parameter.'
+                description: "URL that will be opened by the user's client. If you have created a Game and accepted the conditions via @Botfather, specify the URL that opens your game – note that this will only work if the query comes from a callback_game button.Otherwise, you may use links like t.me/your_bot?start=XXXX that open your bot with a parameter."
             -
                 name: cache_time
                 types:
@@ -5080,7 +5080,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot''s message.'
+                description: "Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot's message."
             -
                 name: disable_web_page_preview
                 types:
@@ -5313,7 +5313,7 @@ methods:
                 types:
                     - string
                 optional: false
-                description: 'Short name of sticker set, to be used in t.me/addstickers/ URLs (e.g., animals). Can contain only english letters, digits and underscores. Must begin with a letter, can''t contain consecutive underscores and must end in “_by_<bot username>”. <bot_username> is case insensitive. 1-64 characters.'
+                description: "Short name of sticker set, to be used in t.me/addstickers/ URLs (e.g., animals). Can contain only english letters, digits and underscores. Must begin with a letter, can't contain consecutive underscores and must end in “_by_<bot username>”. <bot_username> is case insensitive. 1-64 characters."
             -
                 name: title
                 types:
@@ -5484,7 +5484,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Deep-linking parameter for the /start message sent to the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a ‘Connect your YouTube account’ button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an oauth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot''s inline capabilities.'
+                description: "Deep-linking parameter for the /start message sent to the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a ‘Connect your YouTube account’ button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an oauth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot's inline capabilities."
         return_types:
             - bool
     -
@@ -5580,25 +5580,25 @@ methods:
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s full name to complete the order'
+                description: "Pass True, if you require the user's full name to complete the order"
             -
                 name: need_phone_number
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s phone number to complete the order'
+                description: "Pass True, if you require the user's phone number to complete the order"
             -
                 name: need_email
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s email to complete the order'
+                description: "Pass True, if you require the user's email to complete the order"
             -
                 name: need_shipping_address
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s shipping address to complete the order'
+                description: "Pass True, if you require the user's shipping address to complete the order"
             -
                 name: is_flexible
                 types:
@@ -5622,7 +5622,7 @@ methods:
                 types:
                     - InlineKeyboardMarkup
                 optional: true
-                description: 'A JSON-serialized object for an inline keyboard. If empty, one ''Pay total price'' button will be shown. If not empty, the first button must be a Pay button.'
+                description: "A JSON-serialized object for an inline keyboard. If empty, one 'Pay total price' button will be shown. If not empty, the first button must be a Pay button."
         return_types:
             - Message
     -
@@ -5733,7 +5733,7 @@ methods:
             - Message
     -
         name: setGameScore
-        description: 'Use this method to set the score of the specified user in a game. On success, if the message was sent by the bot, returns the edited Message, otherwise returns True. Returns an error, if the new score is not greater than the user''s current score in the chat and force is False.'
+        description: "Use this method to set the score of the specified user in a game. On success, if the message was sent by the bot, returns the edited Message, otherwise returns True. Returns an error, if the new score is not greater than the user's current score in the chat and force is False."
         fields:
             -
                 name: Parameters

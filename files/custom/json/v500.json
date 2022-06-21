@@ -1392,7 +1392,7 @@
                         "int"
                     ],
                     "optional": false,
-                    "description": "Value of the dice, 1-6 for “🎲” and “🎯” base emoji, 1-5 for “🏀” and “⚽” base emoji, 1-64 for “🎰” base emoji"
+                    "description": "____simple_html_dom__voku__html_wrapper____>Value of the dice, 1-6 for “🎲” and “🎯” base emoji, 1-5 for “🏀” and “⚽” base emoji, 1-64 for “🎰” base emoji"
                 }
             ],
             "extended_by": []
@@ -8014,7 +8014,7 @@
                         "string"
                     ],
                     "optional": true,
-                    "description": "Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, or “🎰”. Dice can have values 1-6 for “🎲” and “🎯”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”",
+                    "description": "____simple_html_dom__voku__html_wrapper____>Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, or “🎰”. Dice can have values 1-6 for “🎲” and “🎯”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”",
                     "default": "🎲"
                 },
                 {

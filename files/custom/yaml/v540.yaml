@@ -9,7 +9,7 @@ types:
                 types:
                     - int
                 optional: false
-                description: 'The update''s unique identifier. Update identifiers start from a certain positive number and increase sequentially. This ID becomes especially handy if you''re using Webhooks, since it allows you to ignore repeated updates or to restore the correct update sequence, should they get out of order. If there are no new updates for at least a week, then identifier of the next update will be chosen randomly instead of sequentially.'
+                description: "The update's unique identifier. Update identifiers start from a certain positive number and increase sequentially. This ID becomes especially handy if you're using Webhooks, since it allows you to ignore repeated updates or to restore the correct update sequence, should they get out of order. If there are no new updates for at least a week, then identifier of the next update will be chosen randomly instead of sequentially."
             -
                 name: message
                 types:
@@ -81,13 +81,13 @@ types:
                 types:
                     - ChatMemberUpdated
                 optional: true
-                description: 'Optional. The bot''s chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user.'
+                description: "Optional. The bot's chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user."
             -
                 name: chat_member
                 types:
                     - ChatMemberUpdated
                 optional: true
-                description: 'Optional. A chat member''s status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify “chat_member” in the list of allowed_updates to receive these updates.'
+                description: "Optional. A chat member's status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify “chat_member” in the list of allowed_updates to receive these updates."
             -
                 name: chat_join_request
                 types:
@@ -169,25 +169,25 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'User''s or bot''s first name'
+                description: "User's or bot's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. User''s or bot''s last name'
+                description: "Optional. User's or bot's last name"
             -
                 name: username
                 types:
                     - string
                 optional: true
-                description: 'Optional. User''s or bot''s username'
+                description: "Optional. User's or bot's username"
             -
                 name: language_code
                 types:
                     - string
                 optional: true
-                description: 'Optional. IETF language tag of the user''s language'
+                description: "Optional. IETF language tag of the user's language"
             -
                 name: can_join_groups
                 types:
@@ -383,7 +383,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. Sender''s name for messages forwarded from users who disallow adding a link to their account in forwarded messages'
+                description: "Optional. Sender's name for messages forwarded from users who disallow adding a link to their account in forwarded messages"
             -
                 name: forward_date
                 types:
@@ -571,14 +571,14 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Service message: the supergroup has been created. This field can''t be received in a message coming through updates, because bot can''t be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup.'
+                description: "Optional. Service message: the supergroup has been created. This field can't be received in a message coming through updates, because bot can't be a member of a supergroup when it is created. It can only be found in reply_to_message if someone replies to a very first message in a directly created supergroup."
                 default: true
             -
                 name: channel_chat_created
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Service message: the channel has been created. This field can''t be received in a message coming through updates, because bot can''t be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel.'
+                description: "Optional. Service message: the channel has been created. This field can't be received in a message coming through updates, because bot can't be a member of a channel when it is created. It can only be found in reply_to_message if someone replies to a very first message in a channel."
                 default: true
             -
                 name: message_auto_delete_timer_changed
@@ -633,7 +633,7 @@ types:
                 types:
                     - ProximityAlertTriggered
                 optional: true
-                description: 'Optional. Service message. A user in the chat triggered another user''s proximity alert while sharing Live Location.'
+                description: "Optional. Service message. A user in the chat triggered another user's proximity alert while sharing Live Location."
             -
                 name: voice_chat_scheduled
                 types:
@@ -732,7 +732,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: width
                 types:
@@ -767,7 +767,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: width
                 types:
@@ -826,7 +826,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: duration
                 types:
@@ -885,7 +885,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: thumb
                 types:
@@ -926,7 +926,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: width
                 types:
@@ -985,7 +985,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: length
                 types:
@@ -1026,7 +1026,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: duration
                 types:
@@ -1055,25 +1055,25 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
             -
                 name: user_id
                 types:
                     - int
                 optional: true
-                description: 'Optional. Contact''s user identifier in Telegram. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.'
+                description: "Optional. Contact's user identifier in Telegram. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier."
             -
                 name: vcard
                 types:
@@ -1096,7 +1096,7 @@ types:
                 types:
                     - int
                 optional: false
-                description: 'Value of the dice, 1-6 for “🎲”, “🎯” and “🎳” base emoji, 1-5 for “🏀” and “⚽” base emoji, 1-64 for “🎰” base emoji'
+                description: '____simple_html_dom__voku__html_wrapper____>Value of the dice, 1-6 for “🎲”, “🎯” and “🎳” base emoji, 1-5 for “🏀” and “⚽” base emoji, 1-64 for “🎰” base emoji'
         extended_by: {  }
     -
         name: PollOption
@@ -1271,7 +1271,7 @@ types:
                 types:
                     - Location
                 optional: false
-                description: 'Venue location. Can''t be a live location'
+                description: "Venue location. Can't be a live location"
             -
                 name: title
                 types:
@@ -1383,7 +1383,7 @@ types:
         extended_by: {  }
     -
         name: UserProfilePhotos
-        description: 'This object represent a user''s profile pictures.'
+        description: "This object represent a user's profile pictures."
         fields:
             -
                 name: total_count
@@ -1413,7 +1413,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: file_size
                 types:
@@ -1442,14 +1442,14 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app''s standard keyboard.'
+                description: "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard."
                 default: false
             -
                 name: one_time_keyboard
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Requests clients to hide the keyboard as soon as it''s been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false.'
+                description: "Optional. Requests clients to hide the keyboard as soon as it's been used. The keyboard will still be available, but clients will automatically display the usual letter-keyboard in the chat – the user can press a special button in the input field to see the custom keyboard again. Defaults to false."
                 default: false
             -
                 name: input_field_placeholder
@@ -1462,7 +1462,7 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot''s language, bot replies to the request with a keyboard to select the new language. Other users in the group don''t see the keyboard.'
+                description: "Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot's language, bot replies to the request with a keyboard to select the new language. Other users in the group don't see the keyboard."
         extended_by: {  }
     -
         name: KeyboardButton
@@ -1479,13 +1479,13 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. If True, the user''s phone number will be sent as a contact when the button is pressed. Available in private chats only'
+                description: "Optional. If True, the user's phone number will be sent as a contact when the button is pressed. Available in private chats only"
             -
                 name: request_location
                 types:
                     - bool
                 optional: true
-                description: 'Optional. If True, the user''s current location will be sent when the button is pressed. Available in private chats only'
+                description: "Optional. If True, the user's current location will be sent when the button is pressed. Available in private chats only"
             -
                 name: request_poll
                 types:
@@ -1520,7 +1520,7 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to remove the keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and removes the keyboard for that user, while still showing the keyboard with poll options to users who haven''t voted yet.'
+                description: "Optional. Use this parameter if you want to remove the keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and removes the keyboard for that user, while still showing the keyboard with poll options to users who haven't voted yet."
         extended_by: {  }
     -
         name: InlineKeyboardMarkup
@@ -1566,13 +1566,13 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. If set, pressing the button will prompt the user to select one of their chats, open that chat and insert the bot''s username and the specified inline query in the input field. Can be empty, in which case just the bot''s username will be inserted.Note: This offers an easy way for users to start using your bot in inline mode when they are currently in a private chat with it. Especially useful when combined with switch_pm… actions – in this case the user will be automatically returned to the chat they switched from, skipping the chat selection screen.'
+                description: "Optional. If set, pressing the button will prompt the user to select one of their chats, open that chat and insert the bot's username and the specified inline query in the input field. Can be empty, in which case just the bot's username will be inserted.Note: This offers an easy way for users to start using your bot in inline mode when they are currently in a private chat with it. Especially useful when combined with switch_pm… actions – in this case the user will be automatically returned to the chat they switched from, skipping the chat selection screen."
             -
                 name: switch_inline_query_current_chat
                 types:
                     - string
                 optional: true
-                description: 'Optional. If set, pressing the button will insert the bot''s username and the specified inline query in the current chat''s input field. Can be empty, in which case only the bot''s username will be inserted.This offers a quick way for the user to open your bot in inline mode in the same chat – good for selecting something from multiple options.'
+                description: "Optional. If set, pressing the button will insert the bot's username and the specified inline query in the current chat's input field. Can be empty, in which case only the bot's username will be inserted.This offers a quick way for the user to open your bot in inline mode in the same chat – good for selecting something from multiple options."
             -
                 name: callback_game
                 types:
@@ -1607,7 +1607,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. Username of a bot, which will be used for user authorization. See Setting up a bot for more details. If not specified, the current bot''s username will be assumed. The url''s domain must be the same as the domain linked with the bot. See Linking your domain to the bot for more details.'
+                description: "Optional. Username of a bot, which will be used for user authorization. See Setting up a bot for more details. If not specified, the current bot's username will be assumed. The url's domain must be the same as the domain linked with the bot. See Linking your domain to the bot for more details."
             -
                 name: request_write_access
                 types:
@@ -1664,14 +1664,14 @@ types:
         extended_by: {  }
     -
         name: ForceReply
-        description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot''s message and tapped ''Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
+        description: "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot's message and tapped 'Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode."
         fields:
             -
                 name: force_reply
                 types:
                     - bool
                 optional: false
-                description: 'Shows reply interface to the user, as if they manually selected the bot''s message and tapped ''Reply'''
+                description: "Shows reply interface to the user, as if they manually selected the bot's message and tapped 'Reply'"
                 default: true
             -
                 name: input_field_placeholder
@@ -1684,7 +1684,7 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.'
+                description: "Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message."
         extended_by: {  }
     -
         name: ChatPhoto
@@ -1701,7 +1701,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique file identifier of small (160x160) chat photo, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique file identifier of small (160x160) chat photo, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: big_file_id
                 types:
@@ -1713,7 +1713,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique file identifier of big (640x640) chat photo, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique file identifier of big (640x640) chat photo, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
         extended_by: {  }
     -
         name: ChatInviteLink
@@ -1794,7 +1794,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat, always “creator”'
+                description: "The member's status in the chat, always “creator”"
             -
                 name: user
                 types:
@@ -1806,7 +1806,7 @@ types:
                 types:
                     - bool
                 optional: false
-                description: 'True, if the user''s presence in the chat is hidden'
+                description: "True, if the user's presence in the chat is hidden"
             -
                 name: custom_title
                 types:
@@ -1823,7 +1823,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat, always “administrator”'
+                description: "The member's status in the chat, always “administrator”"
             -
                 name: user
                 types:
@@ -1841,7 +1841,7 @@ types:
                 types:
                     - bool
                 optional: false
-                description: 'True, if the user''s presence in the chat is hidden'
+                description: "True, if the user's presence in the chat is hidden"
             -
                 name: can_manage_chat
                 types:
@@ -1918,7 +1918,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat, always “member”'
+                description: "The member's status in the chat, always “member”"
             -
                 name: user
                 types:
@@ -1935,7 +1935,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat, always “restricted”'
+                description: "The member's status in the chat, always “restricted”"
             -
                 name: user
                 types:
@@ -2005,14 +2005,14 @@ types:
         extended_by: {  }
     -
         name: ChatMemberLeft
-        description: 'Represents a chat member that isn''t currently a member of the chat, but may join it themselves.'
+        description: "Represents a chat member that isn't currently a member of the chat, but may join it themselves."
         fields:
             -
                 name: status
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat, always “left”'
+                description: "The member's status in the chat, always “left”"
             -
                 name: user
                 types:
@@ -2022,14 +2022,14 @@ types:
         extended_by: {  }
     -
         name: ChatMemberBanned
-        description: 'Represents a chat member that was banned in the chat and can''t return to the chat or view chat messages.'
+        description: "Represents a chat member that was banned in the chat and can't return to the chat or view chat messages."
         fields:
             -
                 name: status
                 types:
                     - string
                 optional: false
-                description: 'The member''s status in the chat, always “kicked”'
+                description: "The member's status in the chat, always “kicked”"
             -
                 name: user
                 types:
@@ -2181,7 +2181,7 @@ types:
                 types:
                     - Location
                 optional: false
-                description: 'The location to which the supergroup is connected. Can''t be a live location.'
+                description: "The location to which the supergroup is connected. Can't be a live location."
             -
                 name: address
                 types:
@@ -2415,7 +2415,7 @@ types:
                     - InputFile
                     - string
                 optional: true
-                description: 'Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -2482,7 +2482,7 @@ types:
                     - InputFile
                     - string
                 optional: true
-                description: 'Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -2543,7 +2543,7 @@ types:
                     - InputFile
                     - string
                 optional: true
-                description: 'Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -2604,7 +2604,7 @@ types:
                     - InputFile
                     - string
                 optional: true
-                description: 'Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Optional. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -2650,7 +2650,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: width
                 types:
@@ -2882,7 +2882,7 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if you don''t want the URL to be shown in the message'
+                description: "Optional. Pass True, if you don't want the URL to be shown in the message"
             -
                 name: description
                 types:
@@ -3706,19 +3706,19 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
             -
                 name: vcard
                 types:
@@ -4396,19 +4396,19 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
             -
                 name: vcard
                 types:
@@ -4504,37 +4504,37 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if you require the user''s full name to complete the order'
+                description: "Optional. Pass True, if you require the user's full name to complete the order"
             -
                 name: need_phone_number
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if you require the user''s phone number to complete the order'
+                description: "Optional. Pass True, if you require the user's phone number to complete the order"
             -
                 name: need_email
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if you require the user''s email address to complete the order'
+                description: "Optional. Pass True, if you require the user's email address to complete the order"
             -
                 name: need_shipping_address
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if you require the user''s shipping address to complete the order'
+                description: "Optional. Pass True, if you require the user's shipping address to complete the order"
             -
                 name: send_phone_number_to_provider
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if user''s phone number should be sent to provider'
+                description: "Optional. Pass True, if user's phone number should be sent to provider"
             -
                 name: send_email_to_provider
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Pass True, if user''s email address should be sent to provider'
+                description: "Optional. Pass True, if user's email address should be sent to provider"
             -
                 name: is_flexible
                 types:
@@ -4685,7 +4685,7 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. User''s phone number'
+                description: "Optional. User's phone number"
             -
                 name: email
                 types:
@@ -4864,7 +4864,7 @@ types:
         extended_by: {  }
     -
         name: PassportFile
-        description: 'This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don''t exceed 10MB.'
+        description: "This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don't exceed 10MB."
         fields:
             -
                 name: file_id
@@ -4877,7 +4877,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Unique identifier for this file, which is supposed to be the same over time and for different bots. Can''t be used to download or reuse the file.'
+                description: "Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file."
             -
                 name: file_size
                 types:
@@ -4912,13 +4912,13 @@ types:
                 types:
                     - string
                 optional: true
-                description: 'Optional. User''s verified phone number, available only for “phone_number” type'
+                description: "Optional. User's verified phone number, available only for “phone_number” type"
             -
                 name: email
                 types:
                     - string
                 optional: true
-                description: 'Optional. User''s verified email address, available only for “email” type'
+                description: "Optional. User's verified email address, available only for “email” type"
             -
                 name: files
                 types:
@@ -4965,7 +4965,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Base64-encoded encrypted JSON-serialized data with unique user''s payload, data hashes and secrets required for EncryptedPassportElement decryption and authentication'
+                description: "Base64-encoded encrypted JSON-serialized data with unique user's payload, data hashes and secrets required for EncryptedPassportElement decryption and authentication"
             -
                 name: hash
                 types:
@@ -4977,7 +4977,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Base64-encoded secret, encrypted with the bot''s public RSA key, required for data decryption'
+                description: "Base64-encoded secret, encrypted with the bot's public RSA key, required for data decryption"
         extended_by: {  }
     -
         name: PassportElementError
@@ -4995,7 +4995,7 @@ types:
             - PassportElementErrorUnspecified
     -
         name: PassportElementErrorDataField
-        description: 'Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field''s value changes.'
+        description: "Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field's value changes."
         fields:
             -
                 name: source
@@ -5009,7 +5009,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The section of the user''s Telegram Passport which has the error, one of “personal_details”, “passport”, “driver_license”, “identity_card”, “internal_passport”, “address”'
+                description: "The section of the user's Telegram Passport which has the error, one of “personal_details”, “passport”, “driver_license”, “identity_card”, “internal_passport”, “address”"
             -
                 name: field_name
                 types:
@@ -5045,7 +5045,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The section of the user''s Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”'
+                description: "The section of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”"
             -
                 name: file_hash
                 types:
@@ -5075,7 +5075,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The section of the user''s Telegram Passport which has the issue, one of “driver_license”, “identity_card”'
+                description: "The section of the user's Telegram Passport which has the issue, one of “driver_license”, “identity_card”"
             -
                 name: file_hash
                 types:
@@ -5105,7 +5105,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The section of the user''s Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”'
+                description: "The section of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”"
             -
                 name: file_hash
                 types:
@@ -5135,7 +5135,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The section of the user''s Telegram Passport which has the issue, one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”'
+                description: "The section of the user's Telegram Passport which has the issue, one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”"
             -
                 name: file_hash
                 types:
@@ -5165,7 +5165,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'The section of the user''s Telegram Passport which has the issue, one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”'
+                description: "The section of the user's Telegram Passport which has the issue, one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”"
             -
                 name: file_hashes
                 types:
@@ -5195,7 +5195,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Type of element of the user''s Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”'
+                description: "Type of element of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”"
             -
                 name: file_hash
                 types:
@@ -5225,7 +5225,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Type of element of the user''s Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”'
+                description: "Type of element of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”"
             -
                 name: file_hashes
                 types:
@@ -5255,7 +5255,7 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Type of element of the user''s Telegram Passport which has the issue'
+                description: "Type of element of the user's Telegram Passport which has the issue"
             -
                 name: element_hash
                 types:
@@ -5368,7 +5368,7 @@ methods:
                 types:
                     - Array<string>
                 optional: true
-                description: 'A JSON-serialized list of the update types you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all update types except chat_member (default). If not specified, the previous setting will be used.Please note that this parameter doesn''t affect updates created before the call to the getUpdates, so unwanted updates may be received for a short period of time.'
+                description: "A JSON-serialized list of the update types you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all update types except chat_member (default). If not specified, the previous setting will be used.Please note that this parameter doesn't affect updates created before the call to the getUpdates, so unwanted updates may be received for a short period of time."
         return_types:
             - Array<Update>
     -
@@ -5398,14 +5398,14 @@ methods:
                 types:
                     - int
                 optional: true
-                description: 'Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot''s server, and higher values to increase your bot''s throughput.'
+                description: "Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery, 1-100. Defaults to 40. Use lower values to limit the load on your bot's server, and higher values to increase your bot's throughput."
                 default: 40
             -
                 name: allowed_updates
                 types:
                     - Array<string>
                 optional: true
-                description: 'A JSON-serialized list of the update types you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all update types except chat_member (default). If not specified, the previous setting will be used.Please note that this parameter doesn''t affect updates created before the call to the setWebhook, so unwanted updates may be received for a short period of time.'
+                description: "A JSON-serialized list of the update types you want your bot to receive. For example, specify [“message”, “edited_channel_post”, “callback_query”] to only receive updates of these types. See Update for a complete list of available update types. Specify an empty list to receive all update types except chat_member (default). If not specified, the previous setting will be used.Please note that this parameter doesn't affect updates created before the call to the setWebhook, so unwanted updates may be received for a short period of time."
             -
                 name: drop_pending_updates
                 types:
@@ -5434,7 +5434,7 @@ methods:
             - WebhookInfo
     -
         name: getMe
-        description: 'A simple method for testing your bot''s authentication token. Requires no parameters. Returns basic information about the bot in form of a User object.'
+        description: "A simple method for testing your bot's authentication token. Requires no parameters. Returns basic information about the bot in form of a User object."
         fields: {  }
         return_types:
             - User
@@ -5446,7 +5446,7 @@ methods:
             - bool
     -
         name: close
-        description: 'Use this method to close the bot instance before moving it from one local server to another. You need to delete the webhook before calling this method to ensure that the bot isn''t launched again after server restart. The method will return error 429 in the first 10 minutes after the bot is launched. Returns True on success. Requires no parameters.'
+        description: "Use this method to close the bot instance before moving it from one local server to another. You need to delete the webhook before calling this method to ensure that the bot isn't launched again after server restart. The method will return error 429 in the first 10 minutes after the bot is launched. Returns True on success. Requires no parameters."
         fields: {  }
         return_types:
             - bool
@@ -5516,7 +5516,7 @@ methods:
             - Message
     -
         name: forwardMessage
-        description: 'Use this method to forward messages of any kind. Service messages can''t be forwarded. On success, the sent Message is returned.'
+        description: "Use this method to forward messages of any kind. Service messages can't be forwarded. On success, the sent Message is returned."
         fields:
             -
                 name: chat_id
@@ -5548,7 +5548,7 @@ methods:
             - Message
     -
         name: copyMessage
-        description: 'Use this method to copy messages of any kind. Service messages and invoice messages can''t be copied. The method is analogous to the method forwardMessage, but the copied message doesn''t have a link to the original message. Returns the MessageId of the sent message on success.'
+        description: "Use this method to copy messages of any kind. Service messages and invoice messages can't be copied. The method is analogous to the method forwardMessage, but the copied message doesn't have a link to the original message. Returns the MessageId of the sent message on success."
         fields:
             -
                 name: chat_id
@@ -5634,7 +5634,7 @@ methods:
                     - InputFile
                     - string
                 optional: false
-                description: 'Photo to send. Pass a file_id as String to send a photo that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a photo from the Internet, or upload a new photo using multipart/form-data. The photo must be at most 10 MB in size. The photo''s width and height must not exceed 10000 in total. Width and height ratio must be at most 20. More info on Sending Files »'
+                description: "Photo to send. Pass a file_id as String to send a photo that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a photo from the Internet, or upload a new photo using multipart/form-data. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -5742,7 +5742,7 @@ methods:
                     - InputFile
                     - string
                 optional: true
-                description: 'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: disable_notification
                 types:
@@ -5796,7 +5796,7 @@ methods:
                     - InputFile
                     - string
                 optional: true
-                description: 'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -5892,7 +5892,7 @@ methods:
                     - InputFile
                     - string
                 optional: true
-                description: 'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -5988,7 +5988,7 @@ methods:
                     - InputFile
                     - string
                 optional: true
-                description: 'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: caption
                 types:
@@ -6143,7 +6143,7 @@ methods:
                     - InputFile
                     - string
                 optional: true
-                description: 'Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail''s width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can''t be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »'
+                description: "Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass “attach://<file_attach_name>” if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. More info on Sending Files »"
             -
                 name: disable_notification
                 types:
@@ -6484,19 +6484,19 @@ methods:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Contact''s last name'
+                description: "Contact's last name"
             -
                 name: vcard
                 types:
@@ -6605,13 +6605,13 @@ methods:
                 types:
                     - int
                 optional: true
-                description: 'Amount of time in seconds the poll will be active after creation, 5-600. Can''t be used together with close_date.'
+                description: "Amount of time in seconds the poll will be active after creation, 5-600. Can't be used together with close_date."
             -
                 name: close_date
                 types:
                     - int
                 optional: true
-                description: 'Point in time (Unix timestamp) when the poll will be automatically closed. Must be at least 5 and no more than 600 seconds in the future. Can''t be used together with open_period.'
+                description: "Point in time (Unix timestamp) when the poll will be automatically closed. Must be at least 5 and no more than 600 seconds in the future. Can't be used together with open_period."
             -
                 name: is_closed
                 types:
@@ -6663,7 +6663,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, “🎳”, or “🎰”. Dice can have values 1-6 for “🎲”, “🎯” and “🎳”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”'
+                description: '____simple_html_dom__voku__html_wrapper____>Emoji on which the dice throw animation is based. Currently, must be one of “🎲”, “🎯”, “🏀”, “⚽”, “🎳”, or “🎰”. Dice can have values 1-6 for “🎲”, “🎯” and “🎳”, values 1-5 for “🏀” and “⚽”, and values 1-64 for “🎰”. Defaults to “🎲”'
                 default: 🎲
             -
                 name: disable_notification
@@ -6783,7 +6783,7 @@ methods:
             - bool
     -
         name: unbanChatMember
-        description: 'Use this method to unban a previously banned user in a supergroup or channel. The user will not return to the group or channel automatically, but will be able to join via link, etc. The bot must be an administrator for this to work. By default, this method guarantees that after the call the user is not a member of the chat, but will be able to join it. So if the user is a member of the chat they will also be removed from the chat. If you don''t want this, use the parameter only_if_banned. Returns True on success.'
+        description: "Use this method to unban a previously banned user in a supergroup or channel. The user will not return to the group or channel automatically, but will be able to join via link, etc. The bot must be an administrator for this to work. By default, this method guarantees that after the call the user is not a member of the chat, but will be able to join it. So if the user is a member of the chat they will also be removed from the chat. If you don't want this, use the parameter only_if_banned. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -6859,7 +6859,7 @@ methods:
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if the administrator''s presence in the chat is hidden'
+                description: "Pass True, if the administrator's presence in the chat is hidden"
             -
                 name: can_manage_chat
                 types:
@@ -7013,7 +7013,7 @@ methods:
                 types:
                     - bool
                 optional: true
-                description: 'True, if users joining the chat via the link need to be approved by chat administrators. If True, member_limit can''t be specified'
+                description: "True, if users joining the chat via the link need to be approved by chat administrators. If True, member_limit can't be specified"
         return_types:
             - ChatInviteLink
     -
@@ -7056,7 +7056,7 @@ methods:
                 types:
                     - bool
                 optional: true
-                description: 'True, if users joining the chat via the link need to be approved by chat administrators. If True, member_limit can''t be specified'
+                description: "True, if users joining the chat via the link need to be approved by chat administrators. If True, member_limit can't be specified"
         return_types:
             - ChatInviteLink
     -
@@ -7118,7 +7118,7 @@ methods:
             - bool
     -
         name: setChatPhoto
-        description: 'Use this method to set a new profile photo for the chat. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to set a new profile photo for the chat. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -7137,7 +7137,7 @@ methods:
             - bool
     -
         name: deleteChatPhoto
-        description: 'Use this method to delete a chat photo. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to delete a chat photo. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -7150,7 +7150,7 @@ methods:
             - bool
     -
         name: setChatTitle
-        description: 'Use this method to change the title of a chat. Titles can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to change the title of a chat. Titles can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -7188,7 +7188,7 @@ methods:
             - bool
     -
         name: pinChatMessage
-        description: 'Use this method to add a message to the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the ''can_pin_messages'' administrator right in a supergroup or ''can_edit_messages'' administrator right in a channel. Returns True on success.'
+        description: "Use this method to add a message to the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -7213,7 +7213,7 @@ methods:
             - bool
     -
         name: unpinChatMessage
-        description: 'Use this method to remove a message from the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the ''can_pin_messages'' administrator right in a supergroup or ''can_edit_messages'' administrator right in a channel. Returns True on success.'
+        description: "Use this method to remove a message from the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -7232,7 +7232,7 @@ methods:
             - bool
     -
         name: unpinAllChatMessages
-        description: 'Use this method to clear the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the ''can_pin_messages'' administrator right in a supergroup or ''can_edit_messages'' administrator right in a channel. Returns True on success.'
+        description: "Use this method to clear the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
         fields:
             -
                 name: chat_id
@@ -7374,7 +7374,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'URL that will be opened by the user''s client. If you have created a Game and accepted the conditions via @Botfather, specify the URL that opens your game — note that this will only work if the query comes from a callback_game button.Otherwise, you may use links like t.me/your_bot?start=XXXX that open your bot with a parameter.'
+                description: "URL that will be opened by the user's client. If you have created a Game and accepted the conditions via @Botfather, specify the URL that opens your game — note that this will only work if the query comes from a callback_game button.Otherwise, you may use links like t.me/your_bot?start=XXXX that open your bot with a parameter."
             -
                 name: cache_time
                 types:
@@ -7386,14 +7386,14 @@ methods:
             - bool
     -
         name: setMyCommands
-        description: 'Use this method to change the list of the bot''s commands. See https://core.telegram.org/bots#commands for more details about bot commands. Returns True on success.'
+        description: "Use this method to change the list of the bot's commands. See https://core.telegram.org/bots#commands for more details about bot commands. Returns True on success."
         fields:
             -
                 name: commands
                 types:
                     - Array<BotCommand>
                 optional: false
-                description: 'A JSON-serialized list of bot commands to be set as the list of the bot''s commands. At most 100 commands can be specified.'
+                description: "A JSON-serialized list of bot commands to be set as the list of the bot's commands. At most 100 commands can be specified."
             -
                 name: scope
                 types:
@@ -7411,7 +7411,7 @@ methods:
             - bool
     -
         name: deleteMyCommands
-        description: 'Use this method to delete the list of the bot''s commands for the given scope and user language. After deletion, higher level commands will be shown to affected users. Returns True on success.'
+        description: "Use this method to delete the list of the bot's commands for the given scope and user language. After deletion, higher level commands will be shown to affected users. Returns True on success."
         fields:
             -
                 name: scope
@@ -7430,7 +7430,7 @@ methods:
             - bool
     -
         name: getMyCommands
-        description: 'Use this method to get the current list of the bot''s commands for the given scope and user language. Returns Array of BotCommand on success. If commands aren''t set, an empty list is returned.'
+        description: "Use this method to get the current list of the bot's commands for the given scope and user language. Returns Array of BotCommand on success. If commands aren't set, an empty list is returned."
         fields:
             -
                 name: scope
@@ -7555,7 +7555,7 @@ methods:
             - bool
     -
         name: editMessageMedia
-        description: 'Use this method to edit animation, audio, document, photo, or video messages. If a message is part of a message album, then it can be edited only to an audio for audio albums, only to a document for document albums and to a photo or a video otherwise. When an inline message is edited, a new file can''t be uploaded; use a previously uploaded file via its file_id or specify a URL. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned.'
+        description: "Use this method to edit animation, audio, document, photo, or video messages. If a message is part of a message album, then it can be edited only to an audio for audio albums, only to a document for document albums and to a photo or a video otherwise. When an inline message is edited, a new file can't be uploaded; use a previously uploaded file via its file_id or specify a URL. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
         fields:
             -
                 name: chat_id
@@ -7759,7 +7759,7 @@ methods:
                 types:
                     - string
                 optional: false
-                description: 'Short name of sticker set, to be used in t.me/addstickers/ URLs (e.g., animals). Can contain only english letters, digits and underscores. Must begin with a letter, can''t contain consecutive underscores and must end in “_by_<bot username>”. <bot_username> is case insensitive. 1-64 characters.'
+                description: "Short name of sticker set, to be used in t.me/addstickers/ URLs (e.g., animals). Can contain only english letters, digits and underscores. Must begin with a letter, can't contain consecutive underscores and must end in “_by_<bot username>”. <bot_username> is case insensitive. 1-64 characters."
             -
                 name: title
                 types:
@@ -7894,7 +7894,7 @@ methods:
                     - InputFile
                     - string
                 optional: true
-                description: 'A PNG image with the thumbnail, must be up to 128 kilobytes in size and have width and height exactly 100px, or a TGS animation with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/animated_stickers#technical-requirements for animated sticker technical requirements. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More info on Sending Files ». Animated sticker set thumbnail can''t be uploaded via HTTP URL.'
+                description: "A PNG image with the thumbnail, must be up to 128 kilobytes in size and have width and height exactly 100px, or a TGS animation with the thumbnail up to 32 kilobytes in size; see https://core.telegram.org/animated_stickers#technical-requirements for animated sticker technical requirements. Pass a file_id as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. More info on Sending Files ». Animated sticker set thumbnail can't be uploaded via HTTP URL."
         return_types:
             - bool
     -
@@ -7931,7 +7931,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Pass the offset that a client should send in the next query with the same text to receive more results. Pass an empty string if there are no more results or if you don''t support pagination. Offset length can''t exceed 64 bytes.'
+                description: "Pass the offset that a client should send in the next query with the same text to receive more results. Pass an empty string if there are no more results or if you don't support pagination. Offset length can't exceed 64 bytes."
             -
                 name: switch_pm_text
                 types:
@@ -7943,7 +7943,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Deep-linking parameter for the /start message sent to the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a ''Connect your YouTube account'' button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an OAuth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot''s inline capabilities.'
+                description: "Deep-linking parameter for the /start message sent to the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a 'Connect your YouTube account' button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an OAuth link. Once done, the bot can offer a switch_inline button so that the user can easily return to the chat where they wanted to use the bot's inline capabilities."
         return_types:
             - bool
     -
@@ -8047,37 +8047,37 @@ methods:
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s full name to complete the order'
+                description: "Pass True, if you require the user's full name to complete the order"
             -
                 name: need_phone_number
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s phone number to complete the order'
+                description: "Pass True, if you require the user's phone number to complete the order"
             -
                 name: need_email
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s email address to complete the order'
+                description: "Pass True, if you require the user's email address to complete the order"
             -
                 name: need_shipping_address
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if you require the user''s shipping address to complete the order'
+                description: "Pass True, if you require the user's shipping address to complete the order"
             -
                 name: send_phone_number_to_provider
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if user''s phone number should be sent to provider'
+                description: "Pass True, if user's phone number should be sent to provider"
             -
                 name: send_email_to_provider
                 types:
                     - bool
                 optional: true
-                description: 'Pass True, if user''s email address should be sent to provider'
+                description: "Pass True, if user's email address should be sent to provider"
             -
                 name: is_flexible
                 types:
@@ -8107,7 +8107,7 @@ methods:
                 types:
                     - InlineKeyboardMarkup
                 optional: true
-                description: 'A JSON-serialized object for an inline keyboard. If empty, one ''Pay total price'' button will be shown. If not empty, the first button must be a Pay button.'
+                description: "A JSON-serialized object for an inline keyboard. If empty, one 'Pay total price' button will be shown. If not empty, the first button must be a Pay button."
         return_types:
             - Message
     -
@@ -8221,12 +8221,12 @@ methods:
                 types:
                     - InlineKeyboardMarkup
                 optional: true
-                description: 'A JSON-serialized object for an inline keyboard. If empty, one ''Play game_title'' button will be shown. If not empty, the first button must launch the game.'
+                description: "A JSON-serialized object for an inline keyboard. If empty, one 'Play game_title' button will be shown. If not empty, the first button must launch the game."
         return_types:
             - Message
     -
         name: setGameScore
-        description: 'Use this method to set the score of the specified user in a game message. On success, if the message is not an inline message, the Message is returned, otherwise True is returned. Returns an error, if the new score is not greater than the user''s current score in the chat and force is False.'
+        description: "Use this method to set the score of the specified user in a game message. On success, if the message is not an inline message, the Message is returned, otherwise True is returned. Returns an error, if the new score is not greater than the user's current score in the chat and force is False."
         fields:
             -
                 name: user_id

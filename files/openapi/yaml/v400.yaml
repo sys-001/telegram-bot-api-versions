@@ -9,7 +9,7 @@ servers:
         variables:
             token:
                 default: '1234:AAbbcc'
-                description: 'Bot''s unique authentication token, given by @BotFather.'
+                description: "Bot's unique authentication token, given by @BotFather."
 externalDocs:
     description: 'Official Telegram Bot API documentation.'
     url: 'https://core.telegram.org/bots/api'
@@ -46,7 +46,7 @@ components:
                     schema:
                         $ref: '#/components/schemas/Error'
         TooManyRequests:
-            description: 'You''re doing too many requests, retry after a while.'
+            description: "You're doing too many requests, retry after a while."
             content:
                 application/json:
                     schema:
@@ -561,7 +561,7 @@ components:
                     type: string
             type: object
         UserProfilePhotos:
-            description: 'This object represent a user''s profile pictures.'
+            description: "This object represent a user's profile pictures."
             required:
                 - Field
                 - total_count
@@ -707,7 +707,7 @@ components:
                     type: string
             type: object
         ForceReply:
-            description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
+            description: "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode."
             required:
                 - Field
                 - force_reply
@@ -2021,7 +2021,7 @@ components:
                     $ref: '#/components/schemas/EncryptedCredentials'
             type: object
         PassportFile:
-            description: 'This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don''t exceed 10MB.'
+            description: "This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don't exceed 10MB."
             required:
                 - Field
                 - file_id
@@ -2097,7 +2097,7 @@ components:
                 -
                     $ref: '#/components/schemas/PassportElementErrorFiles'
         PassportElementErrorDataField:
-            description: 'Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field''s value changes.'
+            description: "Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field's value changes."
             required:
                 - Field
                 - source
@@ -2545,7 +2545,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /getMe:
-        description: 'A simple method for testing your bot''s auth token. Requires no parameters. Returns basic information about the bot in form of a User object.'
+        description: "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object."
         post:
             requestBody:
                 content:
@@ -5604,7 +5604,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setChatPhoto:
-        description: 'Use this method to set a new profile photo for the chat. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success.'
+        description: "Use this method to set a new profile photo for the chat. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -5691,7 +5691,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /deleteChatPhoto:
-        description: 'Use this method to delete a chat photo. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success.'
+        description: "Use this method to delete a chat photo. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -5769,7 +5769,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setChatTitle:
-        description: 'Use this method to change the title of a chat. Titles can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success.'
+        description: "Use this method to change the title of a chat. Titles can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -6990,7 +6990,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /editMessageMedia:
-        description: 'Use this method to edit audio, document, photo, or video messages. If a message is a part of a message album, then it can be edited only to a photo or a video. Otherwise, message type can be changed arbitrarily. When inline message is edited, new file can''t be uploaded. Use previously uploaded file via its file_id or specify a URL. On success, if the edited message was sent by the bot, the edited Message is returned, otherwise True is returned.'
+        description: "Use this method to edit audio, document, photo, or video messages. If a message is a part of a message album, then it can be edited only to a photo or a video. Otherwise, message type can be changed arbitrarily. When inline message is edited, new file can't be uploaded. Use previously uploaded file via its file_id or specify a URL. On success, if the edited message was sent by the bot, the edited Message is returned, otherwise True is returned."
         post:
             requestBody:
                 required: true
@@ -8621,7 +8621,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setGameScore:
-        description: 'Use this method to set the score of the specified user in a game. On success, if the message was sent by the bot, returns the edited Message, otherwise returns True. Returns an error, if the new score is not greater than the user''s current score in the chat and force is False.'
+        description: "Use this method to set the score of the specified user in a game. On success, if the message was sent by the bot, returns the edited Message, otherwise returns True. Returns an error, if the new score is not greater than the user's current score in the chat and force is False."
         post:
             requestBody:
                 required: true

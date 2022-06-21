@@ -9,7 +9,7 @@ servers:
         variables:
             token:
                 default: '1234:AAbbcc'
-                description: 'Bot''s unique authentication token, given by @BotFather.'
+                description: "Bot's unique authentication token, given by @BotFather."
 externalDocs:
     description: 'Official Telegram Bot API documentation.'
     url: 'https://core.telegram.org/bots/api'
@@ -46,7 +46,7 @@ components:
                     schema:
                         $ref: '#/components/schemas/Error'
         TooManyRequests:
-            description: 'You''re doing too many requests, retry after a while.'
+            description: "You're doing too many requests, retry after a while."
             content:
                 application/json:
                     schema:
@@ -755,7 +755,7 @@ components:
                         $ref: '#/components/schemas/User'
             type: object
         UserProfilePhotos:
-            description: 'This object represent a user''s profile pictures.'
+            description: "This object represent a user's profile pictures."
             required:
                 - total_count
                 - photos
@@ -906,7 +906,7 @@ components:
                     type: string
             type: object
         ForceReply:
-            description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot''s message and tapped ''Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
+            description: "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot's message and tapped 'Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode."
             required:
                 - force_reply
             properties:
@@ -1093,7 +1093,7 @@ components:
                     type: integer
             type: object
         ChatMemberLeft:
-            description: 'Represents a chat member that isn''t currently a member of the chat, but may join it themselves.'
+            description: "Represents a chat member that isn't currently a member of the chat, but may join it themselves."
             required:
                 - status
                 - user
@@ -1104,7 +1104,7 @@ components:
                     $ref: '#/components/schemas/User'
             type: object
         ChatMemberBanned:
-            description: 'Represents a chat member that was banned in the chat and can''t return to the chat or view chat messages.'
+            description: "Represents a chat member that was banned in the chat and can't return to the chat or view chat messages."
             required:
                 - status
                 - user
@@ -2598,7 +2598,7 @@ components:
                     $ref: '#/components/schemas/EncryptedCredentials'
             type: object
         PassportFile:
-            description: 'This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don''t exceed 10MB.'
+            description: "This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don't exceed 10MB."
             required:
                 - file_id
                 - file_unique_id
@@ -2681,7 +2681,7 @@ components:
                 -
                     $ref: '#/components/schemas/PassportElementErrorUnspecified'
         PassportElementErrorDataField:
-            description: 'Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field''s value changes.'
+            description: "Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field's value changes."
             required:
                 - source
                 - type
@@ -3170,7 +3170,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /getMe:
-        description: 'A simple method for testing your bot''s authentication token. Requires no parameters. Returns basic information about the bot in form of a User object.'
+        description: "A simple method for testing your bot's authentication token. Requires no parameters. Returns basic information about the bot in form of a User object."
         post:
             requestBody:
                 content:
@@ -3258,7 +3258,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /close:
-        description: 'Use this method to close the bot instance before moving it from one local server to another. You need to delete the webhook before calling this method to ensure that the bot isn''t launched again after server restart. The method will return error 429 in the first 10 minutes after the bot is launched. Returns True on success. Requires no parameters.'
+        description: "Use this method to close the bot instance before moving it from one local server to another. You need to delete the webhook before calling this method to ensure that the bot isn't launched again after server restart. The method will return error 429 in the first 10 minutes after the bot is launched. Returns True on success. Requires no parameters."
         post:
             requestBody:
                 content:
@@ -3461,7 +3461,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /forwardMessage:
-        description: 'Use this method to forward messages of any kind. Service messages can''t be forwarded. On success, the sent Message is returned.'
+        description: "Use this method to forward messages of any kind. Service messages can't be forwarded. On success, the sent Message is returned."
         post:
             requestBody:
                 required: true
@@ -3575,7 +3575,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /copyMessage:
-        description: 'Use this method to copy messages of any kind. Service messages and invoice messages can''t be copied. The method is analogous to the method forwardMessage, but the copied message doesn''t have a link to the original message. Returns the MessageId of the sent message on success.'
+        description: "Use this method to copy messages of any kind. Service messages and invoice messages can't be copied. The method is analogous to the method forwardMessage, but the copied message doesn't have a link to the original message. Returns the MessageId of the sent message on success."
         post:
             requestBody:
                 required: true
@@ -6629,7 +6629,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /unbanChatMember:
-        description: 'Use this method to unban a previously banned user in a supergroup or channel. The user will not return to the group or channel automatically, but will be able to join via link, etc. The bot must be an administrator for this to work. By default, this method guarantees that after the call the user is not a member of the chat, but will be able to join it. So if the user is a member of the chat they will also be removed from the chat. If you don''t want this, use the parameter only_if_banned. Returns True on success.'
+        description: "Use this method to unban a previously banned user in a supergroup or channel. The user will not return to the group or channel automatically, but will be able to join via link, etc. The bot must be an administrator for this to work. By default, this method guarantees that after the call the user is not a member of the chat, but will be able to join it. So if the user is a member of the chat they will also be removed from the chat. If you don't want this, use the parameter only_if_banned. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -7049,7 +7049,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /banChatSenderChat:
-        description: 'Use this method to ban a channel chat in a supergroup or a channel. Until the chat is unbanned, the owner of the banned chat won''t be able to send messages on behalf of any of their channels. The bot must be an administrator in the supergroup or channel for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to ban a channel chat in a supergroup or a channel. Until the chat is unbanned, the owner of the banned chat won't be able to send messages on behalf of any of their channels. The bot must be an administrator in the supergroup or channel for this to work and must have the appropriate administrator rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -7808,7 +7808,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setChatPhoto:
-        description: 'Use this method to set a new profile photo for the chat. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to set a new profile photo for the chat. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -7889,7 +7889,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /deleteChatPhoto:
-        description: 'Use this method to delete a chat photo. Photos can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to delete a chat photo. Photos can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -7961,7 +7961,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setChatTitle:
-        description: 'Use this method to change the title of a chat. Titles can''t be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success.'
+        description: "Use this method to change the title of a chat. Titles can't be changed for private chats. The bot must be an administrator in the chat for this to work and must have the appropriate administrator rights. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -8120,7 +8120,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /pinChatMessage:
-        description: 'Use this method to add a message to the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the ''can_pin_messages'' administrator right in a supergroup or ''can_edit_messages'' administrator right in a channel. Returns True on success.'
+        description: "Use this method to add a message to the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -8207,7 +8207,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /unpinChatMessage:
-        description: 'Use this method to remove a message from the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the ''can_pin_messages'' administrator right in a supergroup or ''can_edit_messages'' administrator right in a channel. Returns True on success.'
+        description: "Use this method to remove a message from the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -8285,7 +8285,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /unpinAllChatMessages:
-        description: 'Use this method to clear the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the ''can_pin_messages'' administrator right in a supergroup or ''can_edit_messages'' administrator right in a channel. Returns True on success.'
+        description: "Use this method to clear the list of pinned messages in a chat. If the chat is not a private chat, the bot must be an administrator in the chat for this to work and must have the 'can_pin_messages' administrator right in a supergroup or 'can_edit_messages' administrator right in a channel. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -8965,7 +8965,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setMyCommands:
-        description: 'Use this method to change the list of the bot''s commands. See https://core.telegram.org/bots#commands for more details about bot commands. Returns True on success.'
+        description: "Use this method to change the list of the bot's commands. See https://core.telegram.org/bots#commands for more details about bot commands. Returns True on success."
         post:
             requestBody:
                 required: true
@@ -9046,7 +9046,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /deleteMyCommands:
-        description: 'Use this method to delete the list of the bot''s commands for the given scope and user language. After deletion, higher level commands will be shown to affected users. Returns True on success.'
+        description: "Use this method to delete the list of the bot's commands for the given scope and user language. After deletion, higher level commands will be shown to affected users. Returns True on success."
         post:
             requestBody:
                 content:
@@ -9108,7 +9108,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /getMyCommands:
-        description: 'Use this method to get the current list of the bot''s commands for the given scope and user language. Returns Array of BotCommand on success. If commands aren''t set, an empty list is returned.'
+        description: "Use this method to get the current list of the bot's commands for the given scope and user language. Returns Array of BotCommand on success. If commands aren't set, an empty list is returned."
         post:
             requestBody:
                 content:
@@ -9407,7 +9407,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /editMessageMedia:
-        description: 'Use this method to edit animation, audio, document, photo, or video messages. If a message is part of a message album, then it can be edited only to an audio for audio albums, only to a document for document albums and to a photo or a video otherwise. When an inline message is edited, a new file can''t be uploaded; use a previously uploaded file via its file_id or specify a URL. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned.'
+        description: "Use this method to edit animation, audio, document, photo, or video messages. If a message is part of a message album, then it can be edited only to an audio for audio albums, only to a document for document albums and to a photo or a video otherwise. When an inline message is edited, a new file can't be uploaded; use a previously uploaded file via its file_id or specify a URL. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned."
         post:
             requestBody:
                 required: true
@@ -11199,7 +11199,7 @@ paths:
                 default:
                     $ref: '#/components/responses/UnknownError'
     /setGameScore:
-        description: 'Use this method to set the score of the specified user in a game message. On success, if the message is not an inline message, the Message is returned, otherwise True is returned. Returns an error, if the new score is not greater than the user''s current score in the chat and force is False.'
+        description: "Use this method to set the score of the specified user in a game message. On success, if the message is not an inline message, the Message is returned, otherwise True is returned. Returns an error, if the new score is not greater than the user's current score in the chat and force is False."
         post:
             requestBody:
                 required: true

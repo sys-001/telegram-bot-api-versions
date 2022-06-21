@@ -500,25 +500,25 @@ types:
                 types:
                     - string
                 optional: false
-                description: 'Contact''s phone number'
+                description: "Contact's phone number"
             -
                 name: first_name
                 types:
                     - string
                 optional: false
-                description: 'Contact''s first name'
+                description: "Contact's first name"
             -
                 name: last_name
                 types:
                     - string
                 optional: true
-                description: 'Optional. Contact''s last name'
+                description: "Optional. Contact's last name"
             -
                 name: user_id
                 types:
                     - int
                 optional: true
-                description: 'Optional. Contact''s user identifier in Telegram'
+                description: "Optional. Contact's user identifier in Telegram"
         extended_by: {  }
     -
         name: Location
@@ -545,7 +545,7 @@ types:
         extended_by: {  }
     -
         name: UserProfilePhotos
-        description: 'This object represent a user''s profile pictures.'
+        description: "This object represent a user's profile pictures."
         fields:
             -
                 name: Field
@@ -587,21 +587,21 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app''s standard keyboard.'
+                description: "Optional. Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard."
                 default: false
             -
                 name: one_time_keyboard
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Requests clients to hide the keyboard as soon as it''s been used. Defaults to false.'
+                description: "Optional. Requests clients to hide the keyboard as soon as it's been used. Defaults to false."
                 default: false
             -
                 name: selective
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard.'
+                description: "Optional. Use this parameter if you want to show the keyboard to specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user requests to change the bot‘s language, bot replies to the request with a keyboard to select the new language. Other users in the group don’t see the keyboard."
         extended_by: {  }
     -
         name: ReplyKeyboardHide
@@ -625,11 +625,11 @@ types:
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to hide keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and hides keyboard for that user, while still showing the keyboard with poll options to users who haven''t voted yet.'
+                description: "Optional. Use this parameter if you want to hide keyboard for specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message.Example: A user votes in a poll, bot returns confirmation message in reply to the vote and hides keyboard for that user, while still showing the keyboard with poll options to users who haven't voted yet."
         extended_by: {  }
     -
         name: ForceReply
-        description: 'Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply''). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.'
+        description: "Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot‘s message and tapped ’Reply'). This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode."
         fields:
             -
                 name: Field
@@ -642,14 +642,14 @@ types:
                 types:
                     - bool
                 optional: false
-                description: 'Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'''
+                description: "Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'"
                 default: true
             -
                 name: selective
                 types:
                     - bool
                 optional: true
-                description: 'Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot''s message is a reply (has reply_to_message_id), sender of the original message.'
+                description: "Optional. Use this parameter if you want to force reply from specific users only. Targets: 1) users that are @mentioned in the text of the Message object; 2) if the bot's message is a reply (has reply_to_message_id), sender of the original message."
         extended_by: {  }
     -
         name: InputFile
@@ -714,7 +714,7 @@ methods:
         return_types: {  }
     -
         name: getMe
-        description: 'A simple method for testing your bot''s auth token. Requires no parameters. Returns basic information about the bot in form of a User object.'
+        description: "A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object."
         fields: {  }
         return_types:
             - User
@@ -745,7 +745,7 @@ methods:
                 types:
                     - string
                 optional: true
-                description: 'Send Markdown, if you want Telegram apps to show bold, italic and inline URLs in your bot''s message. For the moment, only Telegram for Android supports this.'
+                description: "Send Markdown, if you want Telegram apps to show bold, italic and inline URLs in your bot's message. For the moment, only Telegram for Android supports this."
             -
                 name: disable_web_page_preview
                 types:
