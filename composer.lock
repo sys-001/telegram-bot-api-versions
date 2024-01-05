@@ -1588,16 +1588,16 @@
         },
         {
             "name": "sysbot/tgscraper",
-            "version": "4.0.7",
+            "version": "4.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sysbot-org/tgscraper.git",
-                "reference": "1dd06c155b718d12f43fed80686533ab0a92e693"
+                "reference": "9d0cdff59b8004b54a13df7bb1c91a08e56a4da3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sysbot-org/tgscraper/zipball/1dd06c155b718d12f43fed80686533ab0a92e693",
-                "reference": "1dd06c155b718d12f43fed80686533ab0a92e693",
+                "url": "https://api.github.com/repos/Sysbot-org/tgscraper/zipball/9d0cdff59b8004b54a13df7bb1c91a08e56a4da3",
+                "reference": "9d0cdff59b8004b54a13df7bb1c91a08e56a4da3",
                 "shasum": ""
             },
             "require": {
@@ -1643,22 +1643,22 @@
             "description": "Utility to extract scheme from Telegram Bot API webpage.",
             "support": {
                 "issues": "https://github.com/Sysbot-org/tgscraper/issues",
-                "source": "https://github.com/Sysbot-org/tgscraper/tree/4.0.7"
+                "source": "https://github.com/Sysbot-org/tgscraper/tree/4.0.8"
             },
-            "time": "2023-08-23T14:14:08+00:00"
+            "time": "2024-01-05T21:44:32+00:00"
         },
         {
             "name": "sysbot/tgscraper-cache",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sysbot-org/tgscraper-cache.git",
-                "reference": "21be86668118e5dc6d6b6c0429a3823d27bc52a8"
+                "reference": "f0ad0f3f3b7e1b4cf44cee880f5e210ecf460d90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sysbot-org/tgscraper-cache/zipball/21be86668118e5dc6d6b6c0429a3823d27bc52a8",
-                "reference": "21be86668118e5dc6d6b6c0429a3823d27bc52a8",
+                "url": "https://api.github.com/repos/Sysbot-org/tgscraper-cache/zipball/f0ad0f3f3b7e1b4cf44cee880f5e210ecf460d90",
+                "reference": "f0ad0f3f3b7e1b4cf44cee880f5e210ecf460d90",
                 "shasum": ""
             },
             "require": {
@@ -1677,16 +1677,16 @@
             "authors": [
                 {
                     "name": "sys-001",
-                    "email": "sys@sys001.ml",
-                    "homepage": "https://sys001.ml",
+                    "email": "sys@sys001.xyz",
+                    "homepage": "https://sys001.xyz",
                     "role": "Developer"
                 }
             ],
             "description": "Cache package containing all available webpage snapshots for Telegram bot API.",
             "support": {
-                "source": "https://github.com/Sysbot-org/tgscraper-cache/tree/1.3.0"
+                "source": "https://github.com/Sysbot-org/tgscraper-cache/tree/1.3.1"
             },
-            "time": "2023-08-28T15:54:46+00:00"
+            "time": "2024-01-05T21:57:38+00:00"
         },
         {
             "name": "voku/simple_html_dom",
